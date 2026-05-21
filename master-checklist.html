@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Checklist — Maryann</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f5f4f0;
+    color: #1a1a1a;
+    padding: 32px 20px;
+    min-height: 100vh;
+  }
+  .container { max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: #888; margin-bottom: 6px; }
+  .last-scan { font-size: 12px; color: #aaa; margin-bottom: 20px; }
+  .progress-bar-wrap {
+    background: #e0ddd8; border-radius: 99px; height: 8px; margin-bottom: 6px; overflow: hidden;
+  }
+  .progress-bar {
+    height: 100%; border-radius: 99px; background: #4caf81; transition: width 0.3s ease;
+  }
+  .progress-label { font-size: 12px; color: #888; margin-bottom: 28px; }
+  .section {
+    background: #fff; border-radius: 14px; padding: 24px 28px;
+    margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .section-completed { background: #fafaf8; border: 1px solid #eee; }
+  .section-header {
+    display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;
+  }
+  .section-header.clickable { cursor: pointer; }
+  .section-header.clickable:hover .section-title { color: #555; }
+  .section-title { font-size: 16px; font-weight: 700; color: #1a1a1a; }
+  .section-count {
+    font-size: 12px; color: #888; background: #f0ede8; padding: 3px 10px; border-radius: 99px;
+  }
+  .section-meta { display: flex; align-items: center; gap: 8px; }
+  .chevron { font-size: 12px; color: #aaa; transition: transform 0.2s; }
+  .item {
+    display: flex; align-items: flex-start; gap: 12px; padding: 11px 0;
+    border-bottom: 1px solid #f0ede8; transition: opacity 0.2s;
+  }
+  .item:last-child { border-bottom: none; }
+  input[type="checkbox"] {
+    flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px;
+    accent-color: #4caf81; cursor: pointer;
+  }
+  .item-content { flex: 1; }
+  .item-num { font-size: 11px; font-weight: 600; color: #bbb; margin-right: 4px; }
+  .item-text { font-size: 14px; line-height: 1.5; color: #1a1a1a; }
+  .item-sub { font-size: 12px; color: #888; margin-top: 2px; line-height: 1.4; }
+  /* Completed items */
+  #completed-items .item { opacity: 0.5; }
+  #completed-items .item .item-text { text-decoration: line-through; color: #aaa; }
+  #completed-items .item .item-sub { color: #bbb; }
+  .tag {
+    display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 7px;
+    border-radius: 99px; margin-left: 6px; vertical-align: middle; position: relative; top: -1px;
+  }
+  .tag-hot { background: #ffe0e0; color: #c0392b; }
+  .tag-gmail { background: #fce8d5; color: #c0612b; }
+  .tag-slack { background: #e8f0fe; color: #3367d6; }
+  .tag-notion { background: #ede8fe; color: #6741d9; }
+  .tag-phone { background: #e8fef0; color: #27ae60; }
+  .tag-maint { background: #fff3cd; color: #856404; }
+  .sub-heading {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #aaa; margin: 18px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #f0ede8;
+  }
+  .sub-heading:first-child { margin-top: 0; }
+  .sub-heading-red   { color: #c0392b !important; border-bottom-color: #ffe0e0 !important; }
+  .sub-heading-amber { color: #b07800 !important; border-bottom-color: #fff0cc !important; }
+  .sub-heading-green { color: #27865a !important; border-bottom-color: #d4f5e4 !important; }
+
+  /* Priority color coding */
+  .item.priority-red   { border-left: 3px solid #e05c5c; padding-left: 9px; }
+  .item.priority-amber { border-left: 3px solid #e8a030; padding-left: 9px; }
+  .item.priority-green { border-left: 3px solid #4caf81; padding-left: 9px; }
+
+  /* Priority board section highlight */
+  #priority-board { border-top: 3px solid #e05c5c; }
+
+  .scan-badge {
+    display: inline-block; font-size: 10px; background: #e8f4ff; color: #2c6fad;
+    padding: 2px 8px; border-radius: 99px; font-weight: 600; margin-left: 8px; vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Master Checklist</h1>
+  <p class="subtitle">Auto-updated · Gmail · Slack · Notion · OpenPhone</p>
+  <p class="last-scan" id="lastScanLabel">Last scan: May 21, 2026 8:00 PM
+
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+  </div>
+  <p class="progress-label" id="progressLabel">0 of 0 completed</p>
+
+  <!-- ===== ACTIVE SECTIONS ===== -->
+  <div id="active-sections">
+    <!-- SCAN: 2026-05-21 Evening (20:00) -->
+    <div class="section" id="scan-20260521-evening" data-scan-date="2026-05-21 Evening">
+      <div class="section-header">
+        <div class="section-title">🔄 New — Wed 21 <span class="scan-badge">Evening</span></div>
+        <div class="section-count" id="count-scan-20260521-evening">2 remaining</div>
+      </div>
+      <div class="item" id="auto_20260521_2000_1" data-section="scan-20260521-evening">
+        <input type="checkbox" onchange="toggle('auto_20260521_2000_1')">
+        <div class="item-content">
+          <div class="item-text">Romantic Cabin for Two — Respond to Michele Booker's dog fee inquiry (Jun 19-22) <span class="tag tag-gmail">Gmail</span></div>
+          <div class="item-sub">Michele asked about dog fee and rules · Inquiry received 7:38 PM · Respond in Airbnb with pricing and pet policy details</div>
+        </div>
+      </div>
+      <div class="item" id="auto_20260521_2000_2" data-section="scan-20260521-evening">
+        <input type="checkbox" onchange="toggle('auto_20260521_2000_2')">
+        <div class="item-content">
+          <div class="item-text">Pickleball+SportCourt | PoolTable | Outdoor Living — Respond to Uma Reddy's price inquiry (May 22-25) <span class="tag tag-gmail">Gmail</span></div>
+          <div class="item-sub">Uma Reddy sent inquiry at 6:54 PM · Says property is amazing but asking to lower price · Consider offer or decline · Respond in Airbnb</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCAN: 2026-05-20 Evening -->
+    <div class="section" id="scan-20260520-evening" data-scan-date="2026-05-20 Evening">
+      <div class="section-header">
+        <div class="section-title">🔄 New — Tue 20 <span class="scan-badge">Evening</span></div>
+        <div class="section-count" id="count-scan-20260520-evening">6 remaining</div>
+      </div>
+      <div class="item priority-red" id="auto_20260520_2000_1" data-section="scan-20260520-evening">
+        <input type="checkbox" onchange="toggle('auto_20260520_2000_1')">
+        <div class="item-content">
+          <div class="item-text">Cozy Q Cabin — Accept or decline Airbnb co-host invitation <span class="tag tag-gmail">Gmail</span><span class="tag tag-hot">HOT</span></div>
+          <div class="item-sub">Lindsey's co-host invite expires June 3 · Full permissions on Cozy Q Cabin · Decision needed</div>
+        </div>
+      </div>
+      <div class="item" id="auto_20260520_2000_2" data-section="scan-20260520-evening">
+        <input type="checkbox" onchange="toggle('auto_20260520_2000_2')">
+        <div class="item-content">
+          <div class="item-text">Unknown Property — Respond to guest Yadira's message (Jun 4-7 stay) <span class="tag tag-gmail">Gmail</span></div>
+          <div class="item-sub">Guest sent late-notice message · Property: Sauna | Firepit | GameRoom | HotTub | Location · Acknowledge & confirm details</div>
+        </div>
+      </div>
+      <div class="item" id="auto_20260520_2000_3" data-section="scan-20260520-evening">
+        <input type="checkbox" onchange="toggle('auto_20260520_2000_3')">
+        <div class="item-content">
+          <div class="item-text">The Rock House — Write guest review for Matt (May 17-20 checkout) <span class="tag tag-gmail">Gmail</span></div>
+          <div class="item-sub">Airbnb review window open · 14 days available · Share your experience from Matt's stay</div>
+        </div>
+      </div>
+      <div class="item priority-red" id="auto_20260520_2000_4" data-section="scan-20260520-evening">
+        <input type="checkbox" onchange="toggle('auto_20260520_2000_4')">
+        <div class="item-content">
+          <div class="item-text">Unknown Property — Last chance to review Tzu-Ning's group <span class="tag tag-gmail">Gmail</span><span class="tag tag-hot">HOT</span></div>
+          <div class="item-sub">Review window closes May 22 (2 days left) · Deadline is hard · Post feedback on group's stay</div>
+        </div>
+      </div>
+      <div class="item" id="auto_20260520_2000_5" data-section="scan-20260520-evening">
+        <input type="checkbox" onchange="toggle('auto_20260520_2000_5')">
+        <div class="item-content">
+          <div class="item-text">PriceLabs — Reschedule meeting with Pratima to tomorrow <span class="tag tag-gmail">Gmail</span></div>
+          <div class="item-sub">Pratima missed scheduled 02:30 PM meeting today · Requested reschedule to tomorrow · Email: pratima.pilania@pricelabs.co</div>
+        </div>
+      </div>
+      <div class="item" id="auto_20260520_2000_6" data-section="scan-20260520-evening">
+        <input type="checkbox" onchange="toggle('auto_20260520_2000_6')">
+        <div class="item-content">
+          <div class="item-text">Unknown Property — Write guest review for Baylee Jordan (just checked out) <span class="tag tag-gmail">Gmail</span></div>
+          <div class="item-sub">Airbnb checkout confirmation · Review window open · Share your experience from their stay</div>
+        </div>
+      </div>
+    </div>
+  <!-- SCAN: 2026-05-19 Evening -->
+  <div class="section" id="scan-20260519-evening" data-scan-date="2026-05-19 Evening">
+    <div class="section-header">
+      <div class="section-title">🔄 New — May 19 <span class="scan-badge">Evening</span></div>
+      <div class="section-count" id="count-scan-20260519-evening">— remaining</div>
+    </div>
+
+    <div class="item" id="auto_20260519_2000_1" data-section="scan-20260519-evening">
+      <input type="checkbox" onchange="toggle('auto_20260519_2000_1')">
+      <div class="item-content">
+        <div class="item-text">Smoky Mountain Views — collect $150 pet fee from Sonyea <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Guest stayed May 13–19, pet fee was not paid · Airbnb payment request sent 7:53 PM · Follow up if not paid within 2 days.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_2000_2" data-section="scan-20260519-evening">
+      <input type="checkbox" onchange="toggle('auto_20260519_2000_2')">
+      <div class="item-content">
+        <div class="item-text">Wildwoods — review Texarkana Glass quote ($1,874.98) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Insurance claim for damaged glass from guest · Texarkana Glass sent quote 4:38 PM · Approve/decline quote; forward to insurance if approved.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_2000_3" data-section="scan-20260519-evening">
+      <input type="checkbox" onchange="toggle('auto_20260519_2000_3')">
+      <div class="item-content">
+        <div class="item-text">LTD Eastern Rise Enterprises LLC — pay 2026 annual agent fee to Oklahoma SOS <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Annual LLC registration fee notice from SOS · Filing #3712912782 · Payment due by year-end · Confirm amount and submit payment.</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- SCAN: 2026-05-19 Afternoon -->
+  <div class="section" id="scan-20260519-afternoon" data-scan-date="2026-05-19 Afternoon">
+    <div class="section-header">
+      <div class="section-title">🔄 New — May 19 <span class="scan-badge">Afternoon</span></div>
+      <div class="section-count" id="count-scan-20260519-afternoon">— remaining</div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_1" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_1')">
+      <div class="item-content">
+        <div class="item-text">Cozy Q — confirm listing is live and booking block until May 21 is active <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">From today's Zoom meeting recap · James launching today to capture Memorial Day weekend · Owner block needed until May 21 for door lock + hot tub privacy walls · Verify with James ASAP.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_2" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_2')">
+      <div class="item-content">
+        <div class="item-text">Airbnb reviews — write reviews for 4 guests currently waiting <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Airbnb emailed 2:21 PM today: 4 guests are waiting for your review · Review window closes 14 days post-checkout · Write before expiration to maintain response rate.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_3" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_3')">
+      <div class="item-content">
+        <div class="item-text">Steve — write host review response to his 5-star review <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Steve left a 5-star review · Email received 4:02 PM today · Respond publicly to thank him and reinforce great guest experience.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_4" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_4')">
+      <div class="item-content">
+        <div class="item-text">Wildwoods — file Safely claim and approve Texarkana Glass quote ($1,874.98) for broken window <span class="tag tag-gmail">Gmail</span><span class="tag tag-maint">Maint</span></div>
+        <div class="item-sub">Texarkana Glass quote emailed 4:38 PM today · Jimmy is boarding up window today as temp fix · Submit Safely claim with this quote to begin reimbursement.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_5" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_5')">
+      <div class="item-content">
+        <div class="item-text">The Cove — cabinet fell again, guest concern — dispatch repair <span class="tag tag-gmail">Gmail</span><span class="tag tag-maint">Maint</span></div>
+        <div class="item-sub">From today's Zoom meeting recap · Cabinet has fallen again causing guest concern · Schedule repair; confirm guest safety and communicate fix timeline.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_6" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_6')">
+      <div class="item-content">
+        <div class="item-text">Tranquil Lane — have cleaning team restart router to restore camera connection <span class="tag tag-gmail">Gmail</span><span class="tag tag-maint">Maint</span></div>
+        <div class="item-sub">From today's Zoom meeting recap · Cameras offline due to router issue · Action: text cleaning team to restart router on next visit or immediately if property is vacant.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_7" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_7')">
+      <div class="item-content">
+        <div class="item-text">Blushing Beaver — order 3 replacement light bulbs (fuse fixed by Jimmy) <span class="tag tag-gmail">Gmail</span><span class="tag tag-maint">Maint</span></div>
+        <div class="item-sub">From today's Zoom meeting recap · Jimmy fixed the fuse but 3 bulbs still need replacing · Order and schedule install.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_8" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_8')">
+      <div class="item-content">
+        <div class="item-text">LTD Eastern Rise — pay 2026 Oklahoma Annual Agent Fee <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Notice from OK SOS emailed 4:18 PM today · Filing number 3712912782 · Annual LLC agent fee due · Pay via link in email or log in to OK SOS portal.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_9" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_9')">
+      <div class="item-content">
+        <div class="item-text">LTD Eastern Rise — review today's VRBO integration audit report for listing errors <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">New audit from Expedia/VRBO emailed 1:39 PM today · Separate from yesterday's May 18 audit · Check attachment for any listing sync issues or errors needing correction.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_10" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_10')">
+      <div class="item-content">
+        <div class="item-text">Panoramic Mountain Views (Jun 8–12) — watch for cancellation from Jeanette <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Jeanette messaged at 2:15 PM: "my mother in law lost her dog care" · Possible cancellation incoming · Monitor reservation and respond if she requests to cancel.</div>
+      </div>
+    </div>
+
+    <div class="item" id="auto_20260519_1500_11" data-section="scan-20260519-afternoon">
+      <input type="checkbox" onchange="toggle('auto_20260519_1500_11')">
+      <div class="item-content">
+        <div class="item-text">Airbnb listing audit — follow up with Zainab to fix AI-generated amenity errors across all listings <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">From today's Zoom meeting recap · Airbnb AI added inaccurate amenities (charcoal grill, waterfront) and is missing critical ones (bathtubs, CO alarms, private entrances) · Zainab owns this; confirm timeline.</div>
+      </div>
+    </div>
+
+  </div><!-- /scan-20260519-afternoon -->
+
+
+  <!-- ===== PRIORITY BOARD ===== -->
+  <div class="section" id="priority-board">
+    <div class="section-header">
+      <div class="section-title">⚡ Priority Board</div>
+      <div class="section-count" id="count-priority-board">— remaining</div>
+    </div>
+
+    <div class="sub-heading sub-heading-red">🔴 Act Now</div>
+    <!-- RED-ITEMS-START -->
+
+    <div class="item priority-red" id="pb_red_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_1')">
+      <div class="item-content">
+        <div class="item-text">Forest Cabin Getaway — confirm Kaley's check-in today + $100 early check-in fee status <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Kaley arrives today May 18–21 · Early check-in fee of $100 was requested May 17 · Verify property ready + confirm fee received.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_2')">
+      <div class="item-content">
+        <div class="item-text">The Perch — respond to Eber's guest change request (1 → 8 guests, Jul 31–Aug 2) <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Panoramic Views · Rooftop Deck · Hot Tub · Approve or decline in Airbnb — time-sensitive.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_3" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_3')">
+      <div class="item-content">
+        <div class="item-text">James Eubanks — send directions + confirm check-in for tomorrow May 19 <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">James arrives tomorrow · Dallas, TX · Identity verified · 2 reviews · Airbnb check-in reminder sent today.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_4" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_4')">
+      <div class="item-content">
+        <div class="item-text">Wildwoods — arrange firewood delivery for guest <span class="tag tag-hot">VERIFY DATES</span><span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">David's EOD May 18: guest requested extra firewood · ⚠️ Check-in/check-out dates unknown — confirm guest is still in-house before acting · If already checked out, clear this item.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_5" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_5')">
+      <div class="item-content">
+        <div class="item-text">Airbnb cancellation HMJSWNPRFK (Jun 19–21) — identify property and notify owner <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Dates re-opened · Received May 17 · Different from Nashville cancellation (HMFR3Z55KX) already in checklist.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_6" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_6')">
+      <div class="item-content">
+        <div class="item-text">LTD Eastern Rise — review new VRBO Integration Audit (May 18) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">New audit emailed 1:23 PM today · Separate from May 15 audit already in checklist · Check attachment for listing health issues.</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-red" id="pb_red_20260518_1500_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_20260518_1500_1')">
+      <div class="item-content">
+        <div class="item-text">The Perch — send door code to Colten Booker (arrives tomorrow May 19) <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Colten messaged asking for door code (May 19–22 stay) · Panoramic Views • Rooftop Deck • Hot Tub · Respond in Airbnb with access code + check-in instructions ASAP.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_20260518_1500_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_20260518_1500_2')">
+      <div class="item-content">
+        <div class="item-text">Romantic Forest Treehouse — check on current guest Helen's open questions <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Helen (May 18–20, in-house now) asked about laundry detergent + fan · Last message ends mid-sentence · Review full thread and confirm all questions are answered.</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-red" id="pb_red_20260518_2000_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_20260518_2000_1')">
+      <div class="item-content">
+        <div class="item-text">The Cove — confirm freezer issue is resolved; Terry was dispatched this morning <span class="tag tag-hot">HOT</span><span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Flagged 10:40 AM by Maryann · Terry dispatched to fix freezer · No resolution update logged yet · Follow up with Terry or David to confirm fix is done · ⚠️ Guest dates unknown — verify if guests are in-house before assuming resolved</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_20260518_2000_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_20260518_2000_2')">
+      <div class="item-content">
+        <div class="item-text">Private Cabin w/ Hot Tub, Fireplace &amp; Forest Views — respond to Barry Booker's unread in-house message <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 18 · Check-out: May 22 · Barry messaged "In town for work" at 6:54 PM today — thread unread · Review thread and reply in Airbnb</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-red" id="pb_red_20260519_1200_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_20260519_1200_1')">
+      <div class="item-content">
+        <div class="item-text">Private Cabin w/ Hot Tub, Fireplace &amp; Forest Views — verify Jesus Guest received door code <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 18 · Check-out: May 22 · Jesus Guest messaged "Hello. Texting for the door code" at 10:42 PM May 18 in Barry Booker's thread · Confirm code was sent and guest has access</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="pb_red_20260519_1200_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_red_20260519_1200_2')">
+      <div class="item-content">
+        <div class="item-text">Cabin for Two • Pond, Kayak &amp; Spa Bath — cancellation HM38FBKAW9 (Janice Booker, Jul 10–13) — notify owner <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Was: Jul 10–13 · Cancellation received May 19 at 1:58 AM · Janice said "My plans changed, no longer have coverage" · Dates now open — notify owner, update pricing, reopen for rebooking</div>
+      </div>
+    </div>
+
+    <!-- RED-ITEMS-END -->
+
+    <div class="sub-heading sub-heading-amber">🟡 Review Today</div>
+    <!-- AMBER-ITEMS-START -->
+
+    <div class="item priority-amber" id="pb_amb_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_1')">
+      <div class="item-content">
+        <div class="item-text">PriceLabs — implement Non-Repeating Seasons for min-stay management <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">From today's PriceLabs meeting recap (Fathom) · Solves the manual min-stay override problem · Enable other advanced features reviewed in meeting.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_2')">
+      <div class="item-content">
+        <div class="item-text">Cozy Retreat — post-checkout maintenance issues <span class="tag tag-maint">Maint</span><span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Olivia EOD May 17: bathroom door locked · flies · broken back door knob upstairs · broken faucet left master · stains on rug · Log in Notion + schedule fixes.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_3" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_3')">
+      <div class="item-content">
+        <div class="item-text">Grandview Heights — confirm Leonard starts leak repair Monday <span class="tag tag-maint">Maint</span><span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">David's EOD: Leonard informed, working on it Monday (May 19) · Follow up to confirm repair is scheduled + started.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_4" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_4')">
+      <div class="item-content">
+        <div class="item-text">Kambri — missing red crossbody wallet/purse <span class="tag tag-maint">Maint</span><span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Flagged Olivia EOD May 17 · Guest skipped review due to missing item · Coordinate with cleaning team to locate + arrange return.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_5" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_5')">
+      <div class="item-content">
+        <div class="item-text">Back to the Forest — confirm Apple Watch was shipped to guest <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">David's EOD: Watch found, address shared with cleaner for shipping · Verify it went out + share tracking with guest.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_6" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_6')">
+      <div class="item-content">
+        <div class="item-text">Carter Mountain — confirm Jimmy has cleaner's maintenance list + ETA <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">David's EOD: Jimmy asked about availability, needs to work off the maintenance list from cleaners · Confirm he has it and set a timeline.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_7" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_7')">
+      <div class="item-content">
+        <div class="item-text">Write reviews for 7 guests Olivia skipped <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Kambri · Heather · Maribel · Cory · Raquel · John (Jade Pond) · Lenny — all checked out May 17, reviews not yet written per EOD.</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-amber" id="pb_amb_20260518_1500_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_1500_1')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — respond publicly to Fily's 5-star review <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Airbnb review notification received today at 4:41 PM · Identify the property in Airbnb dashboard + post a public host response to reinforce guest experience.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260518_1500_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_1500_2')">
+      <div class="item-content">
+        <div class="item-text">All Listings — reply to Hospitable before VRBO sync ticket closes <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Hospitable closing the VRBO integration support ticket (last msg 4:24 PM today) · If double-booking risk or sync issues remain unresolved, reply to reopen · Otherwise let it close.</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-amber" id="pb_amb_20260518_2000_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_2000_1')">
+      <div class="item-content">
+        <div class="item-text">Divine Den — collect $4,300 outstanding payment or cancel reservation <span class="tag tag-hot">HOT</span><span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Maryann flagged 10:40 AM · Guest has open balance of ~$4,300 · If unpaid, delete reservation — guest forfeits $1,300 initial deposit (no refunds) · ⚠️ Guest check-in/check-out dates unknown — confirm in reservation system before cancelling</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260518_2000_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_2000_2')">
+      <div class="item-content">
+        <div class="item-text">Skippin Rocks — confirm cleaners are set for early check-in <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Maryann flagged 10:40 AM · Early check-in payment already received per David's EOD · Still need to confirm cleaners are aware and ready · ⚠️ Early check-in date unknown — verify with cleaners ASAP</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260518_2000_3" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_2000_3')">
+      <div class="item-content">
+        <div class="item-text">Carter Mountain Lodge — write review for Latasha <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 15 · Check-out: May 18 · Review window opened today · Write host review before the 14-day window closes</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260518_2000_4" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_2000_4')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — write review for Ginger's group <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-out: May 18 · Review window opened today · Identify property in Airbnb dashboard and write host review</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260518_2000_5" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260518_2000_5')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — write review for Misty's group <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-out: May 18 · Review window opened today · Identify property in Airbnb dashboard and write host review</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_1')">
+      <div class="item-content">
+        <div class="item-text">Large Group Cabin • Plush Theater Room • Fire Pit (Hochatown Treehouse) — verify extra-guest fee applied for Randy's 1→9 guest change <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Randy requested change 1→9 guests at 10:48 PM May 18 · Reservation auto-updated 2 min later · ⚠️ Guest dates unknown — confirm in Airbnb dashboard · Verify per-guest fee for 8 additional guests was charged</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_2')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — cancellation HM4KYZ5BFS (Aug 7–9) — identify property and notify owner <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Was: Aug 7–9 · Cancellation received May 18 at 11:21 PM · Dates now open — find property in Airbnb dashboard, notify owner, reopen calendar for rebooking</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_3" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_3')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — send check-in directions to Daneille Johnson (arrives Tue May 26) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 26 · Check-out: unknown — verify in dashboard · Oklahoma City, OK · Identity verified · 2 reviews · Airbnb reminder received May 18 · Send directions and coordinate check-in time</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_4" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_4')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — send check-in directions to Christine DeSelle (arrives Tue May 26) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 26 · Check-out: unknown — verify in dashboard · Oklahoma · Identity verified · 1 review · Airbnb reminder received May 18 · Send directions and coordinate check-in time</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_5" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_5')">
+      <div class="item-content">
+        <div class="item-text">Romantic Pond Escape • Hot Tub &amp; Kayaks — respond to Amber's inquiry about kayaks (May 26–29) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 26 · Check-out: May 29 · Amber (West Monroe, LA · 3 reviews · identity verified) asked "Is there kayaks to use or do we rent those?" · Needs response in Airbnb inbox</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_6" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_6')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — respond publicly to David's 5-star review <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Review notification received May 19 at 12:18 AM · Identify property in Airbnb dashboard and post a public host response to David's 5-star review</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_7" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_7')">
+      <div class="item-content">
+        <div class="item-text">Sevierville New Listing — implement PriceLabs pricing strategy per Fathom meeting recap <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Fathom recap received May 19 1:43 AM · Strategy: restrict Saturday check-ins/check-outs to capture full-week stays, maximize revenue · Set base price, min/max, and stay restrictions in PriceLabs for new Sevierville property</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_8" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_8')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — update BBQ/grill listing description (propane unit, not charcoal; iron skewers, not bamboo) <span class="tag tag-phone">Phone</span></div>
+        <div class="item-sub">Flagged via OpenPhone at 11:36 PM May 18 · Contact noted: "BBQ section needs to be updated. We have a propane unit not charcoal. Also no bamboo skewers. We did have iron skewers but did not check last time." · Identify property and update listing amenities</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="pb_amb_20260519_1200_9" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_amb_20260519_1200_9')">
+      <div class="item-content">
+        <div class="item-text">Private Playground • Family Cabin • Hot Tub — confirm Carla's check-in details are ready (arrives May 22) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: May 22 · Check-out: May 30 · Jeffrey Host sent check-in details to Carla on May 18 · Verify access code is live and pre-arrival flow is complete before May 22</div>
+      </div>
+    </div>
+
+    <!-- AMBER-ITEMS-END -->
+
+    <div class="sub-heading sub-heading-green">🟢 FYI / No Rush</div>
+    <!-- GREEN-ITEMS-START -->
+
+    <div class="item priority-green" id="pb_grn_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_1')">
+      <div class="item-content">
+        <div class="item-text">Write reviews for 10 May 14–17 checkout guests <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Jennifer's group · Isabel's group · Catherine (Honey Badger) · Hannah's group · Mauricio's group · Praneeth (4 King Suites) · Steve (Spacious 3BR) · Raquel (Modern Forest Cabin) · Kailynn (Kid-Friendly) · Maribel (Cozy Retreat/Sauna) — windows just opened, write while fresh.</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_2')">
+      <div class="item-content">
+        <div class="item-text">New booking — send welcome to Madisyn Garcia (arrives May 22) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Booking confirmed today 1:22 PM · Scenic property · Send check-in details and door code.</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_3" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_3')">
+      <div class="item-content">
+        <div class="item-text">New booking — send welcome to Andrew Goldstein (arrives May 28) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Booking confirmed today 1:35 PM · Wichita Falls, TX · Identity verified · Send check-in details.</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_4" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_4')">
+      <div class="item-content">
+        <div class="item-text">Adam Price — coordinate check-in for May 25 arrival <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Independence, KY · 2 reviews · Identity verified · Send directions closer to date.</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-green" id="pb_grn_20260518_1500_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_20260518_1500_1')">
+      <div class="item-content">
+        <div class="item-text">45-Ft Cliff Views | Sleeps 12 — send welcome to Brooklyn Brennan (arrives May 22) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">New booking confirmed today · Identity verified, 7 reviews, Dallas TX · Host Kathryn has been messaging · Confirm access code + check-in details are set.</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_20260518_1500_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_20260518_1500_2')">
+      <div class="item-content">
+        <div class="item-text">Panoramic Mountain Views Lodge (Viewtopia) — send welcome to Harvey Rollins (arrives Jul 9) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">New booking confirmed today · Identity verified, 3 reviews · Harvey has already signed guest agreement · Send check-in details closer to arrival date.</div>
+      </div>
+    </div>
+
+
+    <div class="item priority-green" id="pb_grn_20260519_1200_1" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_20260519_1200_1')">
+      <div class="item-content">
+        <div class="item-text">Cozy Mountain Escape | Hot Tub, Game Room &amp; Family — send welcome to Katie Mcdaniel (arrives Aug 27) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: Aug 27 · Check-out: Aug 30 · Booking confirmed May 19 at 3:47 AM · Identity verified · Kathryn Host has messaged; confirm pre-arrival flow is queued</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_20260519_1200_2" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_20260519_1200_2')">
+      <div class="item-content">
+        <div class="item-text">Unknown Property — send welcome to Mandi Martin (arrives Jul 28) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: Jul 28 · Check-out: unknown — verify in dashboard · Booking confirmed May 19 at 2:25 AM · Identity verified · 6 reviews · Send check-in details and welcome message</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_20260519_1200_3" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_20260519_1200_3')">
+      <div class="item-content">
+        <div class="item-text">Scenic Retreat | Fire Pit | Hot tub | 2 Kings Bed — send welcome to Angelina Pane (arrives Jun 5) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: Jun 5 · Check-out: Jun 9 · Booking confirmed May 19 at 2:22 AM · Identity verified · 3 reviews · Vicki Host sent initial welcome; confirm pre-arrival flow is set</div>
+      </div>
+    </div>
+
+    <div class="item priority-green" id="pb_grn_20260519_1200_4" data-section="priority-board">
+      <input type="checkbox" onchange="toggle('pb_grn_20260519_1200_4')">
+      <div class="item-content">
+        <div class="item-text">Waterfront • Kayaks, Swim Area, Firepit &amp; GameLoft — confirm check-in details for Tina Booker (arrives Jun 1) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Check-in: Jun 1 · Check-out: Jun 4 · Tina's latest message May 18: "Awesome! Thank you Maryann. We..." · Confirm pre-arrival flow is complete and check-in details are confirmed</div>
+      </div>
+    </div>
+
+    <!-- GREEN-ITEMS-END -->
+
+  </div><!-- /priority-board -->
+
+  <!-- ===== SECTION: TO-DO ===== -->
+  <div class="section" id="section-todo">
+    <div class="section-header">
+      <div class="section-title">✅ To-Dos</div>
+      <div class="section-count" id="count-section-todo">—</div>
+    </div>
+
+    <div class="sub-heading">🔥 Do Today</div>
+
+    <div class="item priority-red" id="i2" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i2')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">2.</span> Write guest reviews — deadline May 17 <span class="tag tag-hot">2 DAYS</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Jabrien's group · Melissa's group · Erik & Ulysses · Abdulbasit's group — all expire after May 17.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="i3" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i3')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">3.</span> Return wallet to Jade Pond guest <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Coordinate with cleaner and communicate with guest. Open since May 11.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="i4" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i4')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">4.</span> Follow up on Cove missing wallet <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Separate from Jade Pond. Open Notion task since May 11, no update.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i5" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i5')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">5.</span> File damaged items claim at the Cove with Safely <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Open task since May 11.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="i6" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i6')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">6.</span> Respond to Nilah's reservation change request <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Wants to change from 2 pets to 1 pet — Panoramic Mountain Views + Hot Tub property.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="i31" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i31')">
+      <div class="item-content">
+        <div class="item-text">Divine Den — check in with current guest <span class="tag tag-hot">HOT</span><span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Follow up today to make sure everything is going well with their stay.</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">💰 Financial & Admin</div>
+
+    <div class="item priority-amber" id="i7" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i7')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">7.</span> Review and pay Flawless 5 Star Cleaning invoices (~$8,035 total) <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">#2194 ($1,350) · #2195 ($1,235) · #2196 ($720) · #2197 ($1,265) · #2198 ($1,040) · #2199 ($1,500) · #2200 ($925)</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="i10" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i10')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">10.</span> File monthly sales tax returns <span class="tag tag-gmail">Gmail</span><span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Automated reminder + open Notion tasks: "File taxes for last month" and "Do taxes — email tax office."</div>
+      </div>
+    </div>
+
+    <div class="item" id="i11" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i11')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">11.</span> Do taxes — email tax office with correct postal and email addresses <span class="tag tag-notion">Notion</span></div>
+      </div>
+    </div>
+
+    <div class="item" id="i12" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i12')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">12.</span> Verify all cabins NOT in Hochatown are not being charged Hochatown taxes <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Open since April 10.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="i32" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i32')">
+      <div class="item-content">
+        <div class="item-text">Send OKTAP account creation emails to 2 owners <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Two owners still don't have OKTAP accounts. Send them the registration email.</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">🔧 Platform & Tech</div>
+
+    <div class="item" id="i16" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i16')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">16.</span> Confirm Hospitable VRBO double-booking is fully resolved <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">They followed up May 14 and May 15. They think it's fixed — you need to verify.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i17" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i17')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">17.</span> Check VRBO integration audit report — LTD Eastern Rise <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Expedia Group audit came in May 15. May flag listing health issues.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i18" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i18')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">18.</span> Integrate Claude with HostBuddy <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Added May 14.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i19" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i19')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">19.</span> Integrate Claude with Touchstay <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Added May 14.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i20" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i20')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">20.</span> Add Livin on the Edge to Touchstay <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Added May 13.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="i33" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i33')">
+      <div class="item-content">
+        <div class="item-text">Create email cleanup plan — Muneeb and Zenib <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">3 pages of emails were not cleaned out at all. Talk it out with both of them and build a clear process so it doesn't pile up again. Assigned to Muneeb in Notion.</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">🏡 Property Operations</div>
+
+    <div class="item priority-red" id="i21" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i21')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">21.</span> Cozy Q Cabin — prep for tentative go live May 22 <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Listings, pricing, Touchstay, HostBuddy all need to be set up.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i23" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i23')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">23.</span> Review master maintenance list sent to Jimmy via Facebook <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Confirm nothing was missed. Open since May 11.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i24" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i24')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">24.</span> Follow up with Alpine Escape guest — confirm AC is still working <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Open Notion task since May 11.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i26" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i26')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">26.</span> Check all Airbnb listings to confirm they look good <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Open Notion task since May 1. General quality audit.</div>
+      </div>
+    </div>
+
+    <div class="item" id="i28" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i28')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">28.</span> 2nd attempt to remove bad review — 7 Spanish Angels <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Open since May 2.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="i34" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i34')">
+      <div class="item-content">
+        <div class="item-text">Skippin Rocks — communicate early check-in time to cleaners <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Notify cleaning team of the early check-in so they can adjust their schedule accordingly.</div>
+      </div>
+    </div>
+
+    <div class="item priority-red" id="i35" data-section="section-todo">
+      <input type="checkbox" onchange="toggle('i35')">
+      <div class="item-content">
+        <div class="item-text">Send message to owners regarding calendar blocks <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Communicate to all relevant owners about blocks on their property calendars.</div>
+      </div>
+    </div>
+
+  </div><!-- /section-todo -->
+
+  <!-- ===== SECTION: MAINTENANCE ===== -->
+  <div class="section" id="section-maint">
+    <div class="section-header">
+      <div class="section-title">🔧 Maintenance Issues</div>
+      <div class="section-count" id="count-section-maint">—</div>
+    </div>
+
+    <div class="sub-heading">🚨 Active Right Now</div>
+
+    <div class="item priority-red" id="m1" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m1')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">1.</span> Alpine Chalet — AC not working <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Mischa did basic troubleshooting, no fix. Ask Paula who she wants to use.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="m3" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m3')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">3.</span> Sweet Serenity — Fridge drawers not closing, blocking door <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">David spotted on video. Possible fix: reposition top shelf. Add to Notion/PIS.</div>
+      </div>
+    </div>
+
+    <div class="item priority-amber" id="m4" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m4')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">4.</span> Wildwoods — Glass repair needed <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Guest approved sending the glass guy May 15. Confirm completed.</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">📋 Open Notion Cabin Issues</div>
+
+    <div class="item" id="m7" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m7')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">7.</span> Fridge is leaking — property TBD <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Logged May 11. Property not identified in record.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m8" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m8')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">8.</span> Trash can drawer is off track — property TBD <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Logged May 11.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m10" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m10')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">10.</span> Sink issue — property TBD <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Logged May 1.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m11" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m11')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">11.</span> Upstairs TV by bunk room not connecting to WiFi — property TBD <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Logged May 1.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m12" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m12')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">12.</span> Purchase dual-pane window at Wildwoods <span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Open task since May 11.</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">📦 Multi-Item List (Cabin Unknown — May 12)</div>
+
+    <div class="item" id="m13" data-section="section-maint"><input type="checkbox" onchange="toggle('m13')"><div class="item-content"><div class="item-text"><span class="item-num">13.</span> 5–6 disc lights out throughout cabin</div></div></div>
+    <div class="item" id="m14" data-section="section-maint"><input type="checkbox" onchange="toggle('m14')"><div class="item-content"><div class="item-text"><span class="item-num">14.</span> No lock on firewood box</div></div></div>
+    <div class="item" id="m15" data-section="section-maint"><input type="checkbox" onchange="toggle('m15')"><div class="item-content"><div class="item-text"><span class="item-num">15.</span> Broken mini-split remote holder</div></div></div>
+    <div class="item" id="m16" data-section="section-maint"><input type="checkbox" onchange="toggle('m16')"><div class="item-content"><div class="item-text"><span class="item-num">16.</span> Tons of firepit lights out</div></div></div>
+    <div class="item" id="m17" data-section="section-maint"><input type="checkbox" onchange="toggle('m17')"><div class="item-content"><div class="item-text"><span class="item-num">17.</span> Missing hot/cold sink button in upstairs bath</div></div></div>
+    <div class="item" id="m18" data-section="section-maint"><input type="checkbox" onchange="toggle('m18')"><div class="item-content"><div class="item-text"><span class="item-num">18.</span> No sink stopper in upstairs bath</div></div></div>
+    <div class="item" id="m19" data-section="section-maint"><input type="checkbox" onchange="toggle('m19')"><div class="item-content"><div class="item-text"><span class="item-num">19.</span> Firepit chairs need repainting; 2 are badly broken and need to be tossed</div></div></div>
+
+    <div class="sub-heading">📱 From OpenPhone</div>
+
+    <div class="item" id="m20" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m20')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">20.</span> Living on the Edge — dishwasher showing ER error code <span class="tag tag-phone">OpenPhone</span></div>
+        <div class="item-sub">Owner flagged via Vacana app May 8. Cleaning team was supposed to check — confirm status.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m21" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m21')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">21.</span> Living on the Edge — string lights need to be replaced <span class="tag tag-phone">OpenPhone</span></div>
+        <div class="item-sub">Owner asked about type to buy (May 7). Amazon link was shared.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m23" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m23')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">23.</span> Ambiance — add water heater location to PIS <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Leonard found it on the deck (May 15). Document so it's never a hunt again.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m24" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m24')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">24.</span> Sweet Serenity — add router location to PIS <span class="tag tag-slack">Slack</span></div>
+        <div class="item-sub">Confirmed above the washer (May 15). Olivia is adding to Notion.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m26" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m26')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">26.</span> Fireplace won't properly shut off — property TBD <span class="tag tag-phone">OpenPhone</span></div>
+        <div class="item-sub">Guest had to toggle it off manually (May 2). Consider a permanent fix or clearer instructions.</div>
+      </div>
+    </div>
+
+    <div class="item" id="m27" data-section="section-maint">
+      <input type="checkbox" onchange="toggle('m27')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">27.</span> Schedule pest control for all Maryann's cabins <span class="tag tag-phone">OpenPhone</span><span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Owner Paula reminded via text May 7: "Don't forget to have Jimmy spray for pest control."</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">🏔️ Carter Mountain Lodge (Revenue Mgmt Only — FYI)</div>
+
+    <div class="item" id="m28" data-section="section-maint"><input type="checkbox" onchange="toggle('m28')"><div class="item-content"><div class="item-text"><span class="item-num">28.</span> Kitchen sink handle missing hot/cold top button</div></div></div>
+    <div class="item" id="m29" data-section="section-maint"><input type="checkbox" onchange="toggle('m29')"><div class="item-content"><div class="item-text"><span class="item-num">29.</span> Door stopper and knob loose in laundry room drawer</div></div></div>
+    <div class="item" id="m30" data-section="section-maint"><input type="checkbox" onchange="toggle('m30')"><div class="item-content"><div class="item-text"><span class="item-num">30.</span> Bent vent in floor (likely from original build)</div></div></div>
+    <div class="item" id="m31" data-section="section-maint"><input type="checkbox" onchange="toggle('m31')"><div class="item-content"><div class="item-text"><span class="item-num">31.</span> Board falling out from top deck ceiling</div></div></div>
+    <div class="item" id="m32" data-section="section-maint"><input type="checkbox" onchange="toggle('m32')"><div class="item-content"><div class="item-text"><span class="item-num">32.</span> No lock on firepit box</div></div></div>
+    <div class="item" id="m33" data-section="section-maint"><input type="checkbox" onchange="toggle('m33')"><div class="item-content"><div class="item-text"><span class="item-num">33.</span> Piece broken off near air unit</div></div></div>
+    <div class="item" id="m34" data-section="section-maint"><input type="checkbox" onchange="toggle('m34')"><div class="item-content"><div class="item-text"><span class="item-num">34.</span> Clips broken off air unit cover</div></div></div>
+    <div class="item" id="m35" data-section="section-maint"><input type="checkbox" onchange="toggle('m35')"><div class="item-content"><div class="item-text"><span class="item-num">35.</span> Driveway needs power-washing near cabin and cross ties</div></div></div>
+    <div class="item" id="m36" data-section="section-maint"><input type="checkbox" onchange="toggle('m36')"><div class="item-content"><div class="item-text"><span class="item-num">36.</span> Yard work needed</div></div></div>
+    <div class="item" id="m37" data-section="section-maint"><input type="checkbox" onchange="toggle('m37')"><div class="item-content"><div class="item-text"><span class="item-num">37.</span> Several firepit lights out on upper deck</div></div></div>
+    <div class="item" id="m38" data-section="section-maint"><input type="checkbox" onchange="toggle('m38')"><div class="item-content"><div class="item-text"><span class="item-num">38.</span> Broken board on steps</div></div></div>
+    <div class="item" id="m39" data-section="section-maint"><input type="checkbox" onchange="toggle('m39')"><div class="item-content"><div class="item-text"><span class="item-num">39.</span> Dryer vent outside is bent up</div></div></div>
+    <div class="item" id="m40" data-section="section-maint"><input type="checkbox" onchange="toggle('m40')"><div class="item-content"><div class="item-text"><span class="item-num">40.</span> Candles need batteries</div></div></div>
+
+    <div class="sub-heading">🗂️ Older Open Issues</div>
+
+    <div class="item" id="m41" data-section="section-maint"><input type="checkbox" onchange="toggle('m41')"><div class="item-content"><div class="item-text"><span class="item-num">41.</span> Outdoor TV not working — weak WiFi signal</div><div class="item-sub">Property not specified.</div></div></div>
+    <div class="item" id="m42" data-section="section-maint"><input type="checkbox" onchange="toggle('m42')"><div class="item-content"><div class="item-text"><span class="item-num">42.</span> No proper hot tub steps</div><div class="item-sub">Property not specified.</div></div></div>
+    <div class="item" id="m43" data-section="section-maint"><input type="checkbox" onchange="toggle('m43')"><div class="item-content"><div class="item-text"><span class="item-num">43.</span> Games need checking and replacement — Monopoly set incomplete</div></div></div>
+    <div class="item" id="m44" data-section="section-maint"><input type="checkbox" onchange="toggle('m44')"><div class="item-content"><div class="item-text"><span class="item-num">44.</span> Frying pans and griddles in poor condition</div><div class="item-sub">Guests couldn't cook properly.</div></div></div>
+    <div class="item" id="m45" data-section="section-maint"><input type="checkbox" onchange="toggle('m45')"><div class="item-content"><div class="item-text"><span class="item-num">45.</span> Cobwebs in main living area — needs better cleaning routine</div></div></div>
+    <div class="item" id="m46" data-section="section-maint"><input type="checkbox" onchange="toggle('m46')"><div class="item-content"><div class="item-text"><span class="item-num">46.</span> Outdoor areas need power washing — pollen buildup</div></div></div>
+    <div class="item" id="m47" data-section="section-maint"><input type="checkbox" onchange="toggle('m47')"><div class="item-content"><div class="item-text"><span class="item-num">47.</span> Room with double shower smells musty</div></div></div>
+    <div class="item" id="m48" data-section="section-maint"><input type="checkbox" onchange="toggle('m48')"><div class="item-content"><div class="item-text"><span class="item-num">48.</span> Curtains/blinds in one room not thick enough to block light</div><div class="item-sub">Guest had trouble sleeping.</div></div></div>
+    <div class="item" id="m49" data-section="section-maint"><input type="checkbox" onchange="toggle('m49')"><div class="item-content"><div class="item-text"><span class="item-num">49.</span> Worn mattress springs in one bedroom</div></div></div>
+    <div class="item" id="m50" data-section="section-maint"><input type="checkbox" onchange="toggle('m50')"><div class="item-content"><div class="item-text"><span class="item-num">50.</span> Not enough utensils — forks and spoons</div></div></div>
+    <div class="item" id="m51" data-section="section-maint"><input type="checkbox" onchange="toggle('m51')"><div class="item-content"><div class="item-text"><span class="item-num">51.</span> Dusty air vents throughout one cabin</div></div></div>
+    <div class="item" id="m52" data-section="section-maint"><input type="checkbox" onchange="toggle('m52')"><div class="item-content"><div class="item-text"><span class="item-num">52.</span> Missing Bluetooth speaker charging cable in kitchen</div></div></div>
+    <div class="item" id="m53" data-section="section-maint"><input type="checkbox" onchange="toggle('m53')"><div class="item-content"><div class="item-text"><span class="item-num">53.</span> Lights on back porch are out</div><div class="item-sub">Logged April 18. Property not specified.</div></div></div>
+
+  </div><!-- /section-maint -->
+
+  <!-- ===== SECTION: NEW ITEMS MAY 15 ===== -->
+  <div class="section" id="section-new">
+    <div class="section-header">
+      <div class="section-title">🆕 New — May 15 <span class="scan-badge">Scan</span></div>
+      <div class="section-count" id="count-section-new">—</div>
+    </div>
+
+    <div class="sub-heading">💰 Invoices</div>
+
+    <div class="item" id="n1" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n1')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N1.</span> Pay 7 Hochatown Premier Cleaning invoices <span class="tag tag-hot">HOT</span><span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Invoices: #2394, #2405, #2407, #2408, #2409, #2417, #2426</div>
+      </div>
+    </div>
+
+    <div class="item" id="n2" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n2')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N2.</span> Pay Cindy Bivings invoices #942 and #943 <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Forwarded via hello@theweekenderstays.com.</div>
+      </div>
+    </div>
+
+    <div class="sub-heading">⭐ Reviews</div>
+
+    <div class="item" id="n3" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n3')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N3.</span> Write review for David's group — checked out May 15 <span class="tag tag-gmail">Gmail</span></div>
+      </div>
+    </div>
+
+    <div class="sub-heading">📅 Reservations & Guest Comms</div>
+
+    <div class="item" id="n4" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n4')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N4.</span> Send welcome message to Anita Garza — arrives July 3 <span class="tag tag-gmail">Gmail</span></div>
+      </div>
+    </div>
+
+    <div class="item" id="n5" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n5')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N5.</span> Coordinate check-in for Jason Mayhew — arrives May 17 <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Send directions and confirm check-in time.</div>
+      </div>
+    </div>
+
+    <div class="item" id="n6" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n6')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N6.</span> Welcome Misty Faulkner — Epic Bluff Views, arrived May 15 <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Booking confirmed 2:01 PM. Check-in 3:00 PM. Send door code + instructions.</div>
+      </div>
+    </div>
+
+    <div class="item" id="n7" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n7')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N7.</span> Nashville canceled reservation (HMFR3Z55KX) — notify owner <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Unit A, 1210 Ireland St, Nashville. Was scheduled Sep 18 via Hospitable.</div>
+      </div>
+    </div>
+
+    <div class="item" id="n8" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n8')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N8.</span> Confirm Simply D'Vine $300 pet fee was received from Amy <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Marsha requested $300 for 2 dogs. Amy confirmed May 24–29.</div>
+      </div>
+    </div>
+
+    <div class="item" id="n9" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n9')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N9.</span> Review VRBO Integration Audit Report — LTD Eastern Rise <span class="tag tag-gmail">Gmail</span></div>
+        <div class="item-sub">Emailed 1:41 PM May 15. Check for any listing errors.</div>
+      </div>
+    </div>
+
+    <div class="item" id="n10" data-section="section-new">
+      <input type="checkbox" onchange="toggle('n10')">
+      <div class="item-content">
+        <div class="item-text"><span class="item-num">N10.</span> Simply D'Vine — fix Lock Style field in Notion (has owner password in it) <span class="tag tag-hot">SECURITY</span><span class="tag tag-notion">Notion</span></div>
+        <div class="item-sub">Marsha's email + password is stored in the Lock Style field — move to secure notes.</div>
+      </div>
+    </div>
+
+  </div><!-- /section-new -->
+
+  <!-- ===== SECTION: LISTING MASTER PAGE GAPS ===== -->
+  <div class="section" id="section-lmp">
+    <div class="section-header">
+      <div class="section-title">📋 Listing Master Page — Field Gaps</div>
+      <div class="section-count" id="count-section-lmp">—</div>
+    </div>
+    <p style="font-size:12px;color:#888;margin-bottom:16px;">Audited 9 of 25 listings. Patterns are consistent — these gaps apply across the board.</p>
+
+    <div class="sub-heading">🔴 Critical — Fix Now</div>
+    <div class="item" id="l1" data-section="section-lmp"><input type="checkbox" onchange="toggle('l1')"><div class="item-content"><div class="item-text"><span class="item-num">L1.</span> Fix "Firn" → "Firm" in Cancellation Policy <span class="tag tag-notion">Notion</span></div><div class="item-sub">Typo on Cozy White, Alpine Escape, and Holy Guacamole.</div></div></div>
+    <div class="item" id="l2" data-section="section-lmp"><input type="checkbox" onchange="toggle('l2')"><div class="item-content"><div class="item-text"><span class="item-num">L2.</span> Move primary contact info into correct fields on all client properties <span class="tag tag-notion">Notion</span></div><div class="item-sub">Sweet Serenity, Simply D'Vine and others have email/phone in the Name field.</div></div></div>
+    <div class="item" id="l3" data-section="section-lmp"><input type="checkbox" onchange="toggle('l3')"><div class="item-content"><div class="item-text"><span class="item-num">L3.</span> Add VRBO links to all active listings <span class="tag tag-notion">Notion</span></div><div class="item-sub">VRBO Link field is empty on every single property.</div></div></div>
+
+    <div class="sub-heading">📝 Listing Content — Missing for Client Properties</div>
+    <div class="item" id="l4" data-section="section-lmp"><input type="checkbox" onchange="toggle('l4')"><div class="item-content"><div class="item-text"><span class="item-num">L4.</span> Write full listing content for Cozy White <span class="tag tag-notion">Notion</span></div><div class="item-sub">Airbnb title, VRBO title, descriptions, directions, rules — all blank.</div></div></div>
+    <div class="item" id="l5" data-section="section-lmp"><input type="checkbox" onchange="toggle('l5')"><div class="item-content"><div class="item-text"><span class="item-num">L5.</span> Write full listing content for Alpine Escape <span class="tag tag-notion">Notion</span></div></div></div>
+    <div class="item" id="l6" data-section="section-lmp"><input type="checkbox" onchange="toggle('l6')"><div class="item-content"><div class="item-text"><span class="item-num">L6.</span> Write full listing content for Holy Guacamole <span class="tag tag-notion">Notion</span></div></div></div>
+    <div class="item" id="l7" data-section="section-lmp"><input type="checkbox" onchange="toggle('l7')"><div class="item-content"><div class="item-text"><span class="item-num">L7.</span> Write full listing content for Livin on the Edge <span class="tag tag-notion">Notion</span></div><div class="item-sub">Most bare-bones page in the database — missing everything.</div></div></div>
+    <div class="item" id="l8" data-section="section-lmp"><input type="checkbox" onchange="toggle('l8')"><div class="item-content"><div class="item-text"><span class="item-num">L8.</span> Write full listing content for Carter Mountain Lodge <span class="tag tag-notion">Notion</span></div><div class="item-sub">5BR / 24 guests. No copy, no Airbnb link, no House Manual.</div></div></div>
+
+    <div class="sub-heading">📅 Maintenance Tracking (0% Complete)</div>
+    <div class="item" id="l9" data-section="section-lmp"><input type="checkbox" onchange="toggle('l9')"><div class="item-content"><div class="item-text"><span class="item-num">L9.</span> Fill in maintenance dates on all properties <span class="tag tag-notion">Notion</span></div><div class="item-sub">All 6 date fields empty on every property: Deep Cleaned · HVAC · Hot Tub · Pest Control · 50-Point Inspection · Extra Landscaping.</div></div></div>
+    <div class="item" id="l10" data-section="section-lmp"><input type="checkbox" onchange="toggle('l10')"><div class="item-content"><div class="item-text"><span class="item-num">L10.</span> Add House Manual links for Livin on the Edge and Carter Mountain Lodge <span class="tag tag-notion">Notion</span></div></div></div>
+
+    <div class="sub-heading">💰 Financial Fields</div>
+    <div class="item" id="l11" data-section="section-lmp"><input type="checkbox" onchange="toggle('l11')"><div class="item-content"><div class="item-text"><span class="item-num">L11.</span> Add Technology Fee and Management Commission Fee to all client properties <span class="tag tag-notion">Notion</span></div></div></div>
+    <div class="item" id="l12" data-section="section-lmp"><input type="checkbox" onchange="toggle('l12')"><div class="item-content"><div class="item-text"><span class="item-num">L12.</span> Add Cleaning Fee to client properties missing it <span class="tag tag-notion">Notion</span></div><div class="item-sub">Cozy White, Alpine Escape, Holy Guacamole, Livin on the Edge, Carter Mountain Lodge.</div></div></div>
+    <div class="item" id="l13" data-section="section-lmp"><input type="checkbox" onchange="toggle('l13')"><div class="item-content"><div class="item-text"><span class="item-num">L13.</span> Fill in Tax Info / Are taxes remitted? / Tax Notes on all properties <span class="tag tag-notion">Notion</span></div></div></div>
+
+    <div class="sub-heading">🔐 Access & Operations</div>
+    <div class="item" id="l14" data-section="section-lmp"><input type="checkbox" onchange="toggle('l14')"><div class="item-content"><div class="item-text"><span class="item-num">L14.</span> Fill in Guest/Cleaner Codes field on all properties <span class="tag tag-notion">Notion</span></div></div></div>
+    <div class="item" id="l15" data-section="section-lmp"><input type="checkbox" onchange="toggle('l15')"><div class="item-content"><div class="item-text"><span class="item-num">L15.</span> Add Airbnb links for client properties missing them <span class="tag tag-notion">Notion</span></div><div class="item-sub">Cozy White, Alpine Escape, Holy Guacamole, Livin on the Edge, Carter Mountain Lodge.</div></div></div>
+    <div class="item" id="l16" data-section="section-lmp"><input type="checkbox" onchange="toggle('l16')"><div class="item-content"><div class="item-text"><span class="item-num">L16.</span> Add STR License Notes for client properties <span class="tag tag-notion">Notion</span></div><div class="item-sub">Cozy White, Alpine Escape, Holy Guacamole, Carter Mountain Lodge.</div></div></div>
+
+    <div class="sub-heading">❓ Guest Q&A (Empty on All 25 Properties)</div>
+    <div class="item" id="l17" data-section="section-lmp"><input type="checkbox" onchange="toggle('l17')"><div class="item-content"><div class="item-text"><span class="item-num">L17.</span> Fill in Travel Tips & Recommendations Q&A on all properties <span class="tag tag-notion">Notion</span></div><div class="item-sub">Restaurants, groceries, hiking, cell service — all blank.</div></div></div>
+    <div class="item" id="l18" data-section="section-lmp"><input type="checkbox" onchange="toggle('l18')"><div class="item-content"><div class="item-text"><span class="item-num">L18.</span> Fill in Property Troubleshooting Q&A on all properties <span class="tag tag-notion">Notion</span></div><div class="item-sub">AC, heaters, circuit breaker, lost & found — every answer is blank.</div></div></div>
+
+    <div class="sub-heading">🔧 Appliances & Notes</div>
+    <div class="item" id="l19" data-section="section-lmp"><input type="checkbox" onchange="toggle('l19')"><div class="item-content"><div class="item-text"><span class="item-num">L19.</span> Complete Appliances Info table on all properties <span class="tag tag-notion">Notion</span></div><div class="item-sub">Make/model, serial number, date bought, user manual link — all blank on every property.</div></div></div>
+    <div class="item" id="l20" data-section="section-lmp"><input type="checkbox" onchange="toggle('l20')"><div class="item-content"><div class="item-text"><span class="item-num">L20.</span> Add Booking Age Requirement to client properties missing it <span class="tag tag-notion">Notion</span></div><div class="item-sub">Cozy White, Alpine Escape, Holy Guacamole, Livin on the Edge, Carter Mountain Lodge.</div></div></div>
+
+  </div><!-- /section-lmp -->
+
+  </div><!-- /active-sections -->
+
+  <!-- ===== COMPLETED SECTION ===== -->
+  <div class="section section-completed" id="section-completed">
+    <div class="section-header clickable" onclick="toggleCompleted()">
+      <div class="section-title">☑️ Completed</div>
+      <div class="section-meta">
+        <div class="section-count" id="count-completed">0 done</div>
+        <span class="chevron" id="chevron-completed">▶</span>
+      </div>
+    </div>
+
+    <div id="completed-items" style="display:none;">
+
+      <!-- ✅ Completed To-Dos -->
+      <div class="item" id="i1" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i1')"><div class="item-content"><div class="item-text"><span class="item-num">1.</span> Respond to Lanna's Airbnb inquiry — Near Hochatown, May 22–26 <span class="tag tag-gmail">Gmail</span></div><div class="item-sub">Response rate penalty if missed. She's asking about dogs.</div></div></div>
+      <div class="item" id="i8" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i8')"><div class="item-content"><div class="item-text"><span class="item-num">8.</span> Review Cindy Bivings invoices #942 and #943 <span class="tag tag-gmail">Gmail</span></div></div></div>
+      <div class="item" id="i9" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i9')"><div class="item-content"><div class="item-text"><span class="item-num">9.</span> Pay JoyIs Wellness invoice #1742 — $215 <span class="tag tag-gmail">Gmail</span></div></div></div>
+      <div class="item" id="i13" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i13')"><div class="item-content"><div class="item-text"><span class="item-num">13.</span> Create master taxes sheet in Notion (Zainab) <span class="tag tag-notion">Notion</span></div><div class="item-sub">Every cabin + whether it's Hochatown, Broken Bow, Scottsdale, or Beavercreek.</div></div></div>
+      <div class="item" id="i14" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i14')"><div class="item-content"><div class="item-text"><span class="item-num">14.</span> Add all OkTAP and STR numbers to the Excel sheet <span class="tag tag-notion">Notion</span></div></div></div>
+      <div class="item" id="i15" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i15')"><div class="item-content"><div class="item-text"><span class="item-num">15.</span> Fix PriceLabs VRBO sync error <span class="tag tag-gmail">Gmail</span></div></div></div>
+      <div class="item" id="i22" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i22')"><div class="item-content"><div class="item-text"><span class="item-num">22.</span> Off-board Red Fern's lock <span class="tag tag-notion">Notion</span></div></div></div>
+      <div class="item" id="i25" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i25')"><div class="item-content"><div class="item-text"><span class="item-num">25.</span> Add to onboarding checklist: identify if cabin is in Hochatown <span class="tag tag-notion">Notion</span></div></div></div>
+      <div class="item" id="i27" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i27')"><div class="item-content"><div class="item-text"><span class="item-num">27.</span> Pursue Whiskey Made Me Do It Airbnb claim <span class="tag tag-notion">Notion</span></div></div></div>
+      <div class="item" id="i29" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i29')"><div class="item-content"><div class="item-text"><span class="item-num">29.</span> Respond to Nashville unit A cancellation (Sep 18) <span class="tag tag-gmail">Gmail</span></div></div></div>
+      <div class="item" id="i30" data-section="section-todo"><input type="checkbox" checked onchange="toggle('i30')"><div class="item-content"><div class="item-text"><span class="item-num">30.</span> Create a printable reservation certificate for guests <span class="tag tag-notion">Notion</span></div></div></div>
+
+      <!-- ✅ Completed Maintenance -->
+      <div class="item" id="m2" data-section="section-maint"><input type="checkbox" checked onchange="toggle('m2')"><div class="item-content"><div class="item-text"><span class="item-num">2.</span> Ambiance — No hot water on left side of house <span class="tag tag-phone">OpenPhone</span></div><div class="item-sub">Kitchen, bathroom next to kitchen, and upstairs bathroom. Resolved.</div></div></div>
+      <div class="item" id="m5" data-section="section-maint"><input type="checkbox" checked onchange="toggle('m5')"><div class="item-content"><div class="item-text"><span class="item-num">5.</span> Pine internet outage — cameras down at ~10 cabins <span class="tag tag-slack">Slack</span></div></div></div>
+      <div class="item" id="m6" data-section="section-maint"><input type="checkbox" checked onchange="toggle('m6')"><div class="item-content"><div class="item-text"><span class="item-num">6.</span> Skippin Rocks — Router/internet issue <span class="tag tag-slack">Slack</span></div><div class="item-sub">Terry reset from the box.</div></div></div>
+      <div class="item" id="m9" data-section="section-maint"><input type="checkbox" checked onchange="toggle('m9')"><div class="item-content"><div class="item-text"><span class="item-num">9.</span> Shower needs to be recaulked <span class="tag tag-notion">Notion</span></div></div></div>
+      <div class="item" id="m22" data-section="section-maint"><input type="checkbox" checked onchange="toggle('m22')"><div class="item-content"><div class="item-text"><span class="item-num">22.</span> Hot tub leak — parts ordered <span class="tag tag-phone">OpenPhone</span></div><div class="item-sub">Parts ordered ~May 9–10, guests told it's safe to use.</div></div></div>
+      <div class="item" id="m25" data-section="section-maint"><input type="checkbox" checked onchange="toggle('m25')"><div class="item-content"><div class="item-text"><span class="item-num">25.</span> Divine Den — white powder stuck to tile on back deck <span class="tag tag-phone">OpenPhone</span></div><div class="item-sub">Power washing dispatched May 1.</div></div></div>
+
+    </div><!-- /completed-items -->
+  </div><!-- /section-completed -->
+
+</div><!-- /container -->
+
+<script>
+  // ── Toggle a single item ──────────────────────────────────────────
+  function toggle(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const cb = el.querySelector('input');
+    if (cb.checked) {
+      document.getElementById('completed-items').appendChild(el);
+      localStorage.setItem(id, '1');
+      // Auto-open completed section when first item is checked
+      const completedEl = document.getElementById('completed-items');
+      if (completedEl.style.display === 'none') toggleCompleted();
+    } else {
+      const origSectionId = el.dataset.section;
+      const origSection = document.getElementById(origSectionId);
+      if (origSection) origSection.appendChild(el);
+      localStorage.removeItem(id);
+    }
+    updateProgress();
+  }
+
+  // ── Expand/collapse completed section ────────────────────────────
+  function toggleCompleted() {
+    const items = document.getElementById('completed-items');
+    const chevron = document.getElementById('chevron-completed');
+    const isOpen = items.style.display !== 'none';
+    items.style.display = isOpen ? 'none' : 'block';
+    chevron.textContent = isOpen ? '▶' : '▼';
+  }
+
+  // ── Update all counters + progress bar ───────────────────────────
+  function updateProgress() {
+    const allItems = document.querySelectorAll('.item[id]');
+    const completedItems = document.querySelectorAll('#completed-items .item[id]');
+    const total = allItems.length;
+    const done = completedItems.length;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+    document.getElementById('progressBar').style.width = pct + '%';
+    document.getElementById('progressLabel').textContent = done + ' of ' + total + ' completed';
+    document.getElementById('count-completed').textContent = done + ' done';
+
+    // Per-section counts (active items remaining)
+    const sectionIds = ['priority-board','section-todo','section-maint','section-new','section-lmp'];
+    sectionIds.forEach(sId => {
+      const section = document.getElementById(sId);
+      if (!section) return;
+      const countEl = document.getElementById('count-' + sId);
+      if (!countEl) return;
+      const totalInSection = document.querySelectorAll('.item[data-section="' + sId + '"]').length;
+      const activeInSection = section.querySelectorAll('.item[id]').length;
+      countEl.textContent = activeInSection + ' / ' + totalInSection;
+    });
+  }
+
+  // ── Restore localStorage state on load ───────────────────────────
+  function loadState() {
+    // Items pre-placed in completed section: sync their localStorage entries
+    document.querySelectorAll('#completed-items .item[id]').forEach(el => {
+      const cb = el.querySelector('input');
+      if (cb) cb.checked = true;
+      localStorage.setItem(el.id, '1');
+    });
+
+    // Items in active sections: move to completed if localStorage says done
+    document.querySelectorAll('#active-sections .item[id]').forEach(el => {
+      if (localStorage.getItem(el.id) === '1') {
+        const cb = el.querySelector('input');
+        if (cb) cb.checked = true;
+        document.getElementById('completed-items').appendChild(el);
+      }
+    });
+
+    updateProgress();
+  }
+
+  loadState();
+</script>
+</body>
+</html>
