@@ -1,7 +1,10 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-21T21:46:00.000000+00:00",
+  "_last_updated": "2026-05-22T20:00:00.000000+00:00",
   "gmail_threads": [
+    "19e4c8d12f5e7a3b",
+    "19e4c8a97b2c1d6f",
+    "19e4c8734e9f5c2a",
     "19e3ba183cd1df98",
     "19e3b4cb419b79ef",
     "19e3b46a22dd9843",
