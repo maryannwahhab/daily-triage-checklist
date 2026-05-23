@@ -1,7 +1,26 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-22T20:00:00.000000+00:00",
+  "_last_updated": "2026-05-23T18:00:00.000000+00:00",
   "gmail_threads": [
+    "19e54fed20ffc80e",
+    "19e54f9e97e02837",
+    "19e54f95f228c886",
+    "19e54f72788ec3d2",
+    "19e54f1fdf72fe57",
+    "19e405873519630b",
+    "19e54ed525ab02ba",
+    "19e54ea907934aa0",
+    "19e54e0a663d0096",
+    "19e52d870f1be37b",
+    "19e52b8b63101279",
+    "19e52b8250e1e7b8",
+    "19e52a4e2a7d0dc1",
+    "19e5278c62f40fee",
+    "19e524383e2f65d6",
+    "19e522a56053c096",
+    "19e5223005c37ccf",
+    "19e520f633ba6f46",
+    "19e51fb054d968cb",
     "19e4c8d12f5e7a3b",
     "19e4c8a97b2c1d6f",
     "19e4c8734e9f5c2a",
@@ -125,6 +144,7 @@
     "1779118852.558679"
   ],
   "openphone_message_ids": [
+    "openphone_gabrielle_guest_issue_20260523",
     "openphone_bbq_update_19032581112_20260518"
   ],
   "item_text_hashes": [
