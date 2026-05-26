@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-26T21:00:00.000000+00:00",
+  "_last_updated": "2026-05-26T20:07:41.000000+00:00",
   "gmail_threads": [
     "19e54fed20ffc80e",
     "19e54f9e97e02837",
@@ -131,7 +131,30 @@
     "19e4c68b52a8653e",
     "19e4bfaf53c654ec",
     "19e4b7d65c7715a3",
-    "19e4c3dccefb736c"
+    "19e4c3dccefb736c",
+    "19e65e50486802f6",
+    "19e6535829e0c09a",
+    "19e64a4bb297b74f",
+    "19e64887cd9e7faa",
+    "19e655cbe5c658c5",
+    "19e648bb6e58a6df",
+    "19e64c49bc0d9248",
+    "19e62f2aa017d178",
+    "19e656b88bede467",
+    "19e64afe16a79f4d",
+    "19e64a70a512d0a7",
+    "19e623d399e2e798",
+    "19e622b6f7d40be5",
+    "19e61e89df110b79",
+    "19e61b76a5e0d4d9",
+    "19e61a93d8af7c16",
+    "19e619ada74f51c0",
+    "19e60d10cc722543",
+    "19e65c369774d3cc",
+    "19e65c3650d6c12f",
+    "19e6599f48cbcc6a",
+    "19e655f71766a992",
+    "19e655432ae614ae"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4"
@@ -141,7 +164,10 @@
     "1779060295.733739",
     "1779113149.884919",
     "1779102452.156659",
-    "1779118852.558679"
+    "1779118852.558679",
+    "1779818689.005309",
+    "1779825701.454859",
+    "1779825451.402919"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -214,6 +240,12 @@
     "sophie-5star-review-response-20260521",
     "edward-5star-review-response-20260521",
     "amy-payment-request-20260521",
-    "zainab-html-email-template-weekender-20260521"
+    "zainab-html-email-template-weekender-20260521",
+    "divine-den-may28-guest-ready-20260526pm",
+    "annual-agent-fee-2026-bbg-20260526pm",
+    "joyis-wellness-invoice-1750-215-20260526pm",
+    "vrbo-brent-parker-jul131-ha-kkrxtr-20260526pm",
+    "airbnb-reviews-4-taylor-anjali-joyella-bradley-20260526pm",
+    "new-bookings-10-guests-20260526pm"
   ]
 }
