@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-27T17:01:00.000000+00:00",
+  "_last_updated": "2026-05-27T20:07:00.000000+00:00",
   "gmail_threads": [
     "19e6635844139f89",
     "19e679d36e203df4",
@@ -189,7 +189,16 @@
     "19e65c3650d6c12f",
     "19e6599f48cbcc6a",
     "19e655f71766a992",
-    "19e655432ae614ae"
+    "19e655432ae614ae",
+    "19e6aac56e3474d8",
+    "19e6a345b8015d04",
+    "19e6acddc88e0259",
+    "19e6ab26e361c154",
+    "19e6a88a70f271d8",
+    "19e6a3d941a0184b",
+    "19e6a2cc7569d2c1",
+    "19e69d06eef4283c",
+    "19df9f14bfbc8911"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
