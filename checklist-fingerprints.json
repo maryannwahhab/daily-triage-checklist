@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-27T20:07:00.000000+00:00",
+  "_last_updated": "2026-05-28T12:07:00.000000+00:00",
   "gmail_threads": [
     "19e6635844139f89",
     "19e679d36e203df4",
@@ -198,13 +198,36 @@
     "19e6a3d941a0184b",
     "19e6a2cc7569d2c1",
     "19e69d06eef4283c",
-    "19df9f14bfbc8911"
+    "19df9f14bfbc8911",
+    "19e6ca62876f1a39",
+    "19e6e5d9b24efab8",
+    "19e6e58545f59dbd",
+    "19e6ca060dcb589e",
+    "19e6ca3237dcb8a2",
+    "19e6e753f49ec1ce",
+    "19e6c5de9f66fac8",
+    "19e6c850b7fa7b78",
+    "19e663f87f039842",
+    "19e6c472ae27a0dc",
+    "19e6cba8c227e603",
+    "19e6ca332a3bf737",
+    "19e6c8de46ba99de",
+    "19e6c86fb79b158f",
+    "19e6c84f9bcfaf05",
+    "19e6c4bfe9b562a3",
+    "19e6c422f90ee275",
+    "19e6c76f9c5ce0ab",
+    "19e6c3b6dba80711",
+    "19e6e222093c8467",
+    "19e6b24e6411919e"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
     "36defc47-61b2-80f5-af1e-f98296b353b8",
     "36cefc47-61b2-8077-8fe9-f90d6f537240",
-    "36cefc47-61b2-8045-b4b3-c16ecde9fcf9"
+    "36cefc47-61b2-8045-b4b3-c16ecde9fcf9",
+    "364efc47-61b2-8164-8f7a-f5f5801eecef",
+    "364efc47-61b2-819f-b515-c806a7259d7b"
   ],
   "slack_message_ids": [
     "1779896346.158979",
@@ -326,6 +349,14 @@
     "blushing-beaver-wildwoods-copy-reverted-ownerrez-20260527eve",
     "unknown-property-ceiling-leak-jessica-review-20260527eve",
     "team-notion-qa-test-olivia-10questions-20260527eve",
-    "tree-lofts-email-spot-count-emails23-20260527eve"
+    "tree-lofts-email-spot-count-emails23-20260527eve",
+    "hunter-18yo-inquiries-relaxing-cozy-retreat-jul21-20260528am",
+    "near-hochatown-18yo-group-aug25-deadline-20260528am",
+    "cecilia-preapprove-20260528am",
+    "kristal-private-playground-extend-sunday-20260528am",
+    "vrbo-jocelyn-gates-sep30-oct4-20260528am",
+    "notion-oktap-emails-2owners-20260528am",
+    "notion-email-cleanup-muneeb-zainab-20260528am",
+    "lisa-inquiry-sleeps14-4thbedroom-jul1720-20260528am"
   ]
 }
