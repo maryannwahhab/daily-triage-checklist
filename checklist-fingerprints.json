@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-28T12:07:00.000000+00:00",
+  "_last_updated": "2026-05-29T20:00:00.000000+00:00",
   "gmail_threads": [
     "19e6635844139f89",
     "19e679d36e203df4",
@@ -219,7 +219,18 @@
     "19e6c76f9c5ce0ab",
     "19e6c3b6dba80711",
     "19e6e222093c8467",
-    "19e6b24e6411919e"
+    "19e6b24e6411919e",
+    "19e6f176d99ad99c",
+    "19e70016f088d715",
+    "19e7138e905f269d",
+    "19e7108cce6ac205",
+    "19e7132c34e721fc",
+    "19e71dc33c3c1442",
+    "19e7217ccb1a2f68",
+    "19e73e8763b9b3aa",
+    "19e73f30abff5405",
+    "19e72899f4755563",
+    "19e73f91b3c03492"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -242,11 +253,19 @@
     "1779825451.402919",
     "1779900943.936799",
     "1779892282.056049",
-    "1779894429.973599"
+    "1779894429.973599",
+    "1779994754.171699",
+    "1779994923.409579",
+    "1780058559.655019",
+    "1780060119.996899",
+    "1780060562.653919",
+    "1780060774.466059",
+    "1780011045.990799"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
-    "openphone_bbq_update_19032581112_20260518"
+    "openphone_bbq_update_19032581112_20260518",
+    "openphone_ashley_rich_family_emergency_20260529"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -357,6 +376,24 @@
     "vrbo-jocelyn-gates-sep30-oct4-20260528am",
     "notion-oktap-emails-2owners-20260528am",
     "notion-email-cleanup-muneeb-zainab-20260528am",
-    "lisa-inquiry-sleeps14-4thbedroom-jul1720-20260528am"
+    "lisa-inquiry-sleeps14-4thbedroom-jul1720-20260528am",
+    "joyis-wellness-invoice-1755-215-20260528pm",
+    "hochacool-tranquil-lane-invoice-pending-20260528pm",
+    "hochacool-livin-on-edge-invoice-pending-20260528pm",
+    "cabin-near-town-mandy-pet-fee-20260528pm",
+    "rocky-top-meagan-guest-change-6to10-20260529am",
+    "ashley-rich-family-emergency-reservation-20260529am",
+    "hostbuddy-photo-request-coaching-call-20260529am",
+    "tranquil-lane-reimbursables-cushion-batteries-remotes-20260529am",
+    "cozy-q-update-info-sheet-20260529am",
+    "blender-amenity-sheet-add-20260529am",
+    "tranquil-lane-lock-wifi-sop-20260529am",
+    "ltd-eastern-rise-adam-45ft-cliff-views-disappointing-20260529am",
+    "ltd-eastern-rise-robin-waterfront-wifi-20260529am",
+    "ltd-eastern-rise-cancellation-hmzjj49y9p-20260529am",
+    "ltd-eastern-rise-cancellation-hmqhcbzx8t-20260529am",
+    "ltd-eastern-rise-cancellation-hmm9rtw8m4-20260529am",
+    "ltd-eastern-rise-mileiby-lost-earring-20260529am",
+    "ltd-eastern-rise-vrbo-audit-20260529am"
   ]
 }
