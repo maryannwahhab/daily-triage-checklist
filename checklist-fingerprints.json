@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-29T20:00:00.000000+00:00",
+  "_last_updated": "2026-05-30T12:10:00.000000+00:00",
   "gmail_threads": [
     "19e6635844139f89",
     "19e679d36e203df4",
@@ -230,7 +230,11 @@
     "19e73e8763b9b3aa",
     "19e73f30abff5405",
     "19e72899f4755563",
-    "19e73f91b3c03492"
+    "19e73f91b3c03492",
+    "19e7412521df0503",
+    "19e7723b91c47084",
+    "19e760e30c2dd39e",
+    "19e6ffa164c109a3"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -238,7 +242,8 @@
     "36cefc47-61b2-8077-8fe9-f90d6f537240",
     "36cefc47-61b2-8045-b4b3-c16ecde9fcf9",
     "364efc47-61b2-8164-8f7a-f5f5801eecef",
-    "364efc47-61b2-819f-b515-c806a7259d7b"
+    "364efc47-61b2-819f-b515-c806a7259d7b",
+    "36fefc47-61b2-8004-aca2-d6a46f642ed7"
   ],
   "slack_message_ids": [
     "1779896346.158979",
@@ -260,12 +265,15 @@
     "1780060119.996899",
     "1780060562.653919",
     "1780060774.466059",
-    "1780011045.990799"
+    "1780011045.990799",
+    "1780142696.908079",
+    "1780142675.991719"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
     "openphone_bbq_update_19032581112_20260518",
-    "openphone_ashley_rich_family_emergency_20260529"
+    "openphone_ashley_rich_family_emergency_20260529",
+    "openphone_meagan_rocky_top_cracking_20260530"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -394,6 +402,12 @@
     "ltd-eastern-rise-cancellation-hmqhcbzx8t-20260529am",
     "ltd-eastern-rise-cancellation-hmm9rtw8m4-20260529am",
     "ltd-eastern-rise-mileiby-lost-earring-20260529am",
-    "ltd-eastern-rise-vrbo-audit-20260529am"
+    "ltd-eastern-rise-vrbo-audit-20260529am",
+    "eastern-rise-group-cabin-jessica-hottub-breaker-20260530am",
+    "eastern-rise-waterfront-cabin-dolma-hottub-drain-spiderweb-20260530am",
+    "eastern-rise-white-cabin-isis-light-out-20260530am",
+    "rocky-top-meagan-cracking-sound-20260530am",
+    "mandb-cleaning-2-invoices-brandy-20260530am",
+    "cove-broken-cabinet-invoice-safely-20260530am"
   ]
 }
