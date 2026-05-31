@@ -1,7 +1,9 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-31T17:07:00.000000+00:00",
+  "_last_updated": "2026-06-01T01:07:00.000000+00:00",
   "gmail_threads": [
+    "19e7f971ca2052a6",
+    "19e7fa1f96b500a9",
     "19e6635844139f89",
     "19e679d36e203df4",
     "19e671f9f5031277",
@@ -415,6 +417,8 @@
     "sweet-serenity-wifi-router-20260531pm",
     "cliffhanger-trim-wood-fell-repair-20260531pm",
     "alpine-chalet-escape-missing-sheet-info-20260531pm",
-    "bookkeeping-mohsin-airbnb-code-20260531pm"
+    "bookkeeping-mohsin-airbnb-code-20260531pm",
+    "easternrise-treehouse-angel-decline-19yo-jun35-20260531eve",
+    "easternrise-longrange-tiffany-inquiry-14guests-jun714-20260531eve"
   ]
 }
