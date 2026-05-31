@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-05-30T12:10:00.000000+00:00",
+  "_last_updated": "2026-05-31T17:07:00.000000+00:00",
   "gmail_threads": [
     "19e6635844139f89",
     "19e679d36e203df4",
@@ -267,7 +267,10 @@
     "1780060774.466059",
     "1780011045.990799",
     "1780142696.908079",
-    "1780142675.991719"
+    "1780142675.991719",
+    "1780182035.559189",
+    "1780182973.281699",
+    "1780090217.725569"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -408,6 +411,10 @@
     "eastern-rise-white-cabin-isis-light-out-20260530am",
     "rocky-top-meagan-cracking-sound-20260530am",
     "mandb-cleaning-2-invoices-brandy-20260530am",
-    "cove-broken-cabinet-invoice-safely-20260530am"
+    "cove-broken-cabinet-invoice-safely-20260530am",
+    "sweet-serenity-wifi-router-20260531pm",
+    "cliffhanger-trim-wood-fell-repair-20260531pm",
+    "alpine-chalet-escape-missing-sheet-info-20260531pm",
+    "bookkeeping-mohsin-airbnb-code-20260531pm"
   ]
 }
