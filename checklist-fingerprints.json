@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-01T17:00:00.000000+00:00",
+  "_last_updated": "2026-06-01T20:10:00.000000+00:00",
   "gmail_threads": [
     "19e7f971ca2052a6",
     "19e7fa1f96b500a9",
@@ -236,7 +236,21 @@
     "19e7412521df0503",
     "19e7723b91c47084",
     "19e760e30c2dd39e",
-    "19e6ffa164c109a3"
+    "19e6ffa164c109a3",
+    "19e84b2d76f73091",
+    "19e841d02b961f65",
+    "19e84391cf34624e",
+    "19e846e6d4ba0691",
+    "19e846e549cacf8a",
+    "19e846e24a230af3",
+    "19e846e07d89eac8",
+    "19e846de63be0cc5",
+    "19e846b415cc2d85",
+    "19e846b1991f6e95",
+    "19e846af60f562b4",
+    "19e846ad7fdf5c9e",
+    "19e846ab45539ac0",
+    "19e841811f857a38"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -245,7 +259,8 @@
     "36cefc47-61b2-8045-b4b3-c16ecde9fcf9",
     "364efc47-61b2-8164-8f7a-f5f5801eecef",
     "364efc47-61b2-819f-b515-c806a7259d7b",
-    "36fefc47-61b2-8004-aca2-d6a46f642ed7"
+    "36fefc47-61b2-8004-aca2-d6a46f642ed7",
+    "372efc47-61b2-80e6-af43-dc17d33096d4"
   ],
   "slack_message_ids": [
     "1779896346.158979",
@@ -422,6 +437,11 @@
     "easternrise-treehouse-angel-decline-19yo-jun35-20260531eve",
     "easternrise-longrange-tiffany-inquiry-14guests-jun714-20260531eve",
     "johana-left-mothers-earrings-no-reply-20260601midday",
-    "eod-2-billdu-invoices-pay-20260601midday"
+    "eod-2-billdu-invoices-pay-20260601midday",
+    "rocky-top-zackery-16to24-guests-20260601pm",
+    "cozy-q-paige-datechange-jul-20260601pm",
+    "hochatown-premier-cleaning-10-invoices-20260601pm",
+    "carter-mountain-divine-den-checkout-timings-20260601pm",
+    "grandview-heights-tax-jurisdiction-reassign-20260601pm"
   ]
 }
