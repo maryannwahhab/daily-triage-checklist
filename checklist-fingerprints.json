@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-01T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-02T12:10:00.000000+00:00",
   "gmail_threads": [
     "19e7f971ca2052a6",
     "19e7fa1f96b500a9",
@@ -250,7 +250,12 @@
     "19e846af60f562b4",
     "19e846ad7fdf5c9e",
     "19e846ab45539ac0",
-    "19e841811f857a38"
+    "19e841811f857a38",
+    "19e84493b5485258",
+    "19e883b31c728d0e",
+    "19e8638d30cb36fc",
+    "19e86477a75e55f3",
+    "19e8642908c07ab3"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -288,13 +293,17 @@
     "1780182035.559189",
     "1780182973.281699",
     "1780090217.725569",
-    "1780268555.542149"
+    "1780268555.542149",
+    "1780322949.298129",
+    "1780328579.473939"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
     "openphone_bbq_update_19032581112_20260518",
     "openphone_ashley_rich_family_emergency_20260529",
-    "openphone_meagan_rocky_top_cracking_20260530"
+    "openphone_meagan_rocky_top_cracking_20260530",
+    "openphone_mountain_majesty_ac_tina_20260602",
+    "openphone_juanita_cleaner_transition_20260602"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -442,6 +451,14 @@
     "cozy-q-paige-datechange-jul-20260601pm",
     "hochatown-premier-cleaning-10-invoices-20260601pm",
     "carter-mountain-divine-den-checkout-timings-20260601pm",
-    "grandview-heights-tax-jurisdiction-reassign-20260601pm"
+    "grandview-heights-tax-jurisdiction-reassign-20260601pm",
+    "easternrise-brickyard-power-outage-eduardo-20260602am",
+    "mountain-majesty-ac-tina-upstairs-20260602am",
+    "mountain-majesty-juanita-cleaner-transition-w9-20260602am",
+    "easternrise-3mi-lake-a-elopement-23guests-dec1013-20260602am",
+    "easternrise-45ft-cliff-christin-early-checkin-jun47-20260602am",
+    "easternrise-romantic-cabin-lisa-declined-jun914-20260602am",
+    "bookkeeping-itemize-cleaning-fees-owner-statements-20260602am",
+    "bookkeeping-notify-eom-bills-may-statements-20260602am"
   ]
 }
