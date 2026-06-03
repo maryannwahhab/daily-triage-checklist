@@ -1,7 +1,9 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-02T12:10:00.000000+00:00",
+  "_last_updated": "2026-06-03T14:15:00.000000+00:00",
   "gmail_threads": [
+    "19e8908501ff6693",
+    "19e89df70d80920c",
     "19e7f971ca2052a6",
     "19e7fa1f96b500a9",
     "19e6635844139f89",
@@ -255,7 +257,10 @@
     "19e883b31c728d0e",
     "19e8638d30cb36fc",
     "19e86477a75e55f3",
-    "19e8642908c07ab3"
+    "19e8642908c07ab3",
+    "19e8a5997e5dc3f3",
+    "19e8afc4d7120859",
+    "19e8d48d2766a6c6"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -268,6 +273,10 @@
     "372efc47-61b2-80e6-af43-dc17d33096d4"
   ],
   "slack_message_ids": [
+    "1780430439.162189",
+    "1780426344.157009",
+    "1780427075.726769",
+    "1780420098.969589",
     "1779896346.158979",
     "1779896376.791079",
     "1779113703.546809",
@@ -295,7 +304,8 @@
     "1780090217.725569",
     "1780268555.542149",
     "1780322949.298129",
-    "1780328579.473939"
+    "1780328579.473939",
+    "1780441871.318669"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -303,7 +313,8 @@
     "openphone_ashley_rich_family_emergency_20260529",
     "openphone_meagan_rocky_top_cracking_20260530",
     "openphone_mountain_majesty_ac_tina_20260602",
-    "openphone_juanita_cleaner_transition_20260602"
+    "openphone_juanita_cleaner_transition_20260602",
+    "openphone_carter_mountain_owner_block_jul2326_20260603"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -459,6 +470,22 @@
     "easternrise-45ft-cliff-christin-early-checkin-jun47-20260602am",
     "easternrise-romantic-cabin-lisa-declined-jun914-20260602am",
     "bookkeeping-itemize-cleaning-fees-owner-statements-20260602am",
-    "bookkeeping-notify-eom-bills-may-statements-20260602am"
+    "bookkeeping-notify-eom-bills-may-statements-20260602am",
+    "smores-kits-purchase-12sets-by-tomorrow-20260602pm",
+    "pricelabs-contract-offer-15pct-respond-20260602pm",
+    "cliffhanger-dog-hair-fee-discrepancy-20260602pm",
+    "cozyq-cleaning-fee-185-155pct-20260602pm",
+    "easternrise-block-adam-ownerrez-20260602pm",
+    "easternrise-panoramic-jeanette-crib-jun812-20260602pm",
+    "cozyq-uncleaned-checkin-autumn-20260603am",
+    "pricelabs-sync-failure-hospitable-dynamic-pricing-20260603am",
+    "karson-walktobeach-inquiry-nov1522-deadline-20260603am",
+    "grandview-cockroaches-powerwash-mow-jimmy-20260603am",
+    "alpine-escape-order-bulbs-cabin-fridge-20260603am",
+    "boots-bonfires-griddle-guest-question-20260603am",
+    "carter-mountain-26guest-inquiry-occupancy-20260603am",
+    "carter-mountain-owner-block-jul2326-20260603am",
+    "winegar-cg-may-invoicing-reimbursables-20260603am",
+    "safely-grill-info-request-20260603am"
   ]
 }
