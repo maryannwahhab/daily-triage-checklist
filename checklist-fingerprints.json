@@ -1,7 +1,9 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-03T14:15:00.000000+00:00",
+  "_last_updated": "2026-06-03T20:10:00.000000+00:00",
   "gmail_threads": [
+    "19e8ea1ee997334a",
+    "19e8ebc1f40dec9e",
     "19e8908501ff6693",
     "19e89df70d80920c",
     "19e7f971ca2052a6",
@@ -486,6 +488,9 @@
     "carter-mountain-26guest-inquiry-occupancy-20260603am",
     "carter-mountain-owner-block-jul2326-20260603am",
     "winegar-cg-may-invoicing-reimbursables-20260603am",
-    "safely-grill-info-request-20260603am"
+    "safely-grill-info-request-20260603am",
+    "ruba-panoramic-resolution-1437-bedbug-20260603pm",
+    "may-owner-statements-data-gaps-ambiance-duplicates-20260603pm",
+    "pricelabs-adam-rhodes-transition-disconnect-20260603pm"
   ]
 }
