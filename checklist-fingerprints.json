@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-03T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-05T13:55:00.000000+00:00",
   "gmail_threads": [
     "19e8ea1ee997334a",
     "19e8ebc1f40dec9e",
@@ -262,7 +262,9 @@
     "19e8642908c07ab3",
     "19e8a5997e5dc3f3",
     "19e8afc4d7120859",
-    "19e8d48d2766a6c6"
+    "19e8d48d2766a6c6",
+    "19e94d66a21230c4",
+    "19e7411cd748cce8"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -307,7 +309,18 @@
     "1780268555.542149",
     "1780322949.298129",
     "1780328579.473939",
-    "1780441871.318669"
+    "1780441871.318669",
+    "1780516501.704289",
+    "1780579208.997899",
+    "1780579216.269519",
+    "1780518359.863809",
+    "1780662804.627739",
+    "1780664343.803029",
+    "1780666033.700959",
+    "1780666060.326309",
+    "1780666073.683159",
+    "1780666909.494709",
+    "1780667698.683779"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -316,7 +329,8 @@
     "openphone_meagan_rocky_top_cracking_20260530",
     "openphone_mountain_majesty_ac_tina_20260602",
     "openphone_juanita_cleaner_transition_20260602",
-    "openphone_carter_mountain_owner_block_jul2326_20260603"
+    "openphone_carter_mountain_owner_block_jul2326_20260603",
+    "openphone_summer_bat_assessment_20260604"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -491,6 +505,14 @@
     "safely-grill-info-request-20260603am",
     "ruba-panoramic-resolution-1437-bedbug-20260603pm",
     "may-owner-statements-data-gaps-ambiance-duplicates-20260603pm",
-    "pricelabs-adam-rhodes-transition-disconnect-20260603pm"
+    "pricelabs-adam-rhodes-transition-disconnect-20260603pm",
+    "divine-den-new-lock-copy-key-20260604pm",
+    "shawn-brewer-portal-ownerrez-website-20260604pm",
+    "bookkeeping-may-statements-review-rocky-top-commission-20260604pm",
+    "heavenly-hilltop-angelina-guest-change-2to3-20260605am",
+    "heavenly-hilltop-angelina-crockpot-question-jun59-20260605am",
+    "unknown-property-summer-bat-assessment-20260605am",
+    "bookkeeping-topkey-qbo-invoices-ready-seema-20260605am",
+    "bookkeeping-mountain-majesty-juanita-payment-history-seema-20260605am"
   ]
 }
