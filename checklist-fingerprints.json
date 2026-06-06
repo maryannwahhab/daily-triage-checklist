@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-05T13:55:00.000000+00:00",
+  "_last_updated": "2026-06-06T21:00:00.000000+00:00",
   "gmail_threads": [
     "19e8ea1ee997334a",
     "19e8ebc1f40dec9e",
@@ -264,7 +264,12 @@
     "19e8afc4d7120859",
     "19e8d48d2766a6c6",
     "19e94d66a21230c4",
-    "19e7411cd748cce8"
+    "19e7411cd748cce8",
+    "19e9827d2716d8d0",
+    "19e992c3537ee037",
+    "19e9b9b6f72ccd4d",
+    "19e9d3017831031e",
+    "19e9e2811c5890e0"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -320,7 +325,19 @@
     "1780666060.326309",
     "1780666073.683159",
     "1780666909.494709",
-    "1780667698.683779"
+    "1780667698.683779",
+    "1780689949.584669",
+    "1780689412.920109",
+    "1780687582.711169",
+    "1780687491.427549",
+    "1780689928.525899",
+    "1780686191.153719",
+    "1780755086.348349",
+    "1780755135.081339",
+    "1780755045.962559",
+    "1780755060.332739",
+    "1780776572.678259",
+    "1780776042.505049"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -513,6 +530,24 @@
     "heavenly-hilltop-angelina-crockpot-question-jun59-20260605am",
     "unknown-property-summer-bat-assessment-20260605am",
     "bookkeeping-topkey-qbo-invoices-ready-seema-20260605am",
-    "bookkeeping-mountain-majesty-juanita-payment-history-seema-20260605am"
+    "bookkeeping-mountain-majesty-juanita-payment-history-seema-20260605am",
+    "woodland-oasis-oktap-tax-filing-missed-20260605pm",
+    "the-cove-appliance-not-working-20260605pm",
+    "the-cove-supply-restock-autumn-20260605pm",
+    "skippin-rocks-towels-tp-purchase-approval-20260605pm",
+    "air-filters-multipleproperties-divinden-battery-20260605pm",
+    "smores-kits-cozy-white-alpine-escape-outstanding-20260605pm",
+    "unknown-property-summer-ac-upstairs-bunk-20260605pm",
+    "owner-sundeep-hochatown-tax-form-id-20260605pm",
+    "bookkeeping-mohsin-mountain-majesty-audit-pending-20260605pm",
+    "bianca-process-audit-onboarding-20260605pm",
+    "tranquil-lane-roof-leak-builder-tuesday-20260606am",
+    "alpine-escape-patio-leak-photo-20260606am",
+    "ambiance-septic-alarm-monitor-20260606am",
+    "brickyard-branch-mia-extend-dates-20260606am",
+    "cabin-near-town-kathryn-ship-address-20260606am",
+    "lost-in-pine-fridge-leak-20260606pm",
+    "cancellation-hmabbcr8h5-apr25may2027-20260606pm",
+    "b2tf-add-raquel-invoices-20260606pm"
   ]
 }
