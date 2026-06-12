@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-12T15:00:00.000000+00:00",
+  "_last_updated": "2026-06-12T20:10:00.000000+00:00",
   "gmail_threads": [
     "19e8ea1ee997334a",
     "19e8ebc1f40dec9e",
@@ -273,7 +273,8 @@
     "19eb22b839bd8b84",
     "19ebc236797f8de8",
     "19ebc74f2a62c4f7",
-    "19ebc4e7506ea4f2"
+    "19ebc4e7506ea4f2",
+    "19eb83666b8aa13c"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -351,7 +352,20 @@
     "1781272983.499139",
     "1781272672.350529",
     "1781272826.850179",
-    "1781272761.680699"
+    "1781272761.680699",
+    "1781289981.035549",
+    "1781292090.551369",
+    "1781294725.044329",
+    "1781290580.193829",
+    "1781285639.794009",
+    "1781285558.832139",
+    "1781277697.639919",
+    "1781287968.124899",
+    "1781287941.936889",
+    "1781283731.276269",
+    "1781275920.788399",
+    "1781289700.754709",
+    "1781279220.703099"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -363,7 +377,10 @@
     "openphone_carter_mountain_owner_block_jul2326_20260603",
     "openphone_summer_bat_assessment_20260604",
     "openphone_woodland_oasis_window_leak_20260612",
-    "openphone_ashley_ceiling_leak_20260612"
+    "openphone_ashley_ceiling_leak_20260612",
+    "openphone_katie_sweet_serenity_move_20260612",
+    "openphone_servants_hand_massage_20260612",
+    "openphone_uma_bliss_airbnb_20260612"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -578,6 +595,20 @@
     "the-cove-carpet-dining-table-airbnb-lux-20260612",
     "fathom-travel-ops-recap-20260612",
     "bianca-running-list-google-sheet-20260612",
-    "skippin-rocks-purchase-frother-connectors-20260612"
+    "skippin-rocks-purchase-frother-connectors-20260612",
+    "sweet-serenity-bedbugs-block-move-guest-20260612pm",
+    "sweet-serenity-4way-heat-treatment-monday-20260612pm",
+    "sweet-serenity-safely-bedbug-claim-20260612pm",
+    "sweet-serenity-divine-den-owner-transfer-20260612pm",
+    "timbuktu-trail-couples-massage-servants-hand-20260612pm",
+    "team-pay-va-team-today-20260612pm",
+    "carter-mountain-tv-power-outdoor-lights-20260612pm",
+    "taxes-oktap-5-cabins-mark-paid-20260612pm",
+    "team-tax-info-notion-source-of-truth-20260612pm",
+    "skippin-rocks-clothes-shipping-address-20260612pm",
+    "sundeep-shabana-contract-followup-20260612pm",
+    "sundeep-cindys-chat-photos-20260612pm",
+    "the-bliss-uma-airbnb-account-setup-20260612pm",
+    "walk-to-beach-rodonna-preapproval-booking-issue-20260612pm"
   ]
 }
