@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-12T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-14T01:00:00.000000+00:00",
   "gmail_threads": [
     "19e8ea1ee997334a",
     "19e8ebc1f40dec9e",
@@ -274,7 +274,8 @@
     "19ebc236797f8de8",
     "19ebc74f2a62c4f7",
     "19ebc4e7506ea4f2",
-    "19eb83666b8aa13c"
+    "19eb83666b8aa13c",
+    "19eabbad800456e3"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -609,6 +610,11 @@
     "sundeep-shabana-contract-followup-20260612pm",
     "sundeep-cindys-chat-photos-20260612pm",
     "the-bliss-uma-airbnb-account-setup-20260612pm",
-    "walk-to-beach-rodonna-preapproval-booking-issue-20260612pm"
+    "walk-to-beach-rodonna-preapproval-booking-issue-20260612pm",
+    "alpine-escape-wasps-hottub-slippery-mats-rodent-20260613eve",
+    "7-spanish-angels-tv-line-fireplace-remote-paint-floor-20260613eve",
+    "timber-lodge-cooling-issue-owner-vents-20260613eve",
+    "olivia-master-info-database-notion-halffilled-20260613eve",
+    "eastern-rise-waterfront-airbnb-luxe-walkthrough-date-20260613eve"
   ]
 }
