@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-14T01:00:00.000000+00:00",
+  "_last_updated": "2026-06-15T20:00:00.000000+00:00",
   "gmail_threads": [
     "19e8ea1ee997334a",
     "19e8ebc1f40dec9e",
@@ -282,6 +282,8 @@
     "36defc47-61b2-80f5-af1e-f98296b353b8",
     "36cefc47-61b2-8077-8fe9-f90d6f537240",
     "36cefc47-61b2-8045-b4b3-c16ecde9fcf9",
+    "37fefc47-61b2-802d-bff8-f80b3b227970",
+    "37fefc47-61b2-8047-a704-ee17bf6e724e",
     "364efc47-61b2-8164-8f7a-f5f5801eecef",
     "364efc47-61b2-819f-b515-c806a7259d7b",
     "36fefc47-61b2-8004-aca2-d6a46f642ed7",
@@ -366,7 +368,15 @@
     "1781283731.276269",
     "1781275920.788399",
     "1781289700.754709",
-    "1781279220.703099"
+    "1781279220.703099",
+    "1781479550.249149",
+    "1781532444.231979",
+    "1781487457.897529",
+    "1781487473.340229",
+    "1781474701.088399",
+    "1781474928.392099",
+    "1781474970.663819",
+    "1781474994.268699"
   ],
   "openphone_message_ids": [
     "openphone_gabrielle_guest_issue_20260523",
@@ -381,7 +391,8 @@
     "openphone_ashley_ceiling_leak_20260612",
     "openphone_katie_sweet_serenity_move_20260612",
     "openphone_servants_hand_massage_20260612",
-    "openphone_uma_bliss_airbnb_20260612"
+    "openphone_uma_bliss_airbnb_20260612",
+    "openphone_desert_botanical_dishwasher_mold_danielle_20260614"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -615,6 +626,16 @@
     "7-spanish-angels-tv-line-fireplace-remote-paint-floor-20260613eve",
     "timber-lodge-cooling-issue-owner-vents-20260613eve",
     "olivia-master-info-database-notion-halffilled-20260613eve",
-    "eastern-rise-waterfront-airbnb-luxe-walkthrough-date-20260613eve"
+    "eastern-rise-waterfront-airbnb-luxe-walkthrough-date-20260613eve",
+    "the-bliss-uma-new-account-decision-james-20260615",
+    "carter-mountain-replacement-tv-owner-approved-20260615",
+    "divine-den-order-10-towels-safely-20260615",
+    "desert-botanical-dishwasher-mold-danielle-20260615",
+    "lost-in-pine-loose-six-step-staircase-20260615",
+    "holy-guacamole-bathroom-roof-leak-above-toilet-20260615",
+    "alpine-chalet-hot-tub-breaker-problem-20260615",
+    "boots-bonfires-pool-table-damage-fan-20260615",
+    "new-client-lindsey-referral-info-setup-james-20260615",
+    "mandb-cleaning-2-new-invoices-brandy-20260615"
   ]
 }
