@@ -1,7 +1,9 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-15T20:00:00.000000+00:00",
+  "_last_updated": "2026-06-15T20:10:00.000000+00:00",
   "gmail_threads": [
+    "19ecbbb8afad551f",
+    "19ecbbb9e335032c",
     "19e8ea1ee997334a",
     "19e8ebc1f40dec9e",
     "19e8908501ff6693",
@@ -294,6 +296,9 @@
     "37cefc47-61b2-80b1-95a7-e77015a34ffd"
   ],
   "slack_message_ids": [
+    "1781553613.507499",
+    "1781553981.678529",
+    "1781554087.586839",
     "1780430439.162189",
     "1780426344.157009",
     "1780427075.726769",
@@ -379,6 +384,8 @@
     "1781474994.268699"
   ],
   "openphone_message_ids": [
+    "openphone_woodland_window_visit_20260615",
+    "openphone_livinedge_cleaning_nicole_20260615",
     "openphone_gabrielle_guest_issue_20260523",
     "openphone_bbq_update_19032581112_20260518",
     "openphone_ashley_rich_family_emergency_20260529",
@@ -636,6 +643,9 @@
     "alpine-chalet-hot-tub-breaker-problem-20260615",
     "boots-bonfires-pool-table-damage-fan-20260615",
     "new-client-lindsey-referral-info-setup-james-20260615",
-    "mandb-cleaning-2-new-invoices-brandy-20260615"
+    "mandb-cleaning-2-new-invoices-brandy-20260615",
+    "mountain-top-cabin-services-inv978-979-20260615pm",
+    "livin-edge-cleaning-complaint-hair-dirt-20260615pm",
+    "woodland-oasis-window-contractor-visit-permission-20260615pm"
   ]
 }
