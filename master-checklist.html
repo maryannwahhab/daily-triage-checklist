@@ -88,12 +88,41 @@
     display: inline-block; font-size: 10px; background: #e8f4ff; color: #2c6fad;
     padding: 2px 8px; border-radius: 99px; font-weight: 600; margin-left: 8px; vertical-align: middle;
   }
+
+  /* ── Tabs ── */
+  .tabs { display: flex; gap: 8px; margin: 14px 0 22px; }
+  .tab-btn {
+    font: inherit; font-size: 14px; font-weight: 600; color: #888; background: #ece9e4;
+    border: none; padding: 9px 18px; border-radius: 99px; cursor: pointer; transition: all .15s;
+  }
+  .tab-btn:hover { background: #e2ded8; }
+  .tab-btn.active { background: #1a1a1a; color: #fff; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── Maryann's personal list ── */
+  .m-card { background: #fff; border-radius: 14px; padding: 14px 24px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+  .m-item { display: flex; align-items: flex-start; gap: 12px; padding: 13px 0; border-bottom: 1px solid #f0ede8; }
+  .m-item:last-child { border-bottom: none; }
+  .m-item .m-text { font-size: 15px; line-height: 1.5; }
+  .m-item .m-sub { font-size: 12.5px; color: #999; margin-top: 2px; }
+  .m-item.done { opacity: .55; }
+  .m-item.done .m-text { text-decoration: line-through; color: #aaa; }
+  .m-details { margin-top: 18px; }
+  .m-details summary { cursor: pointer; font-size: 13px; font-weight: 600; color: #888; padding: 6px 0; outline: none; }
 </style>
 </head>
 <body>
 <div class="container">
 
   <h1>Master Checklist</h1>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="team" onclick="showTab('team')">📋 Team Checklist</button>
+    <button class="tab-btn" data-tab="maryann" onclick="showTab('maryann')">✅ Maryann's List</button>
+  </div>
+
+  <div id="tab-team" class="tab-panel active">
   <p class="subtitle">Auto-updated · Gmail · Slack · Notion · OpenPhone</p>
   <p class="last-scan" id="lastScanLabel">Last scan: June 15, 2026 3:00 PM</p>
 
@@ -2801,6 +2830,46 @@
     </div><!-- /completed-items -->
   </div><!-- /section-completed -->
 
+  </div><!-- /tab-team -->
+
+  <!-- ===== MARYANN'S LIST TAB ===== -->
+  <div id="tab-maryann" class="tab-panel">
+    <p class="subtitle">Maryann's personal to-dos</p>
+    <p class="progress-label" id="mLabel" style="margin-bottom:16px;"></p>
+
+    <div class="m-card" id="mOpen">
+      <div class="m-item" id="m_safely"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Check Safely payments — confirm Safely has deposited into the account</div></div></div>
+      <div class="m-item" id="m_purchase_cove_skippin"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Purchase items for The Cove and Skippin' Rocks</div></div></div>
+      <div class="m-item" id="m_bliss_site"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Get The Bliss Airbnb site running</div><div class="m-sub">Pushban / Uma — new account setup</div></div></div>
+      <div class="m-item" id="m_bianca_stack"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Add Bianca to the entire tech stack</div></div></div>
+      <div class="m-item" id="m_bianca_doc"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Update the document for Bianca</div></div></div>
+      <div class="m-item" id="m_30emails"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Organize the 30 emails</div></div></div>
+      <div class="m-item" id="m_ghl"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Move the list to Go High Level and tag it</div></div></div>
+      <div class="m-item" id="m_guest_copy"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Update the guest-facing copy</div></div></div>
+      <div class="m-item" id="m_pay_cindy"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Pay Cindy</div></div></div>
+      <div class="m-item" id="m_cleaning_fees"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Add all cleaning fees to the reimbursables for Cindy and Manuela</div></div></div>
+      <div class="m-item" id="m_audit_bm"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Audit payments made to Brandy &amp; Manuela against their invoices</div><div class="m-sub">Confirm everything on the invoices has been paid</div></div></div>
+      <div class="m-item" id="m_email_cleaners"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Email the cleaners about our insurance — notifying us, sending photos, and using Slack</div></div></div>
+      <div class="m-item" id="m_renew_insurance"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Renew home insurance</div></div></div>
+      <div class="m-item" id="m_spain_300"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Collect $300 from the owner with the listing in Spain</div></div></div>
+      <div class="m-item" id="m_shawn_brewer"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Follow up with Shawn Brewer about his website</div></div></div>
+      <div class="m-item" id="m_car"><input type="checkbox" onchange="mToggle(this)"><div><div class="m-text">Car: smog check, registration check, and oil change</div></div></div>
+    </div>
+
+    <details class="m-details">
+      <summary id="mDoneSummary">Done</summary>
+      <div class="m-card" style="margin-top:8px;">
+        <div class="m-item done" id="m_grandview_bk"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Grandview Heights bookkeeping item</div></div></div>
+        <div class="m-item done" id="m_check_payments"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Check all client payments — who hasn't paid</div></div></div>
+        <div class="m-item done" id="m_cullen_email"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Send the next email for Cullen</div></div></div>
+        <div class="m-item done" id="m_cove_shuffleboard"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Purchase a shuffleboard for The Cove</div></div></div>
+        <div class="m-item done" id="m_carter_tv"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Confirm the TV purchased for Carter Mountain Lodge is 65 or 70 inches</div></div></div>
+        <div class="m-item done" id="m_pay_brandy"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Pay Brandy</div></div></div>
+        <div class="m-item done" id="m_pay_manuela"><input type="checkbox" checked onchange="mToggle(this)"><div><div class="m-text">Pay Manuela</div></div></div>
+      </div>
+    </details>
+  </div><!-- /tab-maryann -->
+
 </div><!-- /container -->
 
 <script>
@@ -2880,6 +2949,45 @@
   }
 
   loadState();
+
+  // ── Tab switching ────────────────────────────────────────────────
+  function showTab(name) {
+    document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.toggle('active', p.id === 'tab-' + name); });
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b.dataset.tab === name); });
+    try { localStorage.setItem('activeTab', name); } catch(e){}
+  }
+
+  // ── Maryann's personal list (separate from team progress) ────────
+  function mUpd() {
+    var all = document.querySelectorAll('.m-item input[type=checkbox]');
+    var done = 0;
+    all.forEach(function(b){
+      b.closest('.m-item').classList.toggle('done', b.checked);
+      if (b.checked) done++;
+    });
+    var lbl = document.getElementById('mLabel');
+    if (lbl) lbl.textContent = (all.length - done) + ' to do · ' + done + ' done';
+    var s = document.getElementById('mDoneSummary');
+    if (s) s.textContent = 'Done (' + done + ')';
+  }
+  function mToggle(b) {
+    var item = b.closest('.m-item');
+    if (item && item.id) localStorage.setItem(item.id, b.checked ? '1' : '0');
+    mUpd();
+  }
+  function loadMState() {
+    document.querySelectorAll('.m-item[id]').forEach(function(el){
+      var stored = localStorage.getItem(el.id);
+      var cb = el.querySelector('input');
+      if (!cb || stored === null) return;       // no saved choice → keep default
+      cb.checked = (stored === '1');
+    });
+    mUpd();
+  }
+  loadMState();
+
+  // Restore last-viewed tab
+  try { var t = localStorage.getItem('activeTab'); if (t) showTab(t); } catch(e){}
 </script>
 </body>
 </html>
