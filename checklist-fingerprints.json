@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-16T18:46:00.000000+00:00",
+  "_last_updated": "2026-06-16T20:10:00.000000+00:00",
   "gmail_threads": [
     "19ecbbb8afad551f",
     "19ecbbb9e335032c",
@@ -277,7 +277,8 @@
     "19ebc74f2a62c4f7",
     "19ebc4e7506ea4f2",
     "19eb83666b8aa13c",
-    "19eabbad800456e3"
+    "19eabbad800456e3",
+    "19ed11f0d7ed0352"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -402,7 +403,8 @@
     "openphone_katie_sweet_serenity_move_20260612",
     "openphone_servants_hand_massage_20260612",
     "openphone_uma_bliss_airbnb_20260612",
-    "openphone_desert_botanical_dishwasher_mold_danielle_20260614"
+    "openphone_desert_botanical_dishwasher_mold_danielle_20260614",
+    "openphone_lindsey_guest_cut_foot_tile_20260616"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -652,6 +654,10 @@
     "woodland-oasis-window-contractor-visit-permission-20260615pm",
     "hostbuddy-turn-off-summer-manual-20260616",
     "ambiance-deadlock-batteries-nancy-20260616",
-    "cliffhanger-order-new-shower-shelves-20260616"
+    "cliffhanger-order-new-shower-shelves-20260616",
+    "lindsey-cabin-guest-cut-foot-tile-repair-price-20260616pm2",
+    "team-guest-injury-report-protocol-maryann-bianca-20260616pm2",
+    "rabbit-paw-extension-price-435-vs-205-david-20260616pm2",
+    "a-servants-hand-invoice-95942-massage-pay-20260616pm2"
   ]
 }
