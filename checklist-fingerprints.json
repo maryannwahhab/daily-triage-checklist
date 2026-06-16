@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-15T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-16T18:46:00.000000+00:00",
   "gmail_threads": [
     "19ecbbb8afad551f",
     "19ecbbb9e335032c",
@@ -381,7 +381,10 @@
     "1781474701.088399",
     "1781474928.392099",
     "1781474970.663819",
-    "1781474994.268699"
+    "1781474994.268699",
+    "1781613814.015999",
+    "1781565217.950399",
+    "1781542138.843559"
   ],
   "openphone_message_ids": [
     "openphone_woodland_window_visit_20260615",
@@ -646,6 +649,9 @@
     "mandb-cleaning-2-new-invoices-brandy-20260615",
     "mountain-top-cabin-services-inv978-979-20260615pm",
     "livin-edge-cleaning-complaint-hair-dirt-20260615pm",
-    "woodland-oasis-window-contractor-visit-permission-20260615pm"
+    "woodland-oasis-window-contractor-visit-permission-20260615pm",
+    "hostbuddy-turn-off-summer-manual-20260616",
+    "ambiance-deadlock-batteries-nancy-20260616",
+    "cliffhanger-order-new-shower-shelves-20260616"
   ]
 }
