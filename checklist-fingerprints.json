@@ -1,7 +1,10 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-17T12:10:00.000000+00:00",
+  "_last_updated": "2026-06-17T20:10:00.000000+00:00",
   "gmail_threads": [
+    "19ed67b6996bea5e",
+    "19ed6996ebde6a37",
+    "19ed673b71725b99",
     "19ecbbb8afad551f",
     "19ecbbb9e335032c",
     "19e8ea1ee997334a",
@@ -297,6 +300,9 @@
     "37cefc47-61b2-80b1-95a7-e77015a34ffd"
   ],
   "slack_message_ids": [
+    "1781725455.117429",
+    "1781726872.603559",
+    "1781726416.347719",
     "1781553613.507499",
     "1781553981.678529",
     "1781554087.586839",
@@ -392,6 +398,7 @@
     "1781651613.893979"
   ],
   "openphone_message_ids": [
+    "openphone_cozyq_ac_downstairs_20260617",
     "openphone_woodland_window_visit_20260615",
     "openphone_livinedge_cleaning_nicole_20260615",
     "openphone_gabrielle_guest_issue_20260523",
@@ -669,6 +676,10 @@
     "back-to-forest-raquel-oktap-southside-remove-20260617am",
     "shawn-brewer-airbnb-payout-verification-20260617am",
     "skippin-rocks-bathroom-lights-20260617am",
-    "the-cove-missing-item-label-packages-20260617am"
+    "the-cove-missing-item-label-packages-20260617am",
+    "cozyq-ac-blower-burnt-warranty-20260617pm",
+    "team-sop-guest-inconvenience-ac-plumbing-20260617pm",
+    "joyis-wellness-invoice-1767-215-20260617pm",
+    "olivia-cabin-facts-staging-review-sheet-20260617pm"
   ]
 }
