@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-16T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-17T12:10:00.000000+00:00",
   "gmail_threads": [
     "19ecbbb8afad551f",
     "19ecbbb9e335032c",
@@ -385,7 +385,11 @@
     "1781474994.268699",
     "1781613814.015999",
     "1781565217.950399",
-    "1781542138.843559"
+    "1781542138.843559",
+    "1781649270.989879",
+    "1781650146.388149",
+    "1781647870.856999",
+    "1781651613.893979"
   ],
   "openphone_message_ids": [
     "openphone_woodland_window_visit_20260615",
@@ -404,7 +408,9 @@
     "openphone_servants_hand_massage_20260612",
     "openphone_uma_bliss_airbnb_20260612",
     "openphone_desert_botanical_dishwasher_mold_danielle_20260614",
-    "openphone_lindsey_guest_cut_foot_tile_20260616"
+    "openphone_lindsey_guest_cut_foot_tile_20260616",
+    "openphone_raquel_oktap_southside_remove_20260616",
+    "openphone_shawn_airbnb_payout_verification_20260616"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -658,6 +664,11 @@
     "lindsey-cabin-guest-cut-foot-tile-repair-price-20260616pm2",
     "team-guest-injury-report-protocol-maryann-bianca-20260616pm2",
     "rabbit-paw-extension-price-435-vs-205-david-20260616pm2",
-    "a-servants-hand-invoice-95942-massage-pay-20260616pm2"
+    "a-servants-hand-invoice-95942-massage-pay-20260616pm2",
+    "simply-dvine-hottub-marsha-ben-20260617am",
+    "back-to-forest-raquel-oktap-southside-remove-20260617am",
+    "shawn-brewer-airbnb-payout-verification-20260617am",
+    "skippin-rocks-bathroom-lights-20260617am",
+    "the-cove-missing-item-label-packages-20260617am"
   ]
 }
