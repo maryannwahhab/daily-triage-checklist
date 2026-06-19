@@ -1,7 +1,11 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-18T17:10:00.000000+00:00",
+  "_last_updated": "2026-06-19T14:20:00.000000+00:00",
   "gmail_threads": [
+    "19edbadf73432579",
+    "19edb62ac028a4a6",
+    "19edc1e3e4f9391a",
+    "19eb701b2833b727",
     "19ed8a6b7fa15679",
     "19ed67b6996bea5e",
     "19ed6996ebde6a37",
@@ -282,7 +286,11 @@
     "19ebc4e7506ea4f2",
     "19eb83666b8aa13c",
     "19eabbad800456e3",
-    "19ed11f0d7ed0352"
+    "19ed11f0d7ed0352",
+    "19ee01bed451c2a2",
+    "19ee02771f04fd02",
+    "19ee02fa618bed2a",
+    "19ede1c898daf703"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -398,9 +406,15 @@
     "1781649270.989879",
     "1781650146.388149",
     "1781647870.856999",
-    "1781651613.893979"
+    "1781651613.893979",
+    "1781824374.211529",
+    "1781870840.364429",
+    "1781848776.489519",
+    "1781877924.219409",
+    "1781878012.474949"
   ],
   "openphone_message_ids": [
+    "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
     "openphone_cozyq_ac_downstairs_20260617",
     "openphone_woodland_window_visit_20260615",
     "openphone_livinedge_cleaning_nicole_20260615",
@@ -420,7 +434,8 @@
     "openphone_desert_botanical_dishwasher_mold_danielle_20260614",
     "openphone_lindsey_guest_cut_foot_tile_20260616",
     "openphone_raquel_oktap_southside_remove_20260616",
-    "openphone_shawn_airbnb_payout_verification_20260616"
+    "openphone_shawn_airbnb_payout_verification_20260616",
+    "openphone_gameloft_lockout_resolved_20260619"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -686,6 +701,14 @@
     "olivia-cabin-facts-staging-review-sheet-20260617pm",
     "sweet-serenity-jamie-res-change-5to8-20260618midday",
     "bookkeeping-hochatown-premier-split-skippin-wildwoods-20260618midday",
-    "lost-in-pine-blinds-window-seal-20260618midday"
+    "lost-in-pine-blinds-window-seal-20260618midday",
+    "sweet-serenity-bedbug-retreatment-live-bugs-4way-20260618eve",
+    "zen-awaits-breanna-change-1to11-pet-20260618eve",
+    "pricelabs-ridge-compset-bug-support-20260618eve",
+    "airbnb-luxe-submit-other-account-listings-20260618eve",
+    "divine-den-guest-stained-items-reimbursement-20260619am",
+    "the-bliss-hot-tub-issue-20260619am",
+    "cliffhanger-hot-tub-lights-half-out-20260619am",
+    "the-cove-bunk-light-falling-terry-20260619am"
   ]
 }
