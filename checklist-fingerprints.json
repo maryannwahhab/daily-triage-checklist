@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-19T14:20:00.000000+00:00",
+  "_last_updated": "2026-06-20T01:10:00.000000+00:00",
   "gmail_threads": [
     "19edbadf73432579",
     "19edb62ac028a4a6",
@@ -290,7 +290,8 @@
     "19ee01bed451c2a2",
     "19ee02771f04fd02",
     "19ee02fa618bed2a",
-    "19ede1c898daf703"
+    "19ede1c898daf703",
+    "19ee105482c031b1"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -411,7 +412,11 @@
     "1781870840.364429",
     "1781848776.489519",
     "1781877924.219409",
-    "1781878012.474949"
+    "1781878012.474949",
+    "1781881432.318149",
+    "1781887398.678539",
+    "1781895683.618529",
+    "1781894196.507849"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -709,6 +714,11 @@
     "divine-den-guest-stained-items-reimbursement-20260619am",
     "the-bliss-hot-tub-issue-20260619am",
     "cliffhanger-hot-tub-lights-half-out-20260619am",
-    "the-cove-bunk-light-falling-terry-20260619am"
+    "the-cove-bunk-light-falling-terry-20260619am",
+    "boots-bonfires-cabinet-canopener-pitcher-washcloths-20260619eve",
+    "sweet-serenity-bulbs-flickering-johnny-20260619eve",
+    "blushing-beaver-icemaker-leonard-approved-20260619eve",
+    "james-document-friday-earlycheckin-sop-20260619eve",
+    "waterfront-cabin-theresa-crockpot-20260619eve"
   ]
 }
