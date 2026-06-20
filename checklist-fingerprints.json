@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-20T01:10:00.000000+00:00",
+  "_last_updated": "2026-06-20T12:10:00.000000+00:00",
   "gmail_threads": [
     "19edbadf73432579",
     "19edb62ac028a4a6",
@@ -416,7 +416,9 @@
     "1781881432.318149",
     "1781887398.678539",
     "1781895683.618529",
-    "1781894196.507849"
+    "1781894196.507849",
+    "1781910641.081669",
+    "1781910602.439789"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -719,6 +721,7 @@
     "sweet-serenity-bulbs-flickering-johnny-20260619eve",
     "blushing-beaver-icemaker-leonard-approved-20260619eve",
     "james-document-friday-earlycheckin-sop-20260619eve",
-    "waterfront-cabin-theresa-crockpot-20260619eve"
+    "waterfront-cabin-theresa-crockpot-20260619eve",
+    "blueberry-bliss-bridge-rails-vanity-lights-20260620"
   ]
 }
