@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-20T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-21T17:05:00.000000+00:00",
   "gmail_threads": [
     "19ee68bc873e2b1b",
     "19edbadf73432579",
@@ -308,7 +308,11 @@
     "376efc47-61b2-80ee-baa7-c02d3ef40d2c",
     "37cefc47-61b2-808f-90a5-da0559069232",
     "37cefc47-61b2-803b-8b31-e370268ca722",
-    "37cefc47-61b2-80b1-95a7-e77015a34ffd"
+    "37cefc47-61b2-80b1-95a7-e77015a34ffd",
+    "385efc47-61b2-818e-835c-e2781d533913",
+    "385efc47-61b2-81dd-a9a6-fae6c20a06c3",
+    "385efc47-61b2-8138-b5af-ddf1198d7a3f",
+    "385efc47-61b2-8186-9f4a-c6d18c40acf3"
   ],
   "slack_message_ids": [
     "1781733776.612059",
@@ -419,7 +423,8 @@
     "1781895683.618529",
     "1781894196.507849",
     "1781910641.081669",
-    "1781910602.439789"
+    "1781910602.439789",
+    "1781996327.903659"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -443,7 +448,9 @@
     "openphone_lindsey_guest_cut_foot_tile_20260616",
     "openphone_raquel_oktap_southside_remove_20260616",
     "openphone_shawn_airbnb_payout_verification_20260616",
-    "openphone_gameloft_lockout_resolved_20260619"
+    "openphone_gameloft_lockout_resolved_20260619",
+    "openphone_rohnda_tranquil_alpine_pest_monday_20260620",
+    "openphone_colton_ac_condensate_leak_20260620"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -724,6 +731,13 @@
     "james-document-friday-earlycheckin-sop-20260619eve",
     "waterfront-cabin-theresa-crockpot-20260619eve",
     "blueberry-bliss-bridge-rails-vanity-lights-20260620",
-    "alpine-escape-roderick-change-1to2-20260620pm"
+    "alpine-escape-roderick-change-1to2-20260620pm",
+    "the-cove-fridge-leak-terry-20260621",
+    "tranquil-alpine-pest-control-monday-20260621",
+    "wildwoods-living-room-tv-wont-stay-on-20260621",
+    "holy-guacamole-wifi-unstable-20260621",
+    "ac-condensate-leak-colton-property-tbd-20260621",
+    "boots-bonfires-dishwasher-rack-wheels-20260621",
+    "alpine-escape-dishwasher-detergent-restock-20260621"
   ]
 }
