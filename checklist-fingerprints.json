@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-21T17:05:00.000000+00:00",
+  "_last_updated": "2026-06-21T20:10:00.000000+00:00",
   "gmail_threads": [
     "19ee68bc873e2b1b",
     "19edbadf73432579",
@@ -292,7 +292,9 @@
     "19ee02771f04fd02",
     "19ee02fa618bed2a",
     "19ede1c898daf703",
-    "19ee105482c031b1"
+    "19ee105482c031b1",
+    "19eea740944a7b87",
+    "19eeb1876b1b6c24"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -312,7 +314,9 @@
     "385efc47-61b2-818e-835c-e2781d533913",
     "385efc47-61b2-81dd-a9a6-fae6c20a06c3",
     "385efc47-61b2-8138-b5af-ddf1198d7a3f",
-    "385efc47-61b2-8186-9f4a-c6d18c40acf3"
+    "385efc47-61b2-8186-9f4a-c6d18c40acf3",
+    "386efc47-61b2-81ba-8d54-c18e4bc4afe4",
+    "385efc47-61b2-812d-bfd8-dfb1f9c74e3d"
   ],
   "slack_message_ids": [
     "1781733776.612059",
@@ -424,7 +428,14 @@
     "1781894196.507849",
     "1781910641.081669",
     "1781910602.439789",
-    "1781996327.903659"
+    "1781996327.903659",
+    "1782053625.377969",
+    "1782070863.926039",
+    "1782071225.207059",
+    "1782071491.222889",
+    "1782071811.396509",
+    "1782065842.364969",
+    "1782062471.353339"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -738,6 +749,14 @@
     "holy-guacamole-wifi-unstable-20260621",
     "ac-condensate-leak-colton-property-tbd-20260621",
     "boots-bonfires-dishwasher-rack-wheels-20260621",
-    "alpine-escape-dishwasher-detergent-restock-20260621"
+    "alpine-escape-dishwasher-detergent-restock-20260621",
+    "airbnb-hotel-occupancy-surcharge-nonhochatown-20260621pm",
+    "skippin-cove-pest-control-roaches-jimmy-20260621pm",
+    "ambiance-iron-ironing-board-replacement-20260621pm",
+    "livin-edge-kitchen-sink-handle-20260621pm",
+    "bliss-airbnb-account-migration-channelbridge-20260621pm",
+    "mountain-majesty-block-through-tuesday-20260621pm",
+    "rocky-top-hostbuddy-relist-decision-20260621pm",
+    "sunday-purchase-day-autumn-requests-20260621pm"
   ]
 }
