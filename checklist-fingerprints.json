@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-21T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-22T17:10:00.000000+00:00",
   "gmail_threads": [
     "19ee68bc873e2b1b",
     "19edbadf73432579",
@@ -435,7 +435,10 @@
     "1782071491.222889",
     "1782071811.396509",
     "1782065842.364969",
-    "1782062471.353339"
+    "1782062471.353339",
+    "1782088245.692609",
+    "1782083079.299679",
+    "1782126406.859259"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -461,7 +464,10 @@
     "openphone_shawn_airbnb_payout_verification_20260616",
     "openphone_gameloft_lockout_resolved_20260619",
     "openphone_rohnda_tranquil_alpine_pest_monday_20260620",
-    "openphone_colton_ac_condensate_leak_20260620"
+    "openphone_colton_ac_condensate_leak_20260620",
+    "openphone_cozyq_newfamily_ac_refund_20260621",
+    "openphone_tranquil_code_vendor_cataract_20260622",
+    "openphone_nancy_ambiance_hotwater_pilot_20260621"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -757,6 +763,9 @@
     "bliss-airbnb-account-migration-channelbridge-20260621pm",
     "mountain-majesty-block-through-tuesday-20260621pm",
     "rocky-top-hostbuddy-relist-decision-20260621pm",
-    "sunday-purchase-day-autumn-requests-20260621pm"
+    "sunday-purchase-day-autumn-requests-20260621pm",
+    "cozyq-new-family-checkin-ac-pending-20260622",
+    "tranquil-pest-vendor-door-code-20260622",
+    "ambiance-no-hot-water-pilot-deck-heater-20260622"
   ]
 }
