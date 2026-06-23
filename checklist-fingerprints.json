@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-23T17:00:00.000000+00:00",
+  "_last_updated": "2026-06-23T20:10:00.000000+00:00",
   "gmail_threads": [
     "19ee68bc873e2b1b",
     "19edbadf73432579",
@@ -447,7 +447,11 @@
     "1782164341.059129",
     "1782164520.601839",
     "1782214311.914729",
-    "1782138200.549389"
+    "1782138200.549389",
+    "1782239168.268099",
+    "1782244709.161669",
+    "1782244120.935119",
+    "1782240313.745779"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -779,6 +783,10 @@
     "ambiance-no-hot-water-pilot-deck-heater-20260622",
     "251-lost-plum-mike-dunlap-no-hot-water-main-house-20260622",
     "cozyq-3creeks-wristbands-owner-policy-lynsie-20260622",
-    "bookkeeping-mohsin-june-statements-review-20260622"
+    "bookkeeping-mohsin-june-statements-review-20260622",
+    "insurance-shutdown-paula-rabbitpaw-alpinechalet-honeybadger-20260623pm",
+    "bliss-block-reservations-through-eoy-pricing-20260623pm",
+    "bookkeeping-mohsin-aprmay-classallocation-safely-portal-20260623pm",
+    "ambiance-accept-overoccupancy-notify-owners-20260623pm"
   ]
 }
