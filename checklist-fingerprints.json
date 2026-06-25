@@ -1,7 +1,9 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-25T17:07:00.000000+00:00",
+  "_last_updated": "2026-06-25T20:10:00.000000+00:00",
   "gmail_threads": [
+    "19efee7837f07823",
+    "19effe5071eec518",
     "19ee68bc873e2b1b",
     "19edbadf73432579",
     "19edb62ac028a4a6",
@@ -329,6 +331,10 @@
     "385efc47-61b2-812d-bfd8-dfb1f9c74e3d"
   ],
   "slack_message_ids": [
+    "1782412703.728729",
+    "1782416567.206959",
+    "1782415646.737159",
+    "1782391715.804989",
     "1781733776.612059",
     "1781738034.827409",
     "1781725455.117429",
@@ -468,6 +474,7 @@
     "1782388004.309259"
   ],
   "openphone_message_ids": [
+    "openphone_dogdamage_closetdoor_2149911302_20260625",
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
     "openphone_cozyq_ac_downstairs_20260617",
     "openphone_woodland_window_visit_20260615",
@@ -816,6 +823,13 @@
     "joyis-wellness-invoice-1772-215-20260624pm",
     "wildwoods-ecobee-lowtemp-65-20260625",
     "joyis-1772-verify-reimbursables-20260625",
-    "lostfound-swimclothes-watchcharger-ckout0614-20260625"
+    "lostfound-swimclothes-watchcharger-ckout0614-20260625",
+    "ashlyn-709-resolution-alpine-cabin-20260625pm",
+    "rocky-top-grill-purchase-cindy-20260625pm",
+    "simply-dvine-outdoor-coffeetable-replace-safely-20260625pm",
+    "jimmy-master-checklist-dispatch-20260625pm",
+    "closet-door-dog-damage-tbd-20260625pm",
+    "alpine-chalet-vrbo-problem-guest-20260625pm",
+    "suquleana-cabin-onboarding-leslie-jerry-20260625pm"
   ]
 }
