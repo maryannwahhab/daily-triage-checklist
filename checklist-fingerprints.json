@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-25T01:10:00.000000+00:00",
+  "_last_updated": "2026-06-25T17:07:00.000000+00:00",
   "gmail_threads": [
     "19ee68bc873e2b1b",
     "19edbadf73432579",
@@ -303,7 +303,8 @@
     "19ef68bf6334469e",
     "19efacccdade9d8a",
     "19efa96d06730e27",
-    "19efab3e44020235"
+    "19efab3e44020235",
+    "19efccf16aabc1ff"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -462,7 +463,9 @@
     "1782321798.924669",
     "1782327283.119749",
     "1782327261.519809",
-    "1782320758.497729"
+    "1782320758.497729",
+    "1782387982.206079",
+    "1782388004.309259"
   ],
   "openphone_message_ids": [
     "openphone_4way_sweetserenity_bedbug_retreatment_20260618",
@@ -493,7 +496,8 @@
     "openphone_tranquil_code_vendor_cataract_20260622",
     "openphone_nancy_ambiance_hotwater_pilot_20260621",
     "openphone_mike_dunlap_251lostplum_nohotwater_20260622",
-    "openphone_james_scheu_cozyq_escalation_refund_20260623"
+    "openphone_james_scheu_cozyq_escalation_refund_20260623",
+    "openphone_lostfound_swimclothes_watchcharger_20260624"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -809,6 +813,9 @@
     "7sa-adirondack-chairs-jimmy-deliver-20260624pm",
     "7sa-window-shade-wont-lower-jimmy-20260624pm",
     "heavenly-hilltop-dishwasher-order-vicky-20260624pm",
-    "joyis-wellness-invoice-1772-215-20260624pm"
+    "joyis-wellness-invoice-1772-215-20260624pm",
+    "wildwoods-ecobee-lowtemp-65-20260625",
+    "joyis-1772-verify-reimbursables-20260625",
+    "lostfound-swimclothes-watchcharger-ckout0614-20260625"
   ]
 }
