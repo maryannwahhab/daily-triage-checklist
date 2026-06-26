@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-25T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-26T17:07:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -328,7 +328,11 @@
     "385efc47-61b2-8138-b5af-ddf1198d7a3f",
     "385efc47-61b2-8186-9f4a-c6d18c40acf3",
     "386efc47-61b2-81ba-8d54-c18e4bc4afe4",
-    "385efc47-61b2-812d-bfd8-dfb1f9c74e3d"
+    "385efc47-61b2-812d-bfd8-dfb1f9c74e3d",
+    "woodland-oasis-doorlock-keypad-unresponsive-20260625",
+    "simply-dvine-sewer-smell-outside-20260625",
+    "grandview-heights-hottub-power-20260625",
+    "the-bliss-floor-gashes-arrival-20260624"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -471,7 +475,8 @@
     "1782327261.519809",
     "1782320758.497729",
     "1782387982.206079",
-    "1782388004.309259"
+    "1782388004.309259",
+    "1782429248.501099"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -506,6 +511,7 @@
     "openphone_james_scheu_cozyq_escalation_refund_20260623",
     "openphone_lostfound_swimclothes_watchcharger_20260624"
   ],
+  "outlook_message_ids": [],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
     "eber-perch-guest-change-20260518",
@@ -830,6 +836,11 @@
     "jimmy-master-checklist-dispatch-20260625pm",
     "closet-door-dog-damage-tbd-20260625pm",
     "alpine-chalet-vrbo-problem-guest-20260625pm",
-    "suquleana-cabin-onboarding-leslie-jerry-20260625pm"
+    "suquleana-cabin-onboarding-leslie-jerry-20260625pm",
+    "woodland-oasis-doorlock-keypad-guest-lockout-20260626",
+    "grandview-heights-hottub-power-guest-20260626",
+    "simply-dvine-sewer-smell-outside-showers-20260626",
+    "the-bliss-floor-gashes-arrival-safely-20260626",
+    "tree-house-chalet-owner-approval-door-stain-string-lights-20260626"
   ]
 }
