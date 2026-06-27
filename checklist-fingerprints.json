@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-27T17:10:00.000000+00:00",
+  "_last_updated": "2026-06-27T20:10:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -306,7 +306,8 @@
     "19efacccdade9d8a",
     "19efa96d06730e27",
     "19efab3e44020235",
-    "19efccf16aabc1ff"
+    "19efccf16aabc1ff",
+    "19f05d64b2ccfd43"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -335,7 +336,11 @@
     "the-bliss-floor-gashes-arrival-20260624",
     "divine-den-shower-handle-andrea-20260627",
     "divine-den-kitchen-sink-stopper-andrea-20260627",
-    "alpine-chalet-board-games-missing-pieces-20260627"
+    "alpine-chalet-board-games-missing-pieces-20260627",
+    "rustic-lodge-restroom-door-lock-jessica-20260627",
+    "rustic-lodge-hottub-light-jessica-20260627",
+    "heavenly-hilltop-dishwasher-flood-drainline-brian-20260627",
+    "heavenly-hilltop-supply-line-leak-kitchen-sink-brian-20260627"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -522,7 +527,9 @@
     "openphone_james_scheu_cozyq_escalation_refund_20260623",
     "openphone_lostfound_swimclothes_watchcharger_20260624"
   ],
-  "outlook_message_ids": [],
+  "outlook_message_ids": [
+    "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>"
+  ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
     "eber-perch-guest-change-20260518",
@@ -864,6 +871,12 @@
     "skippin-rocks-hostbuddy-response-bank-coach-20260626",
     "divine-den-shower-handle-andrea-20260627",
     "divine-den-kitchen-sink-stopper-andrea-20260627",
-    "alpine-chalet-board-games-missing-pieces-20260627"
+    "alpine-chalet-board-games-missing-pieces-20260627",
+    "cliffhanger-margaret-reservation-change-oct-20260627eve",
+    "rustic-lodge-restroom-door-lock-20260627eve",
+    "rustic-lodge-hottub-light-20260627eve",
+    "heavenly-hilltop-dishwasher-flood-cleanup-20260627eve",
+    "heavenly-hilltop-kitchen-supply-line-leak-20260627eve",
+    "ownerrez-airbnb-deposit-resolutions-categorize-20260627eve"
   ]
 }
