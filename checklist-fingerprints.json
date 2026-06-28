@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-27T20:10:00.000000+00:00",
+  "_last_updated": "2026-06-28T12:15:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -340,7 +340,13 @@
     "rustic-lodge-restroom-door-lock-jessica-20260627",
     "rustic-lodge-hottub-light-jessica-20260627",
     "heavenly-hilltop-dishwasher-flood-drainline-brian-20260627",
-    "heavenly-hilltop-supply-line-leak-kitchen-sink-brian-20260627"
+    "heavenly-hilltop-supply-line-leak-kitchen-sink-brian-20260627",
+    "cozyq-shower-tile-guest-injury-lesley-20260628",
+    "cozyq-oven-large-flames-scorching-lesley-20260628",
+    "cozyq-downstairs-hvac-blower-motor-failed-lesley-20260628",
+    "cozyq-main-shower-temp-pressure-twoheads-lesley-20260628",
+    "cozyq-frontdoor-glass-pane-loose-panes-lesley-20260628",
+    "cozyq-no-broom-dustpan-restock-lesley-20260628"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -525,10 +531,12 @@
     "openphone_nancy_ambiance_hotwater_pilot_20260621",
     "openphone_mike_dunlap_251lostplum_nohotwater_20260622",
     "openphone_james_scheu_cozyq_escalation_refund_20260623",
-    "openphone_lostfound_swimclothes_watchcharger_20260624"
+    "openphone_lostfound_swimclothes_watchcharger_20260624",
+    "openphone_holyguac_stringlights_angietigert_20260628"
   ],
   "outlook_message_ids": [
-    "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>"
+    "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
+    "<0203625c-7b8a-40ba-8ce3-39562621656a@mtasv.net>"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -877,6 +885,13 @@
     "rustic-lodge-hottub-light-20260627eve",
     "heavenly-hilltop-dishwasher-flood-cleanup-20260627eve",
     "heavenly-hilltop-kitchen-supply-line-leak-20260627eve",
-    "ownerrez-airbnb-deposit-resolutions-categorize-20260627eve"
+    "ownerrez-airbnb-deposit-resolutions-categorize-20260627eve",
+    "cozyq-shower-tile-guest-injury-lesley-20260628",
+    "cozyq-oven-large-flames-scorching-lesley-20260628",
+    "cozyq-downstairs-hvac-blower-motor-failed-lesley-20260628",
+    "cozyq-main-shower-temp-pressure-twoheads-lesley-20260628",
+    "cozyq-frontdoor-glass-pane-loose-panes-lesley-20260628",
+    "cozyq-no-broom-dustpan-restock-lesley-20260628",
+    "holy-guacamole-tree-string-lights-out-angie-20260628"
   ]
 }
