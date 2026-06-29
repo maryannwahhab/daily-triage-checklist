@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-28T20:40:00.000000+00:00",
+  "_last_updated": "2026-06-29T12:10:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -355,7 +355,16 @@
     "7sa-hottub-not-drained-cleaned-20260628",
     "7sa-master-bath-sliding-door-offtrack-20260628",
     "7sa-burnt-bulbs-living-dining-20260628",
-    "7sa-yard-mowing-weeds-20260628"
+    "7sa-yard-mowing-weeds-20260628",
+    "cozyq-hottub-draining-filter-20260629",
+    "livin-on-edge-upstairs-minisplit-20260629",
+    "livin-on-edge-shower-light-fixture-20260629",
+    "livin-on-edge-pet-hair-cobwebs-cleaning-20260629",
+    "blueberry-bliss-outdoor-tv-line-screen-20260629",
+    "cliffhanger-yard-debris-hottub-cushions-20260629",
+    "blueberry-bliss-tp-holder-broken-20260629",
+    "blueberry-bliss-wood-trim-dining-20260629",
+    "cliffhanger-can-opener-missing-20260629"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -507,7 +516,9 @@
     "1782501153.439239",
     "1782498879.107729",
     "1782497641.742969",
-    "1782501269.328959"
+    "1782501269.328959",
+    "1782691415.776259",
+    "1782688668.641419"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -912,6 +923,17 @@
     "7sa-master-bath-sliding-door-offtrack-20260628pm",
     "7sa-burnt-bulbs-living-dining-20260628pm",
     "7sa-yard-mowing-weeds-20260628pm",
-    "dog-damaged-linens-restock-safely-cleaner-20260628pm"
+    "dog-damaged-linens-restock-safely-cleaner-20260628pm",
+    "cozyq-hottub-draining-filter-20260629",
+    "livin-on-edge-upstairs-minisplit-20260629",
+    "livin-on-edge-shower-light-fixture-20260629",
+    "livin-on-edge-pet-hair-cobwebs-cleaning-20260629",
+    "blueberry-bliss-outdoor-tv-line-screen-20260629",
+    "cliffhanger-yard-debris-hottub-cushions-20260629",
+    "cozy-white-guest-agreement-unsigned-20260628",
+    "blueberry-bliss-tp-holder-broken-20260629",
+    "blueberry-bliss-wood-trim-dining-20260629",
+    "cliffhanger-can-opener-missing-20260629",
+    "cozyq-order-cart-awaiting-maryann-confirm-20260628"
   ]
 }
