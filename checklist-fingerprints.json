@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-30T12:05:00.000000+00:00",
+  "_last_updated": "2026-06-30T20:10:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -364,7 +364,12 @@
     "cliffhanger-yard-debris-hottub-cushions-20260629",
     "blueberry-bliss-tp-holder-broken-20260629",
     "blueberry-bliss-wood-trim-dining-20260629",
-    "cliffhanger-can-opener-missing-20260629"
+    "cliffhanger-can-opener-missing-20260629",
+    "backtoforest-trashcan-track-20260630",
+    "backtoforest-upstairs-bulb-20260630",
+    "lostinpine-internet-modem-thermostat-20260630",
+    "boots-bonfires-screendoor-detached-20260630",
+    "woodland-oasis-outdoor-lights-20260630"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -527,7 +532,8 @@
     "1782754400.595999",
     "1782771232.735359",
     "1782765718.955789",
-    "1782747195.549419"
+    "1782747195.549419",
+    "1782774444.807229"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -563,14 +569,27 @@
     "openphone_lostfound_swimclothes_watchcharger_20260624",
     "openphone_holyguac_stringlights_angietigert_20260628",
     "openphone_dogdamage_linens_5806122847_20260628",
-    "openphone_fridge_9032939333_20260630"
+    "openphone_fridge_9032939333_20260630",
+    "openphone_simplydvine_hottub_turner_panel_20260630",
+    "openphone_backtoforest_broom_heads_pethair_20260630"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
     "<0203625c-7b8a-40ba-8ce3-39562621656a@mtasv.net>",
     "<XU1aJIMbRd2hzLLMHus5SQ@geopod-ismtpd-15>",
     "<GNKgtkhYRIGI8fSnkRDTlQ@geopod-ismtpd-91>",
-    "<8BydPFQZT8WU1nub2KStSQ@geopod-ismtpd-89>"
+    "<8BydPFQZT8WU1nub2KStSQ@geopod-ismtpd-89>",
+    "<CAH0MTt+k=GNp2qk5FuSVyODwNupKxai6L5N9SKMy=ZcvgjOiGA@mail.gmail.com>",
+    "<CAH0MTtLFZAWizh2r2bwmVPXZUZ1kmLapoz8d5LksnBxxxDCVHQ@mail.gmail.com>",
+    "<CAH0MTt+TSwBNKN8_Et2TSZLRj4RnuoJW_VzmHXysOeCqiug4zg@mail.gmail.com>",
+    "<CAH0MTtLmxkkmie1D6dPeXiCJAR2CkV519+-ZKkGHGcMHzMKZUw@mail.gmail.com>",
+    "<CAH0MTtLxOr=tPJehofw6U5x4=f_D3=AWUgFaBjBkf2JeBDbYQQ@mail.gmail.com>",
+    "<CAH0MTt+bgLGUMbsAYQPgpL=LXxkRsRNePnd=PmJ6Ohn6MCv8wA@mail.gmail.com>",
+    "<CAH0MTtK3X8bxCi0EMCsF43ixqZp=1LKNaE21QCQRc1Es4QwRZA@mail.gmail.com>",
+    "<CAH0MTtJUSPi1JM9k-RSYBpaLQ7G0R9QJKu4E6z-3K_mFH3QxXw@mail.gmail.com>",
+    "<65CC8AB6-21BF-4335-9B2B-471AAD5EE5A4@gmail.com>",
+    "<6DCFD399-51AD-427F-BB27-CA376A1F45C3@gmail.com>",
+    "<9BC12969-EA75-49DB-8380-80A58AA5DF6A@yahoo.com>"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -958,6 +977,17 @@
     "unknown-property-refrigerator-issue-9032939333-20260630",
     "safely-claims-133909-133879-need-photos-receipts-20260630",
     "blueberry-bliss-airbnb-damage-claim-timing-20260630",
-    "manual-upsells-confirm-monday-sends-20260630"
+    "manual-upsells-confirm-monday-sends-20260630",
+    "lostinpine-internet-modem-thermostat-20260630pm",
+    "simplydvine-hottub-turner-panel-vendor-20260630pm",
+    "woodland-oasis-outdoor-lights-20260630pm",
+    "7sa-security-batteries-order-kim-20260630pm",
+    "hochatown-premier-8-invoices-6690-20260630pm",
+    "leslie-gonzales-remaining-balance-20260630pm",
+    "mountaintop-cabin-services-inv994-995-20260630pm",
+    "boots-bonfires-screendoor-detached-20260630pm",
+    "backtoforest-trashcan-track-20260630pm",
+    "backtoforest-upstairs-bulb-20260630pm",
+    "backtoforest-broom-heads-pethair-20260630pm"
   ]
 }
