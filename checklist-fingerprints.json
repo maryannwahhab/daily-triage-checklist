@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-06-30T20:10:00.000000+00:00",
+  "_last_updated": "2026-07-01T13:50:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -571,7 +571,9 @@
     "openphone_dogdamage_linens_5806122847_20260628",
     "openphone_fridge_9032939333_20260630",
     "openphone_simplydvine_hottub_turner_panel_20260630",
-    "openphone_backtoforest_broom_heads_pethair_20260630"
+    "openphone_backtoforest_broom_heads_pethair_20260630",
+    "openphone_livinedge_cornhole_board_breanne_20260701",
+    "openphone_7sa_samsung_tv_remotes_lauren_20260630"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
@@ -988,6 +990,8 @@
     "boots-bonfires-screendoor-detached-20260630pm",
     "backtoforest-trashcan-track-20260630pm",
     "backtoforest-upstairs-bulb-20260630pm",
-    "backtoforest-broom-heads-pethair-20260630pm"
+    "backtoforest-broom-heads-pethair-20260630pm",
+    "livin-on-edge-cornhole-board-broken-breanne-20260701",
+    "7sa-samsung-tv-remotes-not-connecting-lauren-20260701"
   ]
 }
