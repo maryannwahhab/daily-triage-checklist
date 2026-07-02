@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-01T13:50:00.000000+00:00",
+  "_last_updated": "2026-07-02T12:15:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -307,7 +307,20 @@
     "19efa96d06730e27",
     "19efab3e44020235",
     "19efccf16aabc1ff",
-    "19f05d64b2ccfd43"
+    "19f05d64b2ccfd43",
+    "19f1f4bc19e870a7",
+    "19f1f43ccca0f9a5",
+    "19f1e978f2efcb3a",
+    "19f1f24bddc49b28",
+    "19f1e114e6663678",
+    "19f21407e2ab67b2",
+    "19f2121337550c5b",
+    "19f20ab7de6e81d9",
+    "19f20a032f114969",
+    "19f0e200875929ce",
+    "19f209f9c04158f8",
+    "19f20115daaac9e2",
+    "19f1fa9c4127f2a3"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -369,7 +382,9 @@
     "backtoforest-upstairs-bulb-20260630",
     "lostinpine-internet-modem-thermostat-20260630",
     "boots-bonfires-screendoor-detached-20260630",
-    "woodland-oasis-outdoor-lights-20260630"
+    "woodland-oasis-outdoor-lights-20260630",
+    "391efc47-61b2-814e-b611-c63fcc0c2a67",
+    "391efc47-61b2-81c1-8c2e-d956d8dbd33c"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -533,7 +548,11 @@
     "1782771232.735359",
     "1782765718.955789",
     "1782747195.549419",
-    "1782774444.807229"
+    "1782774444.807229",
+    "1782860561.000000",
+    "1782862152.000000",
+    "1782916863.000000",
+    "1782927814.000000"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -573,7 +592,9 @@
     "openphone_simplydvine_hottub_turner_panel_20260630",
     "openphone_backtoforest_broom_heads_pethair_20260630",
     "openphone_livinedge_cornhole_board_breanne_20260701",
-    "openphone_7sa_samsung_tv_remotes_lauren_20260630"
+    "openphone_7sa_samsung_tv_remotes_lauren_20260630",
+    "openphone_cozyq_wristbands_jocelyn_reggie_20260701",
+    "openphone_lote_vanity_knob_faucet_breanne_hostbuddy_20260701"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
@@ -591,7 +612,12 @@
     "<CAH0MTtJUSPi1JM9k-RSYBpaLQ7G0R9QJKu4E6z-3K_mFH3QxXw@mail.gmail.com>",
     "<65CC8AB6-21BF-4335-9B2B-471AAD5EE5A4@gmail.com>",
     "<6DCFD399-51AD-427F-BB27-CA376A1F45C3@gmail.com>",
-    "<9BC12969-EA75-49DB-8380-80A58AA5DF6A@yahoo.com>"
+    "<9BC12969-EA75-49DB-8380-80A58AA5DF6A@yahoo.com>",
+    "<d5b21fd1-e109-4d68-9629-8f56635ef336@mtasv.net>",
+    "<edbsn853d8dcffb9340dbca8a0f67a5d503527bf417759822cb2469e6a41657d83a28_xl7ie_19f22b95247@zohodesk.com>",
+    "<U365GETCOTU4.M73HEDRMUQEJ1@-1973231499>",
+    "<d2c66fc1-f218-4e69-b15d-de3b7776f290@mtasv.net>",
+    "<apjodboTRHKXqDBhbFOJyw@geopod-ismtpd-22>"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -992,6 +1018,36 @@
     "backtoforest-upstairs-bulb-20260630pm",
     "backtoforest-broom-heads-pethair-20260630pm",
     "livin-on-edge-cornhole-board-broken-breanne-20260701",
-    "7sa-samsung-tv-remotes-not-connecting-lauren-20260701"
+    "7sa-samsung-tv-remotes-not-connecting-lauren-20260701",
+    "riverfront-cabin-nicole-inquiry-jul79-20260701pm",
+    "skippin-rocks-ashley-guest-change-1to5-pet-20260701pm",
+    "riverfront-cabin-ashley-pending-request-aug2024-20260701pm",
+    "cancellation-hmtpf99bpc-jul30aug4-20260701pm",
+    "tranquil-lane-shawnda-cancellation-notify-owner-20260701pm",
+    "ltd-eastern-rise-vrbo-audit-20260701pm",
+    "bookkeeping-mohsin-cozy-gateway-ownerrez-access-notion-expenses-20260701pm",
+    "olivia-reimbursables-list-nancy-bill-20260701pm",
+    "cozyq-hochatown-invoice-reimbursables-20260701pm",
+    "7sa-security-hub-code-owner-access-20260701pm",
+    "honey-badger-fridge-ice-buildup-mischa-thaw-20260701pm",
+    "blushing-beaver-leonard-door-fix-confirm-20260701pm",
+    "mike-ovadia-podcast-lead-respond-20260701pm",
+    "unknown-property-wanda-water-leak-cement-floor-20260701pm",
+    "cozyq-wristbands-jocelyn-reggie-clubhouse-20260702am",
+    "livin-on-edge-vanity-knob-faucet-cap-20260702am",
+    "ambiance-jacob-change-15to16-20260702am",
+    "zen-awaits-sydnie-change-1to6-aug2830-20260702am",
+    "walk-to-beach-mackenzie-inquiry-aug1520-20260702am",
+    "7sa-tommy-cancellation-jul1719-reopen-notify-20260702am",
+    "easternrise-panoramic-jose-mop-question-20260702am",
+    "joyis-wellness-invoice-1777-235-20260702am",
+    "winegar-cg-june-tab-may-payments-check-20260702am",
+    "oktap-password-expiring-weekender-20260702am",
+    "schlage-code-sync-failures-4cabins-ownerrez-fixes-20260702am",
+    "divine-den-leonard-fixes-router-confirm-20260702am",
+    "tree-house-chalet-door-bolt-ordered-install-20260702am",
+    "7sa-jimmy-decommission-security-after-checkout-20260702am",
+    "suquleana-listing-photos-description-20260702am",
+    "cabin-tagging-spreadsheet-olivia-review-20260702am"
   ]
 }
