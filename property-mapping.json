@@ -1,0 +1,216 @@
+{
+  "_comment": "Property name mapping for Maryann's properties. CRITICAL: Separate PM clients (co-hosting) from revenue management clients. Only PM clients appear in daily checklist.",
+  "_last_updated": "2026-05-23T18:00:00.000000+00:00",
+  "_property_management_clients": {
+    "_note": "CO-HOSTING & PROPERTY MANAGEMENT — These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
+    "Alpine Chalet": {
+      "actual_name": "Alpine Chalet",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Alpine Escape": {
+      "actual_name": "Alpine Escape",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Ambiance": {
+      "actual_name": "Ambiance",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Back to the Forest": {
+      "actual_name": "Back to the Forest",
+      "listing_titles": [],
+      "alternate_refs": ["back-to-forest", "back to forest"]
+    },
+    "Blueberry Bliss": {
+      "actual_name": "Blueberry Bliss",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Blushing Beaver Cabin": {
+      "actual_name": "Blushing Beaver Cabin",
+      "listing_titles": ["Blushing Beaver", "Romantic Scandinavian Cabin"],
+      "alternate_refs": ["blushing beaver", "BB"]
+    },
+    "Boots & Bonfires": {
+      "actual_name": "Boots & Bonfires",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Carter Mountain Lodge": {
+      "actual_name": "Carter Mountain Lodge",
+      "listing_titles": ["Carter Mountain Cabin"],
+      "alternate_refs": ["carter mountain"]
+    },
+    "Cliffhanger": {
+      "actual_name": "Cliffhanger",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Cozy Q Cabin": {
+      "actual_name": "Cozy Q Cabin",
+      "listing_titles": [],
+      "alternate_refs": ["cozy q"]
+    },
+    "Cozy White Cabin": {
+      "actual_name": "Cozy White Cabin",
+      "listing_titles": [],
+      "alternate_refs": ["cozy white"]
+    },
+    "Desert Botanical": {
+      "actual_name": "Desert Botanical",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Divine Den": {
+      "actual_name": "Divine Den",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Grandview Heights": {
+      "actual_name": "Grandview Heights",
+      "listing_titles": [],
+      "alternate_refs": ["grandview"]
+    },
+    "Heavenly Hilltop": {
+      "actual_name": "Heavenly Hilltop",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Holy Guacamole": {
+      "actual_name": "Holy Guacamole",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Honey Badger": {
+      "actual_name": "Honey Badger",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Jade Pond": {
+      "actual_name": "Jade Pond",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Livin on the Edge": {
+      "actual_name": "Livin on the Edge",
+      "listing_titles": [],
+      "alternate_refs": ["livin on edge"]
+    },
+    "Lost in Pine": {
+      "actual_name": "Lost in Pine",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Mountain Majesty": {
+      "actual_name": "Mountain Majesty",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Rabbit Paw": {
+      "actual_name": "Rabbit Paw",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Rocky Top": {
+      "actual_name": "Rocky Top",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Rustic Lodge BB": {
+      "actual_name": "Rustic Lodge BB",
+      "listing_titles": [],
+      "alternate_refs": ["rustic lodge"]
+    },
+    "7 Spanish Angels": {
+      "actual_name": "7 Spanish Angels",
+      "listing_titles": [],
+      "alternate_refs": ["spanish angels"]
+    },
+    "Simply D'Vine": {
+      "actual_name": "Simply D'Vine",
+      "listing_titles": [],
+      "alternate_refs": ["simply divine", "dvine"]
+    },
+    "Skippin Rocks": {
+      "actual_name": "Skippin Rocks",
+      "listing_titles": ["Skipping Rocks"],
+      "alternate_refs": ["skippin rocks", "skipping rocks"]
+    },
+    "Sweet Serenity": {
+      "actual_name": "Sweet Serenity",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "The Bliss": {
+      "actual_name": "The Bliss",
+      "listing_titles": [],
+      "alternate_refs": ["bliss"]
+    },
+    "The Cove": {
+      "actual_name": "The Cove",
+      "listing_titles": ["Cove", "Cove Cabin"],
+      "alternate_refs": ["cove"]
+    },
+    "Timber Lodge": {
+      "actual_name": "Timber Lodge",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Tranquil Lane Lodge": {
+      "actual_name": "Tranquil Lane Lodge",
+      "listing_titles": ["Tranquil Lane"],
+      "alternate_refs": ["tranquil lane"]
+    },
+    "Tree House Chalet": {
+      "actual_name": "Tree House Chalet",
+      "listing_titles": [],
+      "alternate_refs": ["tree house", "treehouse"]
+    },
+    "Whiskey Made Me Do It": {
+      "actual_name": "Whiskey Made Me Do It",
+      "listing_titles": [],
+      "alternate_refs": ["whiskey"]
+    },
+    "Wildwoods": {
+      "actual_name": "Wildwoods",
+      "listing_titles": ["Wildwoods Creekside Cabin Retreat"],
+      "alternate_refs": ["wildwoods"]
+    },
+    "Woodland Oasis": {
+      "actual_name": "Woodland Oasis",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Top of the Rock": {
+      "actual_name": "Top of the Rock",
+      "listing_titles": ["Epic Bluff Views | Modern Cabin", "Top of the Rock {Cabin}"],
+      "alternate_refs": [],
+      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com — verify PM vs revenue-only classification"
+    },
+    "Bird's Eye View": {
+      "actual_name": "Bird's Eye View",
+      "listing_titles": [],
+      "alternate_refs": ["birds eye view"],
+      "_note": "Added by scan 2026-07-04 from OwnerRez cancellation alert (booking ORB18213869, Airbnb #215814950) to hello@theweekenderstays.com — verify PM vs revenue-only classification"
+    },
+    "The Rock House": {
+      "actual_name": "The Rock House",
+      "listing_titles": ["Glass-Wall Lodge | Hot Tub · Scenic Views · Patio"],
+      "alternate_refs": ["rock house"],
+      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com (owner cc tim@i-mpact.biz) — verify PM vs revenue-only classification"
+    }
+  },
+  "_revenue_management_clients": {
+    "_note": "REVENUE MANAGEMENT ONLY — These are listings where you provide pricing & revenue strategy. They do NOT appear in daily management checklist. They may appear in a separate revenue management tracking section.",
+    "_note_2": "Add properties here as they're added to your revenue management portfolio. These should NOT trigger HOT/Maint/urgent alerts in the main checklist.",
+    "_placeholder": "To be populated with full list of revenue management client properties and their platform references (Airbnb titles, VRBO titles, platform IDs, etc.)"
+  },
+  "_instructions": {
+    "usage_critical": "ONLY Property Management Clients should appear in the main daily checklist (with HOT, Maint tags, urgent alerts). Revenue Management Clients should be filtered OUT of the daily checklist or placed in a separate tracking section.",
+    "filtering_logic": "When scanning sources (Gmail, Slack, Notion, OpenPhone), check if the property is in _property_management_clients. If yes, include in main checklist. If in _revenue_management_clients only, filter it to revenue section or exclude.",
+    "lookup_strategy": "1. Extract property reference from source. 2. Check against PM clients first. 3. If found in PM clients, use actual_name in main checklist. 4. If only in revenue clients, route to revenue section. 5. If not found anywhere, flag for Maryann to classify.",
+    "maintenance": "Update _property_management_clients when new PM clients are added. Update _revenue_management_clients when new revenue-only clients join."
+  }
+}

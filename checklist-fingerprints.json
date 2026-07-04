@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-02T20:15:00.000000+00:00",
+  "_last_updated": "2026-07-04T12:15:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -323,7 +323,25 @@
     "19f1fa9c4127f2a3",
     "19f2412f9871050e",
     "19f236d60f5aa39e",
-    "19f238da79d41ac7"
+    "19f238da79d41ac7",
+    "19f25c4c568849f7",
+    "19f193f57c56ac5b",
+    "19f243c07f0b5664",
+    "19f1024c7538019b",
+    "19f25e75b217bdbd",
+    "19f259ebb34cc251",
+    "19f25a178fc5d765",
+    "19f2832998118557",
+    "19f27f642cbd3d76",
+    "19f25f2cf9f1af6c",
+    "19f2899ff2cca34b",
+    "19f2a62be61e38d4",
+    "19f2d04ffaa236a8",
+    "19f2a7602a97b399",
+    "19f2b346e84ecd50",
+    "19f2b1bda6956e55",
+    "19f18a3e1b9bcbb7",
+    "19f2a92a75ecf6c0"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -388,7 +406,11 @@
     "woodland-oasis-outdoor-lights-20260630",
     "391efc47-61b2-814e-b611-c63fcc0c2a67",
     "391efc47-61b2-81c1-8c2e-d956d8dbd33c",
-    "391efc47-61b2-8181-9bd9-e4527a4aabc8"
+    "391efc47-61b2-8181-9bd9-e4527a4aabc8",
+    "393efc47-61b2-8169-b7c3-c73952e47827",
+    "393efc47-61b2-8131-bacf-e7593f282fc0",
+    "393efc47-61b2-8167-9723-fa42f305c3b1",
+    "393efc47-61b2-8167-b693-f14eb5d6cb2b"
   ],
   "slack_message_ids": [
     "1782412703.728729",
@@ -564,7 +586,13 @@
     "1783020909.941229",
     "1783013753.915469",
     "1783015196.038469",
-    "1783011615.866539"
+    "1783011615.866539",
+    "1783086316.715939",
+    "1783112788.383819",
+    "1783111905.000000",
+    "1783112265.265179",
+    "1783120069.000000",
+    "1783120135.000000"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -610,7 +638,18 @@
     "openphone_skippin_shaunta_stringlights_20260702",
     "openphone_cozyq_hottub_controls_hostbuddy_jocelyn_20260702",
     "openphone_lockout_2146291004_code_video_20260702",
-    "openphone_simplydvine_amanda_addguest_20260702"
+    "openphone_simplydvine_amanda_addguest_20260702",
+    "openphone_rabbitpaw_dangerous_step_elisa_20260703",
+    "openphone_woodland_uncleaned_pool_sand_hottub_richweber_20260703",
+    "openphone_alpinechalet_dented_plates_shirley_20260703",
+    "openphone_7sa_outdoor_stringlights_lauren_20260703",
+    "openphone_skippin_hottub_breaker_resolved_amy_20260703",
+    "openphone_blueberrybliss_shannon_heat_hottub_20260703",
+    "openphone_woodland_backdoor_wontclose_richweber_20260703",
+    "openphone_tranquil_lane_fan_wont_turn_on_20260704",
+    "openphone_tranquil_lane_keypad_lockout_amanda_20260704",
+    "openphone_hottub_topside_panel_install_5804502633_20260704",
+    "openphone_moonshiner670_schlage_lock_batteries_20260704"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
@@ -635,7 +674,12 @@
     "<d2c66fc1-f218-4e69-b15d-de3b7776f290@mtasv.net>",
     "<apjodboTRHKXqDBhbFOJyw@geopod-ismtpd-22>",
     "<hTJpnWL0SBKt982ELqb1pQ@geopod-ismtpd-6>",
-    "<6b843035-f95a-48e2-b8a9-78c2da250e34@mtasv.net>"
+    "<6b843035-f95a-48e2-b8a9-78c2da250e34@mtasv.net>",
+    "<75dd6a7e-0dc1-498e-a918-cc1d73659eed@mtasv.net>",
+    "<505c99f7-2c14-4b7e-bacc-fcb5f7fe2a7d@mtasv.net>",
+    "<bf7cb261-15a3-4937-ba09-b7610c310054@mtasv.net>",
+    "<3b7bb53c-871d-4ba1-8be7-66f195aa934b@mtasv.net>",
+    "<ce7245b0-5e4d-4830-8e24-25bb8aea0407@mtasv.net>"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -1080,6 +1124,37 @@
     "team-james-2026-tax-receipts-all-cabins-20260702pm",
     "team-fb-maint-threads-notion-update-4cabins-20260702pm",
     "bookkeeping-ramp-historical-2026-tagging-workaround-20260702pm",
-    "top-of-the-rock-celina-cancel-aug1013-20260702pm"
+    "top-of-the-rock-celina-cancel-aug1013-20260702pm",
+    "woodland-oasis-refund-richweber-uncleaned-hms3syas3a-20260703",
+    "woodland-oasis-pool-sand-hottub-clean-20260703",
+    "rabbit-paw-dangerous-step-tripping-20260703",
+    "easternrise-3milake-3-unanswered-messages-20260703",
+    "timber-lodge-stephanie-inquiry-aug1319-20260703",
+    "easternrise-waterfront-amy-hottub-howto-20260703",
+    "romantic-pond-door-codes-failed-keith-20260703",
+    "skippin-rocks-high-chair-amenities-20260703",
+    "7sa-outdoor-upper-stringlights-20260703",
+    "alpine-chalet-dented-plates-shirley-20260703",
+    "rock-house-david-seo-cancel-aug1621-20260703",
+    "grandview-heights-alicia-womack-cancel-20260703",
+    "timber-lodge-rosalind-gaines-cancel-20260703",
+    "sweet-serenity-natasha-coleman-cancel-20260703",
+    "blueberry-bliss-shannon-heat-hottub-20260703pm",
+    "woodland-oasis-backdoor-wont-close-richweber-20260703pm",
+    "ambiance-abby-change-16to19-20260703pm",
+    "tranquil-lane-fan-wont-turn-on-guest-20260704am",
+    "tranquil-lane-front-door-keypad-repair-amanda-20260704am",
+    "hottub-vendor-topside-panel-install-today-20260704am",
+    "moonshiner670-schlage-lock-batteries-identify-20260704am",
+    "forest-cabin-retreat-crystal-inquiry-pool-splashpad-aug2124-20260704am",
+    "boots-bonfires-andee-pickleball-tournament-oct-inquiry-20260704am",
+    "boots-bonfires-lindsey-booker-cost-question-jul712-20260704am",
+    "desert-botanical-amanda-prebooking-questions-jul812-20260704am",
+    "pine-forest-eastern-rise-nina-booker-message-jul1619-20260704am",
+    "birds-eye-view-james-hayes-cancel-orb18213869-20260704am",
+    "ambiance-4-cleaning-fees-nancy-invoice-seema-20260704am",
+    "the-bliss-statement-email-pushban-not-sujatha-20260704am",
+    "bookkeeping-treehouse-chalet-tv-reimbursable-verify-20260704am",
+    "upsells-8-cabins-pending-david-eod-20260704am"
   ]
 }
