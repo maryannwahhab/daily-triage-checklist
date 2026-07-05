@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-05T13:20:00.000000+00:00",
+  "_last_updated": "2026-07-05T20:10:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -346,7 +346,8 @@
     "19f236f8a2b7baf8",
     "19f289aae52fb9af",
     "19f1ac7cd50667e0",
-    "19f2ec5336a1f03b"
+    "19f2ec5336a1f03b",
+    "19f32bd06efbadca"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -613,7 +614,20 @@
     "1783189256.243259",
     "1783206635.966749",
     "1783207736.500949",
-    "1783257926.935839"
+    "1783257926.935839",
+    "1783272751.722739",
+    "1783272777.920629",
+    "1783272865.341039",
+    "1783272931.665549",
+    "1783273330.610099",
+    "1783273385.727849",
+    "1783273979.867359",
+    "1783274643.781399",
+    "1783274680.051959",
+    "1783274935.737619",
+    "1783275160.886179",
+    "1783279567.418439",
+    "1783280296.347469"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -677,7 +691,8 @@
     "openphone_tranquil_patio_fan_call_20260704",
     "openphone_holyguac_dishwasher_breaker_kyle_20260705",
     "openphone_holyguac_bunkroom_lights_ceiling_bulb_kyle_20260705",
-    "openphone_blueberrybliss_ac_notcooling_both_units_shannon_20260705"
+    "openphone_blueberrybliss_ac_notcooling_both_units_shannon_20260705",
+    "openphone_washer_right_nospindry_4058028005_20260705"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
@@ -710,7 +725,8 @@
     "<ce7245b0-5e4d-4830-8e24-25bb8aea0407@mtasv.net>",
     "<f3fee46d-6f6a-4357-a961-d7cecbf4d4b7@mtasv.net>",
     "<44689c74-34f5-45fd-8a25-7658161e5373@mtasv.net>",
-    "<c_UscChkQnCejWFejpEXlg@geopod-ismtpd-102>"
+    "<c_UscChkQnCejWFejpEXlg@geopod-ismtpd-102>",
+    "<59eb9be7-0461-42e3-b0ba-528a179fce34@mtasv.net>"
   ],
   "item_text_hashes": [
     "kaley-forest-cabin-checkin-20260518",
@@ -1200,6 +1216,16 @@
     "safely-claim-134324-approved-667-20260704pm",
     "holy-guacamole-electrical-breaker-dishwasher-bunklights-ceilingbulb-20260705",
     "blueberry-bliss-ac-notcooling-both-units-shannon-20260705",
-    "pricelabs-lejla-reschedule-monday-call-20260705"
+    "pricelabs-lejla-reschedule-monday-call-20260705",
+    "skippin-rocks-guest-trashed-cornhole-hottub-grease-blinds-airbnb-claim-20260705pm",
+    "blueberry-bliss-safely-purchase-replacement-ruined-goods-20260705pm",
+    "blueberry-bliss-remove-tv-charge-owner-statement-seema-306-20260705pm",
+    "the-cove-turn-today-same-guest-block-tomorrow-20260705pm",
+    "the-cove-amazon-undelivered-redelivery-cleaner-address-20260705pm",
+    "sweet-serenity-kp-reservation-change-1to10-20260705pm",
+    "hochatown-treehouse-todd-hamilton-payment-failed-1331-20260705pm",
+    "unknown-property-washer-right-nospindry-20260705pm",
+    "suquleana-golive-date-onboarding-payment-lindsey-20260705pm",
+    "timber-carter-mountain-track-todays-issues-closeout-20260705pm"
   ]
 }
