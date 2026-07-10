@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-10T12:07:00.000000+00:00",
+  "_last_updated": "2026-07-10T20:09:44.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -798,7 +798,8 @@
     "1783623395.310789",
     "1783623387.918649",
     "1783620438.978579",
-    "1783638629.768769"
+    "1783638629.768769",
+    "1783700970.293349"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -950,7 +951,8 @@
     "<4c0f68a1-2cc4-4242-84c1-43b03924e414@mtasv.net>",
     "<9d3ddea4-e8dd-4a4e-80f8-f11a6be5655f@mtasv.net>",
     "<a236a20b-51cc-4248-b3c2-86248d3617bc@bridgetry.co>",
-    "<fae16598-39f7-4353-a2ea-1739225774ab@mtasv.net>"
+    "<fae16598-39f7-4353-a2ea-1739225774ab@mtasv.net>",
+    "<CAFDmC+0WPbLcHMY=Kup5ghy2ZVy3-ZiGeF_OwWnaGrdS5_se_Q@mail.gmail.com>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
@@ -1535,6 +1537,8 @@
     "divineden-doorcode-1313to9796-notion-20260710am",
     "woodlandoasis-stringlight-hook-jimmy-checkout-20260710am",
     "blueberrybliss-showerhook-mastertv-shampoo-20260710am",
-    "ambiance-propane-tanks-low-20260710am"
+    "ambiance-propane-tanks-low-20260710am",
+    "lostinpine-schlage-lockaccess-virtualkey-20260710pm",
+    "marsha-schattner-2ndcabin-invoice-payment-20260710pm"
   ]
 }
