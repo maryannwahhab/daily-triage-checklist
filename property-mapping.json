@@ -200,6 +200,30 @@
       "listing_titles": ["Glass-Wall Lodge | Hot Tub · Scenic Views · Patio"],
       "alternate_refs": ["rock house"],
       "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com (owner cc tim@i-mpact.biz) — verify PM vs revenue-only classification"
+    },
+    "Suquleana": {
+      "actual_name": "Suquleana",
+      "listing_titles": [],
+      "alternate_refs": ["suqueleana", "suqulena", "suquleana cabin"],
+      "_note": "New client onboarding (Leslie & Jerry / owner contact Cassandra), in progress since 2026-06-25 — verify PM vs revenue-only classification once live"
+    },
+    "Green Mallard Trail": {
+      "actual_name": "Green Mallard Trail",
+      "listing_titles": [],
+      "alternate_refs": ["green mallard"],
+      "_note": "Added by scan 2026-07-07 — new owner onboarding, Airbnb account setup in progress — verify PM vs revenue-only classification"
+    },
+    "LTD Eastern Rise": {
+      "actual_name": "LTD Eastern Rise",
+      "listing_titles": ["Panoramic Mountain Views", "Walk to Beach | Private Pool · Hot Tub", "Pond-View Cabin | Hot Tub · Fire Pit · Walkable"],
+      "alternate_refs": ["eastern rise", "easternriseinfo"],
+      "_note": "Added by scan 2026-07-11 — recurring source is the easternriseinfo@gmail.com inbox; has appeared regularly in checklist history but was never formally added to this mapping — verify PM vs revenue-only classification"
+    },
+    "Key Lime Sky": {
+      "actual_name": "Key Lime Sky",
+      "listing_titles": ["Key Lime Sky · Couples Cabin | Hot Tub · Fireplace"],
+      "alternate_refs": ["key lime sky"],
+      "_note": "Added by scan 2026-07-11 (Afternoon) — Airbnb alteration request from guest Jaylia to easternriseinfo@gmail.com; property in Broken Bow — verify PM vs revenue-only classification"
     }
   },
   "_revenue_management_clients": {

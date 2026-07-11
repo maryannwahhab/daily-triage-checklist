@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-10T20:09:44.000000+00:00",
+  "_last_updated": "2026-07-11T20:08:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -409,7 +409,9 @@
     "19f47237359417fc",
     "19f429f08c512489",
     "19f3753af164554f",
-    "19f18de51ebacd40"
+    "19f18de51ebacd40",
+    "19f4e54ee3b6702f",
+    "19f5223f4dd3a5b8"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -482,7 +484,11 @@
     "393efc47-61b2-81b2-b6e3-d65011767332",
     "393efc47-61b2-8103-841f-d700d4ea6715",
     "393efc47-61b2-809f-8144-ec05f2096a63",
-    "396efc4761b2818c993ded60fe8844d8"
+    "396efc4761b2818c993ded60fe8844d8",
+    "39aefc47-61b2-8118-95ef-d79de008728a",
+    "39aefc47-61b2-81a6-b9dc-e2b4b712461a",
+    "39aefc47-61b2-816f-9d5d-e9b9db6eec10",
+    "39aefc47-61b2-81d5-a725-f19a9b9c2c6e"
   ],
   "_notion_todo_backlog_note": "2026-07-10 07:00 scan surfaced ~90 open rows (Done=false) in the To Do List DB that are NOT yet reflected on the checklist and NOT in notion_task_ids below (e.g. Skippin Rocks sand/paint/hot-tub caulking/electrical panel/weed-eating, Wildwoods weed-eating/washer move/deep clean, Cove wicker mat/foosball table, Divine Den table repair, Annual Texas Tax Filings, Call Airbnb for Review Removal, and several P5 someday items). These are pre-existing backlog, not new-in-last-10-hours, so they were NOT auto-added this run per the recency rule. Flagging for Maryann to decide: full one-time backlog sync into the checklist, or leave the To Do List DB as the system of record for non-urgent items.",
   "slack_message_ids": [
@@ -799,7 +805,52 @@
     "1783623387.918649",
     "1783620438.978579",
     "1783638629.768769",
-    "1783700970.293349"
+    "1783700970.293349",
+    "1783740536.882249",
+    "1783714326.893519",
+    "1783712248.545649",
+    "1783711115.252089",
+    "1783708563.544019",
+    "1783708477.439859",
+    "1783707623.528749",
+    "1783707614.698319",
+    "1783701069.976579",
+    "1783703424.007139",
+    "1783701622.373789",
+    "1783701598.959279",
+    "1783701552.785269",
+    "1783701184.293089",
+    "1783701164.163649",
+    "1783701142.760009",
+    "1783701006.339919",
+    "1783703556.534019",
+    "1783703635.652609",
+    "1783703489.142289",
+    "1783703477.053899",
+    "1783701025.606689",
+    "1783701035.041659",
+    "1783702158.099359",
+    "1783702247.507119",
+    "1783703930.036829",
+    "1783704572.894459",
+    "1783705132.135239",
+    "1783705591.436109",
+    "1783708427.758869",
+    "1783708447.131739",
+    "1783708493.063559",
+    "1783708582.901879",
+    "1783708844.100249",
+    "1783708952.359169",
+    "1783709038.076419",
+    "1783710956.291459",
+    "1783713699.463719",
+    "1783716483.338239",
+    "1783717791.164289",
+    "1783719134.258409",
+    "1783719565.494909",
+    "1783721864.565169",
+    "1783722930.116119",
+    "1783723189.179419"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -952,7 +1003,8 @@
     "<9d3ddea4-e8dd-4a4e-80f8-f11a6be5655f@mtasv.net>",
     "<a236a20b-51cc-4248-b3c2-86248d3617bc@bridgetry.co>",
     "<fae16598-39f7-4353-a2ea-1739225774ab@mtasv.net>",
-    "<CAFDmC+0WPbLcHMY=Kup5ghy2ZVy3-ZiGeF_OwWnaGrdS5_se_Q@mail.gmail.com>"
+    "<CAFDmC+0WPbLcHMY=Kup5ghy2ZVy3-ZiGeF_OwWnaGrdS5_se_Q@mail.gmail.com>",
+    "<ec072fcf-63bc-4705-b662-4e02db2d5a3f@mtasv.net>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
@@ -1539,6 +1591,8 @@
     "blueberrybliss-showerhook-mastertv-shampoo-20260710am",
     "ambiance-propane-tanks-low-20260710am",
     "lostinpine-schlage-lockaccess-virtualkey-20260710pm",
-    "marsha-schattner-2ndcabin-invoice-payment-20260710pm"
+    "marsha-schattner-2ndcabin-invoice-payment-20260710pm",
+    "ambiance-airbnb-deposit-resolution-orb17219110-20260711",
+    "ltd-eastern-rise-ecobee-ac-alert-20260711"
   ]
 }
