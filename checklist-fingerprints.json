@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-11T20:08:00.000000+00:00",
+  "_last_updated": "2026-07-12T12:09:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -411,7 +411,9 @@
     "19f3753af164554f",
     "19f18de51ebacd40",
     "19f4e54ee3b6702f",
-    "19f5223f4dd3a5b8"
+    "19f5223f4dd3a5b8",
+    "19f54ccdb5a86879",
+    "19f4d0ce36e0c5a0"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -850,7 +852,11 @@
     "1783719565.494909",
     "1783721864.565169",
     "1783722930.116119",
-    "1783723189.179419"
+    "1783723189.179419",
+    "1783818411.466779",
+    "1783823942.334739",
+    "1783812130.931569",
+    "1783811226.423949"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1593,6 +1599,15 @@
     "lostinpine-schlage-lockaccess-virtualkey-20260710pm",
     "marsha-schattner-2ndcabin-invoice-payment-20260710pm",
     "ambiance-airbnb-deposit-resolution-orb17219110-20260711",
-    "ltd-eastern-rise-ecobee-ac-alert-20260711"
+    "ltd-eastern-rise-ecobee-ac-alert-20260711",
+    "simplydvine-lamonte-guestcount-10to11-20260712am",
+    "easternrise-walktobeach-ac-risingtemp-liz-20260712am",
+    "ambiance-kitchensink-leak-cindy-20260712am",
+    "ambiance-cabinetdoor-lightfixtures-20260712am",
+    "rockytop-kitchensink-leak-photos-20260712am",
+    "blueberrybliss-stovelight-out-20260712am",
+    "thecove-ac-hose-dorthy-terry-20260712am",
+    "suquleana-pricelabs-bookings-monitor-20260712am",
+    "team-septic-type-forms-notion-20260712am"
   ]
 }
