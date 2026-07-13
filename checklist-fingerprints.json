@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-12T12:09:00.000000+00:00",
+  "_last_updated": "2026-07-13T12:08:00.000000+00:00",
   "gmail_threads": [
     "19efee7837f07823",
     "19effe5071eec518",
@@ -413,7 +413,9 @@
     "19f4e54ee3b6702f",
     "19f5223f4dd3a5b8",
     "19f54ccdb5a86879",
-    "19f4d0ce36e0c5a0"
+    "19f4d0ce36e0c5a0",
+    "19f57ddc1e026adf",
+    "19f58efd41e3e119"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -856,7 +858,29 @@
     "1783818411.466779",
     "1783823942.334739",
     "1783812130.931569",
-    "1783811226.423949"
+    "1783811226.423949",
+    "1783876123.359129",
+    "1783879428.461899",
+    "1783879441.841849",
+    "1783879461.178419",
+    "1783879469.343429",
+    "1783879479.837099",
+    "1783879541.839169",
+    "1783879553.737719",
+    "1783879693.029129",
+    "1783879748.766879",
+    "1783879788.774639",
+    "1783879854.295339",
+    "1783879891.914819",
+    "1783881371.347379",
+    "1783882520.532959",
+    "1783882823.424229",
+    "1783886568.490469",
+    "1783942949.560139",
+    "1783939938.447169",
+    "1783939868.914199",
+    "1783941188.533809",
+    "1783924818.636079"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1010,7 +1034,11 @@
     "<a236a20b-51cc-4248-b3c2-86248d3617bc@bridgetry.co>",
     "<fae16598-39f7-4353-a2ea-1739225774ab@mtasv.net>",
     "<CAFDmC+0WPbLcHMY=Kup5ghy2ZVy3-ZiGeF_OwWnaGrdS5_se_Q@mail.gmail.com>",
-    "<ec072fcf-63bc-4705-b662-4e02db2d5a3f@mtasv.net>"
+    "<ec072fcf-63bc-4705-b662-4e02db2d5a3f@mtasv.net>",
+    "<1694999316.612663.1783871576613@mail.yahoo.com>",
+    "<CAFDmC+2Uwt1OH0C85Q8cFBURPqSqZ_iHR7ArtqywYa4_42dcsQ@mail.gmail.com>",
+    "<8052f3af-c86d-4f89-9082-c3e62ec2c828@mtasv.net>",
+    "<1f279aa2-6918-4aab-80a9-94260b2ae36c@mtasv.net>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
@@ -1608,6 +1636,25 @@
     "blueberrybliss-stovelight-out-20260712am",
     "thecove-ac-hose-dorthy-terry-20260712am",
     "suquleana-pricelabs-bookings-monitor-20260712am",
-    "team-septic-type-forms-notion-20260712am"
+    "team-septic-type-forms-notion-20260712am",
+    "easternrise-panoramicmountainviews-aprilwright-sep36-20260712pm",
+    "heavenlyhilltop-marksamples-paymentmethod-orb17922288-20260712pm",
+    "thecove-fridge-terry-partsundercabin-20260712pm",
+    "bootsbonfires-simplydvine-lightbulbs-kimvisit-20260712pm",
+    "suquleana-20pctpromo-confirm-instantbook-20260712pm",
+    "holyguacamole-ceilingleak-bunkbedbath-raining-20260712pm",
+    "cozyq-shampooconditioner-blinds-autumn-20260712pm",
+    "marshaschattner-invoice-reconcile-20260712pm",
+    "keylimesky-daniel-datechange-dec4to11-20260713am",
+    "mountainmajesty-missedbooking-followup-20260713am",
+    "skippinrocks-doghair-arcadegame-autumn-20260713am",
+    "holyguacamole-ruthhenry-waterpressure-20260713am",
+    "holyguacamole-ruthhenry-dispensersmixed-20260713am",
+    "holyguacamole-ruthhenry-poisonivy-20260713am",
+    "holyguacamole-ruthhenry-porchlightsflicker-20260713am",
+    "holyguacamole-ruthhenry-knivesdull-20260713am",
+    "lostinpine-doorlockcode-racheldavis-orb18469713-20260713am",
+    "ambiance-doorlockcode-annaholland-orb18466848-20260713am",
+    "weekenderstays-safelyinvoice-inv036864-context-20260713am"
   ]
 }
