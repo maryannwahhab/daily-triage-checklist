@@ -1,7 +1,9 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-13T12:08:00.000000+00:00",
+  "_last_updated": "2026-07-13T20:15:00.000000+00:00",
   "gmail_threads": [
+    "19f5cc3071ff21b4",
+    "19f5c5b597aa9156",
     "19efee7837f07823",
     "19effe5071eec518",
     "19ee68bc873e2b1b",
@@ -880,7 +882,8 @@
     "1783939938.447169",
     "1783939868.914199",
     "1783941188.533809",
-    "1783924818.636079"
+    "1783924818.636079",
+    "1783964774.507949"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1038,7 +1041,10 @@
     "<1694999316.612663.1783871576613@mail.yahoo.com>",
     "<CAFDmC+2Uwt1OH0C85Q8cFBURPqSqZ_iHR7ArtqywYa4_42dcsQ@mail.gmail.com>",
     "<8052f3af-c86d-4f89-9082-c3e62ec2c828@mtasv.net>",
-    "<1f279aa2-6918-4aab-80a9-94260b2ae36c@mtasv.net>"
+    "<1f279aa2-6918-4aab-80a9-94260b2ae36c@mtasv.net>",
+    "<1504996854.832608.1783961305776@mail.yahoo.com>",
+    "<d2ae0d0d-6640-4c80-a3f6-60c7d6178fc9@mtasv.net>",
+    "<sYhHLzj8SCeaqeANu_XfBA@geopod-ismtpd-28>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
