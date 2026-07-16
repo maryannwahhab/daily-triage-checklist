@@ -1,6 +1,6 @@
 {
   "_comment": "Property name mapping for Maryann's properties. CRITICAL: Separate PM clients (co-hosting) from revenue management clients. Only PM clients appear in daily checklist.",
-  "_last_updated": "2026-05-23T18:00:00.000000+00:00",
+  "_last_updated": "2026-07-16T20:00:00.000000+00:00",
   "_property_management_clients": {
     "_note": "CO-HOSTING & PROPERTY MANAGEMENT — These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
     "Alpine Chalet": {
@@ -224,6 +224,18 @@
       "listing_titles": ["Key Lime Sky · Couples Cabin | Hot Tub · Fireplace"],
       "alternate_refs": ["key lime sky"],
       "_note": "Added by scan 2026-07-11 (Afternoon) — Airbnb alteration request from guest Jaylia to easternriseinfo@gmail.com; property in Broken Bow — verify PM vs revenue-only classification"
+    },
+    "Riverfront Cabin": {
+      "actual_name": "Riverfront Cabin",
+      "listing_titles": ["Riverfront Cabin | Indoor RockWall · HotTub · Loft"],
+      "alternate_refs": ["riverfront cabin", "riverfront"],
+      "_note": "Added by scan 2026-07-15 (Morning) — this listing had already appeared as checklist items on 7/1 and 7/2 (Tommy's, Nicole's, and Ashley's pending requests) flagged as unmapped both times but never formally added to this file; source is easternriseinfo@gmail.com — verify PM vs revenue-only classification"
+    },
+    "Brickyard Branch": {
+      "actual_name": "Brickyard Branch",
+      "listing_titles": ["Brickyard Branch | Hot Tub · Fire Pit"],
+      "alternate_refs": ["brickyard branch", "brickyard"],
+      "_note": "Added by scan 2026-07-16 (Afternoon) — recurring property in checklist history since at least 2026-06-02 (power outage, guest date-extension requests) but never formally added to this file; source is easternriseinfo@gmail.com — verify PM vs revenue-only classification"
     }
   },
   "_revenue_management_clients": {

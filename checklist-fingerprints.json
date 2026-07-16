@@ -1,7 +1,10 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-15T20:15:00.000000+00:00",
+  "_last_updated": "2026-07-16T20:00:00.000000+00:00",
   "gmail_threads": [
+    "19f6949849a7c712",
+    "19f69947318ee452",
+    "19f699e31c24c03a",
     "19f5cc3071ff21b4",
     "19f5c5b597aa9156",
     "19efee7837f07823",
@@ -528,7 +531,15 @@
     "39aefc47-61b2-81a6-b9dc-e2b4b712461a",
     "39aefc47-61b2-816f-9d5d-e9b9db6eec10",
     "39aefc47-61b2-81d5-a725-f19a9b9c2c6e",
-    "notion_todo_no_new_rows_20260715pm"
+    "notion_todo_no_new_rows_20260715pm",
+    "39eefc47-61b2-8176-80c1-dff07da0a18d",
+    "39eefc47-61b2-818d-97f3-c678fbacb3f9",
+    "39eefc47-61b2-8197-b579-e64a4fbfafa2",
+    "39eefc47-61b2-816f-b16e-d1315dd9e914",
+    "39eefc47-61b2-81ab-9bd0-c2af37bf423b",
+    "39eefc47-61b2-81f3-9838-f71f7c2375cf",
+    "39eefc47-61b2-812a-a9c9-ea707f996c53",
+    "notion_todo_no_new_rows_20260716pm"
   ],
   "_notion_todo_backlog_note": "2026-07-10 07:00 scan surfaced ~90 open rows (Done=false) in the To Do List DB that are NOT yet reflected on the checklist and NOT in notion_task_ids below (e.g. Skippin Rocks sand/paint/hot-tub caulking/electrical panel/weed-eating, Wildwoods weed-eating/washer move/deep clean, Cove wicker mat/foosball table, Divine Den table repair, Annual Texas Tax Filings, Call Airbnb for Review Removal, and several P5 someday items). These are pre-existing backlog, not new-in-last-10-hours, so they were NOT auto-added this run per the recency rule. Flagging for Maryann to decide: full one-time backlog sync into the checklist, or leave the To Do List DB as the system of record for non-urgent items.",
   "slack_message_ids": [
@@ -959,7 +970,24 @@
     "1784144655.854229",
     "1784144674.101309",
     "1784144683.800599",
-    "1784139904.795579"
+    "1784139904.795579",
+    "1784152114.584629",
+    "1784153623.742329",
+    "1784155991.641549",
+    "1784153517.860039",
+    "1784160606.502509",
+    "1784160562.549279",
+    "1784160806.680909",
+    "1784166957.418639",
+    "1784167542.137979",
+    "1784157685.697809",
+    "1784162151.122309",
+    "1784157342.506129",
+    "1784157668.995989",
+    "1784175265.008319",
+    "1784166478.746379",
+    "1784157212.721159",
+    "1784156190.475319"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1835,6 +1863,16 @@
     "divineden-sold-newowner-unlist-airbnb-20260715pm",
     "bootsbonfires-micahbaker-dirtycabinets-keurig-20260715pm",
     "thebliss-duncancoleman-hottub-cloudy-20260715pm",
-    "wildwoods-mattmunchrath-gamingstation-tvvolume-firepitlights-20260715pm"
+    "wildwoods-mattmunchrath-gamingstation-tvvolume-firepitlights-20260715pm",
+    "divineden-thanksgiving-datemove-2000deposit-20260716pm",
+    "brickyardbranch-michelle-pricing-961vs881-20260716pm",
+    "wildwoods-ecobee-lowtemp-65-20260716pm",
+    "thecove-christopherphillips-lights-curtain-chewedwood-20260716pm",
+    "rabbitpaw-ethanvoth-spiders-lattice-20260716pm",
+    "desertbotanical-jillagusti-poolballs-dirtypatio-squeegee-20260716pm",
+    "mountainmajesty-craigb-standingac-delivery-followup-20260716pm",
+    "simplydvine-mower-wifi-20260716pm",
+    "rabbitpaw-jacqueline-catrequest-sep1720-20260716pm",
+    "desertbotanical-book-reimbursement-20260716pm"
   ]
 }
