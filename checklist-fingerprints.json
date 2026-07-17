@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-16T20:00:00.000000+00:00",
+  "_last_updated": "2026-07-17T12:00:00.000000+00:00",
   "gmail_threads": [
     "19f6949849a7c712",
     "19f69947318ee452",
@@ -539,7 +539,10 @@
     "39eefc47-61b2-81ab-9bd0-c2af37bf423b",
     "39eefc47-61b2-81f3-9838-f71f7c2375cf",
     "39eefc47-61b2-812a-a9c9-ea707f996c53",
-    "notion_todo_no_new_rows_20260716pm"
+    "notion_todo_no_new_rows_20260716pm",
+    "notion_todo_no_new_rows_20260717am",
+    "notion_individual_tasks_no_new_rows_20260717am",
+    "notion_team_tasks_maintenance_db_no_new_rows_20260717am"
   ],
   "_notion_todo_backlog_note": "2026-07-10 07:00 scan surfaced ~90 open rows (Done=false) in the To Do List DB that are NOT yet reflected on the checklist and NOT in notion_task_ids below (e.g. Skippin Rocks sand/paint/hot-tub caulking/electrical panel/weed-eating, Wildwoods weed-eating/washer move/deep clean, Cove wicker mat/foosball table, Divine Den table repair, Annual Texas Tax Filings, Call Airbnb for Review Removal, and several P5 someday items). These are pre-existing backlog, not new-in-last-10-hours, so they were NOT auto-added this run per the recency rule. Flagging for Maryann to decide: full one-time backlog sync into the checklist, or leave the To Do List DB as the system of record for non-urgent items.",
   "slack_message_ids": [
@@ -987,7 +990,11 @@
     "1784175265.008319",
     "1784166478.746379",
     "1784157212.721159",
-    "1784156190.475319"
+    "1784156190.475319",
+    "1784243201.776949",
+    "1784243346.862639",
+    "1784243360.380449",
+    "1784245217.501819"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1222,7 +1229,9 @@
     "<5e7b545d-80c1-4722-9696-fd061473ea38@mtasv.net>",
     "<661323959.10802631.1784133471619@service-27>",
     "<16dd5032-f2aa-412a-ac30-d83f32144409@mtasv.net>",
-    "<CAFDmC+3DVAGWO-mmDckjMPueagW5BG=qy0UxAbxjyLQisZg5Og@mail.gmail.com>"
+    "<CAFDmC+3DVAGWO-mmDckjMPueagW5BG=qy0UxAbxjyLQisZg5Og@mail.gmail.com>",
+    "<PH3PPF60C43D1E633778D7D3777B750FE70ADC72@PH3PPF60C43D1E6.namprd19.prod.outlook.com>",
+    "<N2DYMKR77V5_6a593851eeee1_d32e7c999cd888_sprut@zendesk.com>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
