@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-17T12:00:00.000000+00:00",
+  "_last_updated": "2026-07-17T20:14:53.315567+00:00",
   "gmail_threads": [
     "19f6949849a7c712",
     "19f69947318ee452",
@@ -453,7 +453,42 @@
     "19f393eef71495ef",
     "19f6620d45eee473",
     "19f4735a64c8ad34",
-    "19f5180e403b8d86"
+    "19f5180e403b8d86",
+    "19f71a17aeda6ff1",
+    "19f719f4bac9abd8",
+    "19f7195a5f5e54b8",
+    "19f718e2bba835b7",
+    "19f718e26835420e",
+    "19f71883eb9e9edc",
+    "19f5bd36149fa295",
+    "19f717420dcb2d41",
+    "19f7169144385bd5",
+    "19f71653f82cbff6",
+    "19f7164c414e7303",
+    "19f7156dbc63ed58",
+    "19f7153cddb8f0be",
+    "19f714e2e7ec1d22",
+    "19f714c18cc91273",
+    "19f713f962894976",
+    "19f71249cafeed21",
+    "19f71140db2cc8ac",
+    "19f51ed70b92b67c",
+    "19f710d21af12025",
+    "19f710a365e1875d",
+    "19f677b368f8491c",
+    "19f70f264a65e9d7",
+    "19f70ee710ed55a1",
+    "19f70e6c24753530",
+    "19f70d823924a11b",
+    "19f70d43f111ca57",
+    "19f70a9cd45cd739",
+    "19f70a944dd0c4c9",
+    "19f5bcd5abf62c53",
+    "19f63d8a7890fd36",
+    "19f70a59f5866595",
+    "19f70a4867b37d6f",
+    "19f689a77ef277f0",
+    "19f70693194ecc93"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -542,7 +577,10 @@
     "notion_todo_no_new_rows_20260716pm",
     "notion_todo_no_new_rows_20260717am",
     "notion_individual_tasks_no_new_rows_20260717am",
-    "notion_team_tasks_maintenance_db_no_new_rows_20260717am"
+    "notion_team_tasks_maintenance_db_no_new_rows_20260717am",
+    "notion_todo_no_new_rows_20260717pm",
+    "notion_individual_tasks_no_new_rows_20260717pm",
+    "notion_team_tasks_maintenance_db_no_new_rows_20260717pm"
   ],
   "_notion_todo_backlog_note": "2026-07-10 07:00 scan surfaced ~90 open rows (Done=false) in the To Do List DB that are NOT yet reflected on the checklist and NOT in notion_task_ids below (e.g. Skippin Rocks sand/paint/hot-tub caulking/electrical panel/weed-eating, Wildwoods weed-eating/washer move/deep clean, Cove wicker mat/foosball table, Divine Den table repair, Annual Texas Tax Filings, Call Airbnb for Review Removal, and several P5 someday items). These are pre-existing backlog, not new-in-last-10-hours, so they were NOT auto-added this run per the recency rule. Flagging for Maryann to decide: full one-time backlog sync into the checklist, or leave the To Do List DB as the system of record for non-urgent items.",
   "slack_message_ids": [
@@ -994,7 +1032,12 @@
     "1784243201.776949",
     "1784243346.862639",
     "1784243360.380449",
-    "1784245217.501819"
+    "1784245217.501819",
+    "1784317938.321869",
+    "1784304554.976759",
+    "1784304737.279629",
+    "1784315465.501419",
+    "1784318664.942219"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1073,7 +1116,8 @@
     "openphone_suqueleana_cassandra_airbnbidverify_20260707",
     "openphone_911pinehillsroad_jasongardner_earlycheckin_20260707",
     "openphone_honeybadger_fridge_escalation_paula_20260707",
-    "openphone_desertbotanical_hostbuddy_emiligomez_tidynotes_20260707"
+    "openphone_desertbotanical_hostbuddy_emiligomez_tidynotes_20260707",
+    "openphone_not_connected_20260717pm"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
@@ -1231,7 +1275,14 @@
     "<16dd5032-f2aa-412a-ac30-d83f32144409@mtasv.net>",
     "<CAFDmC+3DVAGWO-mmDckjMPueagW5BG=qy0UxAbxjyLQisZg5Og@mail.gmail.com>",
     "<PH3PPF60C43D1E633778D7D3777B750FE70ADC72@PH3PPF60C43D1E6.namprd19.prod.outlook.com>",
-    "<N2DYMKR77V5_6a593851eeee1_d32e7c999cd888_sprut@zendesk.com>"
+    "<N2DYMKR77V5_6a593851eeee1_d32e7c999cd888_sprut@zendesk.com>",
+    "<e972ea96-2d64-4d0e-a852-f74a31745c80@mtasv.net>",
+    "<6bfba4d2-e7dd-4cfa-bf92-146042fc71a7@mtasv.net>",
+    "<d8cf1015-9746-4042-8878-ced958d28e10@mtasv.net>",
+    "<5da9f68a-a175-4ef4-9025-b3238e870b16@mtasv.net>",
+    "<4e53d77a-6c9b-4a33-beba-734d28cf8252@mtasv.net>",
+    "<58f964c9-9f6d-4de9-87c5-9e1475a79cb8@mtasv.net>",
+    "<c491d174-28cf-4948-9855-f93b363848f9@mtasv.net>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
