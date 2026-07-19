@@ -1,6 +1,6 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-18T12:15:48.002627+00:00",
+  "_last_updated": "2026-07-19T12:09:00.000000+00:00",
   "gmail_threads": [
     "19f6949849a7c712",
     "19f69947318ee452",
@@ -515,7 +515,14 @@
     "19f7254fbd3d8db2",
     "19f724ee6b325eba",
     "19f5c1379752e740",
-    "19f724c9d9db4f31"
+    "19f724c9d9db4f31",
+    "19f76c4cdfe65cdf",
+    "19f76a136d7b209a",
+    "19f722430073e546",
+    "19f7223d345720de",
+    "19f7778d3592b4e9",
+    "19f778f278172070",
+    "19f7a1efaf9a6af5"
   ],
   "notion_task_ids": [
     "364efc47-61b2-8167-aa2e-c2aa79ed55b4",
@@ -607,7 +614,16 @@
     "notion_team_tasks_maintenance_db_no_new_rows_20260717am",
     "notion_todo_no_new_rows_20260717pm",
     "notion_individual_tasks_no_new_rows_20260717pm",
-    "notion_team_tasks_maintenance_db_no_new_rows_20260717pm"
+    "notion_team_tasks_maintenance_db_no_new_rows_20260717pm",
+    "notion_todo_no_new_rows_20260718pm",
+    "notion_individual_tasks_no_new_rows_20260718pm",
+    "notion_team_tasks_maintenance_db_no_new_rows_20260718pm",
+    "notion_guestissues_no_new_rows_20260718pm",
+    "3a1efc47-61b2-81b9-95e2-db2dd0a5c70c",
+    "3a1efc47-61b2-818b-ad28-dff13d4eed59",
+    "notion_todo_no_new_rows_20260719am",
+    "notion_individual_tasks_no_new_rows_20260719am",
+    "notion_team_tasks_no_new_rows_20260719am"
   ],
   "_notion_todo_backlog_note": "2026-07-10 07:00 scan surfaced ~90 open rows (Done=false) in the To Do List DB that are NOT yet reflected on the checklist and NOT in notion_task_ids below (e.g. Skippin Rocks sand/paint/hot-tub caulking/electrical panel/weed-eating, Wildwoods weed-eating/washer move/deep clean, Cove wicker mat/foosball table, Divine Den table repair, Annual Texas Tax Filings, Call Airbnb for Review Removal, and several P5 someday items). These are pre-existing backlog, not new-in-last-10-hours, so they were NOT auto-added this run per the recency rule. Flagging for Maryann to decide: full one-time backlog sync into the checklist, or leave the To Do List DB as the system of record for non-urgent items.",
   "slack_message_ids": [
@@ -1150,7 +1166,17 @@
     "1784326858.245759",
     "1784326854.959259",
     "1784326768.040359",
-    "1784326764.374729"
+    "1784326764.374729",
+    "1784416695.437219",
+    "1784414570.961009",
+    "1784414747.604909",
+    "1784411949.006199",
+    "1784414648.837459",
+    "1784412329.144659",
+    "1784423190.279309",
+    "1784417482.495739",
+    "1784416607.718679",
+    "1784416748.303029"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1230,7 +1256,9 @@
     "openphone_911pinehillsroad_jasongardner_earlycheckin_20260707",
     "openphone_honeybadger_fridge_escalation_paula_20260707",
     "openphone_desertbotanical_hostbuddy_emiligomez_tidynotes_20260707",
-    "openphone_not_connected_20260717pm"
+    "openphone_not_connected_20260717pm",
+    "openphone_not_connected_20260718pm",
+    "openphone_not_connected_20260719am"
   ],
   "outlook_message_ids": [
     "<32a6e535-0733-4a01-be6d-4d78a6e0a24c@mtasv.net>",
@@ -1404,7 +1432,10 @@
     "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aH4AAA=",
     "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aH3AAA=",
     "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aH1AAA=",
-    "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aHuAAA="
+    "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aHuAAA=",
+    "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aH+AAA=",
+    "AAMkADc5YmM4NmJiLTJiOTctNDVmNC05OTQyLTlmYzMyMmIzOGJiMwBGAAAAAAB+KMKURx0uTIlheCrjDcksBwDvZZnV5GySSKnZpFNtVB0eAAAAAAEMAADvZZnV5GySSKnZpFNtVB0eAAFt4aICAAA=",
+    "<c43a3da2-66cb-43de-8499-61ac2b7bd429@mtasv.net>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
@@ -2055,6 +2086,23 @@
     "mountainmajesty-craigb-standingac-delivery-followup-20260716pm",
     "simplydvine-mower-wifi-20260716pm",
     "rabbitpaw-jacqueline-catrequest-sep1720-20260716pm",
-    "desertbotanical-book-reimbursement-20260716pm"
+    "desertbotanical-book-reimbursement-20260716pm",
+    "ltd-eastern-rise-riverfront-escape-patricia-wifi-refund-20260719",
+    "ltd-eastern-rise-vrbo-audit-20260718",
+    "lostinpine-ownerrez-deposit-ninalandorpeters-20260719",
+    "lostinpine-oven-notworking-ninalandorpeters-20260719",
+    "divineden-ninnetthomas-cancel-refund-20260719",
+    "7sa-discount-50off-20260719",
+    "suquleana-wifi-refund-morethan1night-20260719",
+    "cozyq-ac-ants-outdoorunit-20260719",
+    "sweetserenity-dryerpart-notdelivered-20260719",
+    "blushingbeaver-sauna-breaker-20260719",
+    "divineden-logan-handoff-confirm-20260719"
+  ],
+  "slack_no_new_items_markers": [
+    "slack_eod_bookkeeping_no_new_msgs_20260718pm",
+    "slack_openphone_related_no_text_preview_20260718pm",
+    "slack_eod_bookkeeping_general_claims_hostbuddy_no_new_20260719am",
+    "notion_maintenance_no_new_beyond_rockytop_lostinpine_20260719am"
   ]
 }
