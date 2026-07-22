@@ -1,7 +1,7 @@
 {
   "_comment": "Tracks source IDs already added to master-checklist.html. Scheduled task reads this before adding items to prevent duplicates.",
-  "_last_updated": "2026-07-22T12:09:00.000000+00:00",
-  "_maintenance_db_note": "2026-07-20 07:00 scan located the actual Notion HostBuddy maintenance feed \u2014 '(Archive) Open Issues and Closed Issues' under Hospitality HQ > Maintenance (collection://2f9efc47-61b2-801e-ba19-000b4a621061). Cross-checked ~25 open ('Not started') rows against the live checklist: nearly all were already tracked under earlier scan dates via the Slack/HostBuddy DM path (that's why prior 'maintenance_db_no_new_rows' entries looked like false negatives \u2014 items were entering via Slack fingerprints instead of Notion page IDs). Four still-open, still-unadded minor items remain from 2026-07-16 (Desert Botanical: broken soap dispenser, patio umbrella blowing into pool, low supplies on arrival, slow-draining bathroom sink) \u2014 low urgency, flagging for Maryann's call on whether to add retroactively or leave for the next Desert Botanical maintenance visit.",
+  "_last_updated": "2026-07-22T20:16:00.380683+00:00",
+  "_maintenance_db_note": "2026-07-20 07:00 scan located the actual Notion HostBuddy maintenance feed — '(Archive) Open Issues and Closed Issues' under Hospitality HQ > Maintenance (collection://2f9efc47-61b2-801e-ba19-000b4a621061). Cross-checked ~25 open ('Not started') rows against the live checklist: nearly all were already tracked under earlier scan dates via the Slack/HostBuddy DM path (that's why prior 'maintenance_db_no_new_rows' entries looked like false negatives — items were entering via Slack fingerprints instead of Notion page IDs). Four still-open, still-unadded minor items remain from 2026-07-16 (Desert Botanical: broken soap dispenser, patio umbrella blowing into pool, low supplies on arrival, slow-draining bathroom sink) — low urgency, flagging for Maryann's call on whether to add retroactively or leave for the next Desert Botanical maintenance visit.",
   "gmail_threads": [
     "19f6949849a7c712",
     "19f69947318ee452",
@@ -1366,7 +1366,18 @@
     "1784579781.802119",
     "1784556529.869189",
     "1784676003.299029",
-    "1784676418.433029"
+    "1784676418.433029",
+    "1784730218.407809",
+    "1784730154.660199",
+    "1784730133.558899",
+    "1784730094.631229",
+    "1784730110.264279",
+    "1784733746.135489",
+    "1784733849.124269",
+    "1784739627.393279",
+    "1784739648.556039",
+    "1784745108.390309",
+    "1784745136.669689"
   ],
   "openphone_message_ids": [
     "openphone_dogdamage_closetdoor_2149911302_20260625",
@@ -1661,7 +1672,9 @@
     "<9c9dcfdb-f143-4a42-b9a5-69906cfa2333@mtasv.net>",
     "<fb6c22e9-08f0-47d1-a989-548473ce3337@mtasv.net>",
     "<DM5PR16MB2342299304C33C3F1B482DA09AC22@DM5PR16MB2342.namprd16.prod.outlook.com>",
-    "<123deac3-f847-4186-9344-e5c6a53e0406@mtasv.net>"
+    "<123deac3-f847-4186-9344-e5c6a53e0406@mtasv.net>",
+    "<36214096-7002-40a2-b025-6c92ee30f13b@mtasv.net>",
+    "<yZhhBdakRo2qjjTsFBKrjQ@geopod-ismtpd-15>"
   ],
   "item_text_hashes": [
     "simplydvine-poolinvoice91-482-20260706",
@@ -2330,7 +2343,16 @@
     "cartermountainlodge-goforthinvoice130-150usd-20260722",
     "cliffhanger-wifispotty-callprovider-20260722",
     "woodlandoasis-wifidown-routerreset-followup-20260722",
-    "team-coachhostbuddy-mountainmajesty-nopets-20260722"
+    "team-coachhostbuddy-mountainmajesty-nopets-20260722",
+    "team-doorcodes-verify-notion-20260722",
+    "bookkeeping-safely-reimbursed-update-20260722",
+    "team-upsells-1month-20260722",
+    "team-hostbuddy-petrules-allcabins-20260722",
+    "sweetserenity-dryer-repairplan-20260722",
+    "thecove-terry-toolsleftondeck-20260722",
+    "ltdeasternrise-aircover-claimclosed-clsf06118020-20260722",
+    "suquleana-cancellation-orb18573376-20260722",
+    "joyiswellness-invoice1789-270-20260722"
   ],
   "slack_no_new_items_markers": [
     "slack_eod_bookkeeping_no_new_msgs_20260718pm",
