@@ -1,8 +1,8 @@
 {
   "_comment": "Property name mapping for Maryann's properties. CRITICAL: Separate PM clients (co-hosting) from revenue management clients. Only PM clients appear in daily checklist.",
-  "_last_updated": "2026-07-16T20:00:00.000000+00:00",
+  "_last_updated": "2026-07-26T12:15:00.000000+00:00",
   "_property_management_clients": {
-    "_note": "CO-HOSTING & PROPERTY MANAGEMENT — These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
+    "_note": "CO-HOSTING & PROPERTY MANAGEMENT \u2014 These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
     "Alpine Chalet": {
       "actual_name": "Alpine Chalet",
       "listing_titles": [],
@@ -21,7 +21,10 @@
     "Back to the Forest": {
       "actual_name": "Back to the Forest",
       "listing_titles": [],
-      "alternate_refs": ["back-to-forest", "back to forest"]
+      "alternate_refs": [
+        "back-to-forest",
+        "back to forest"
+      ]
     },
     "Blueberry Bliss": {
       "actual_name": "Blueberry Bliss",
@@ -30,8 +33,14 @@
     },
     "Blushing Beaver Cabin": {
       "actual_name": "Blushing Beaver Cabin",
-      "listing_titles": ["Blushing Beaver", "Romantic Scandinavian Cabin"],
-      "alternate_refs": ["blushing beaver", "BB"]
+      "listing_titles": [
+        "Blushing Beaver",
+        "Romantic Scandinavian Cabin"
+      ],
+      "alternate_refs": [
+        "blushing beaver",
+        "BB"
+      ]
     },
     "Boots & Bonfires": {
       "actual_name": "Boots & Bonfires",
@@ -40,8 +49,12 @@
     },
     "Carter Mountain Lodge": {
       "actual_name": "Carter Mountain Lodge",
-      "listing_titles": ["Carter Mountain Cabin"],
-      "alternate_refs": ["carter mountain"]
+      "listing_titles": [
+        "Carter Mountain Cabin"
+      ],
+      "alternate_refs": [
+        "carter mountain"
+      ]
     },
     "Cliffhanger": {
       "actual_name": "Cliffhanger",
@@ -51,12 +64,16 @@
     "Cozy Q Cabin": {
       "actual_name": "Cozy Q Cabin",
       "listing_titles": [],
-      "alternate_refs": ["cozy q"]
+      "alternate_refs": [
+        "cozy q"
+      ]
     },
     "Cozy White Cabin": {
       "actual_name": "Cozy White Cabin",
       "listing_titles": [],
-      "alternate_refs": ["cozy white"]
+      "alternate_refs": [
+        "cozy white"
+      ]
     },
     "Desert Botanical": {
       "actual_name": "Desert Botanical",
@@ -71,7 +88,9 @@
     "Grandview Heights": {
       "actual_name": "Grandview Heights",
       "listing_titles": [],
-      "alternate_refs": ["grandview"]
+      "alternate_refs": [
+        "grandview"
+      ]
     },
     "Heavenly Hilltop": {
       "actual_name": "Heavenly Hilltop",
@@ -96,7 +115,9 @@
     "Livin on the Edge": {
       "actual_name": "Livin on the Edge",
       "listing_titles": [],
-      "alternate_refs": ["livin on edge"]
+      "alternate_refs": [
+        "livin on edge"
+      ]
     },
     "Lost in Pine": {
       "actual_name": "Lost in Pine",
@@ -121,22 +142,34 @@
     "Rustic Lodge BB": {
       "actual_name": "Rustic Lodge BB",
       "listing_titles": [],
-      "alternate_refs": ["rustic lodge"]
+      "alternate_refs": [
+        "rustic lodge"
+      ]
     },
     "7 Spanish Angels": {
       "actual_name": "7 Spanish Angels",
       "listing_titles": [],
-      "alternate_refs": ["spanish angels"]
+      "alternate_refs": [
+        "spanish angels"
+      ]
     },
     "Simply D'Vine": {
       "actual_name": "Simply D'Vine",
       "listing_titles": [],
-      "alternate_refs": ["simply divine", "dvine"]
+      "alternate_refs": [
+        "simply divine",
+        "dvine"
+      ]
     },
     "Skippin Rocks": {
       "actual_name": "Skippin Rocks",
-      "listing_titles": ["Skipping Rocks"],
-      "alternate_refs": ["skippin rocks", "skipping rocks"]
+      "listing_titles": [
+        "Skipping Rocks"
+      ],
+      "alternate_refs": [
+        "skippin rocks",
+        "skipping rocks"
+      ]
     },
     "Sweet Serenity": {
       "actual_name": "Sweet Serenity",
@@ -146,12 +179,19 @@
     "The Bliss": {
       "actual_name": "The Bliss",
       "listing_titles": [],
-      "alternate_refs": ["bliss"]
+      "alternate_refs": [
+        "bliss"
+      ]
     },
     "The Cove": {
       "actual_name": "The Cove",
-      "listing_titles": ["Cove", "Cove Cabin"],
-      "alternate_refs": ["cove"]
+      "listing_titles": [
+        "Cove",
+        "Cove Cabin"
+      ],
+      "alternate_refs": [
+        "cove"
+      ]
     },
     "Timber Lodge": {
       "actual_name": "Timber Lodge",
@@ -160,23 +200,39 @@
     },
     "Tranquil Lane Lodge": {
       "actual_name": "Tranquil Lane Lodge",
-      "listing_titles": ["Tranquil Lane"],
-      "alternate_refs": ["tranquil lane"]
+      "listing_titles": [
+        "Tranquil Lane"
+      ],
+      "alternate_refs": [
+        "tranquil lane"
+      ]
     },
     "Tree House Chalet": {
       "actual_name": "Tree House Chalet",
       "listing_titles": [],
-      "alternate_refs": ["tree house", "treehouse"]
+      "alternate_refs": [
+        "tree house",
+        "treehouse"
+      ]
     },
     "Whiskey Made Me Do It": {
       "actual_name": "Whiskey Made Me Do It",
       "listing_titles": [],
-      "alternate_refs": ["whiskey"]
+      "alternate_refs": [
+        "whiskey",
+        "vrbo #5256407",
+        "unit_5830568"
+      ],
+      "_note": "Confirmed 2026-07-26 (Morning) — VRBO listing #5256407 / unit_5830568 (guest Siobhain Sanchez, kitchen counter cleaner/sponges request) matches David's Slack 'Whiskey made me do it' pending-list entry describing the same request; this listing had been flagged unmapped in the 2026-07-25 PM scan."
     },
     "Wildwoods": {
       "actual_name": "Wildwoods",
-      "listing_titles": ["Wildwoods Creekside Cabin Retreat"],
-      "alternate_refs": ["wildwoods"]
+      "listing_titles": [
+        "Wildwoods Creekside Cabin Retreat"
+      ],
+      "alternate_refs": [
+        "wildwoods"
+      ]
     },
     "Woodland Oasis": {
       "actual_name": "Woodland Oasis",
@@ -185,61 +241,99 @@
     },
     "Top of the Rock": {
       "actual_name": "Top of the Rock",
-      "listing_titles": ["Epic Bluff Views | Modern Cabin", "Top of the Rock {Cabin}"],
+      "listing_titles": [
+        "Epic Bluff Views | Modern Cabin",
+        "Top of the Rock {Cabin}"
+      ],
       "alternate_refs": [],
-      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com — verify PM vs revenue-only classification"
+      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com \u2014 verify PM vs revenue-only classification"
     },
     "Bird's Eye View": {
       "actual_name": "Bird's Eye View",
       "listing_titles": [],
-      "alternate_refs": ["birds eye view"],
-      "_note": "Added by scan 2026-07-04 from OwnerRez cancellation alert (booking ORB18213869, Airbnb #215814950) to hello@theweekenderstays.com — verify PM vs revenue-only classification"
+      "alternate_refs": [
+        "birds eye view"
+      ],
+      "_note": "Added by scan 2026-07-04 from OwnerRez cancellation alert (booking ORB18213869, Airbnb #215814950) to hello@theweekenderstays.com \u2014 verify PM vs revenue-only classification"
     },
     "The Rock House": {
       "actual_name": "The Rock House",
-      "listing_titles": ["Glass-Wall Lodge | Hot Tub · Scenic Views · Patio"],
-      "alternate_refs": ["rock house"],
-      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com (owner cc tim@i-mpact.biz) — verify PM vs revenue-only classification"
+      "listing_titles": [
+        "Glass-Wall Lodge | Hot Tub \u00b7 Scenic Views \u00b7 Patio"
+      ],
+      "alternate_refs": [
+        "rock house"
+      ],
+      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com (owner cc tim@i-mpact.biz) \u2014 verify PM vs revenue-only classification"
     },
     "Suquleana": {
       "actual_name": "Suquleana",
       "listing_titles": [],
-      "alternate_refs": ["suqueleana", "suqulena", "suquleana cabin"],
-      "_note": "New client onboarding (Leslie & Jerry / owner contact Cassandra), in progress since 2026-06-25 — verify PM vs revenue-only classification once live"
+      "alternate_refs": [
+        "suqueleana",
+        "suqulena",
+        "suquleana cabin"
+      ],
+      "_note": "New client onboarding (Leslie & Jerry / owner contact Cassandra), in progress since 2026-06-25 \u2014 verify PM vs revenue-only classification once live"
     },
     "Green Mallard Trail": {
       "actual_name": "Green Mallard Trail",
       "listing_titles": [],
-      "alternate_refs": ["green mallard"],
-      "_note": "Added by scan 2026-07-07 — new owner onboarding, Airbnb account setup in progress — verify PM vs revenue-only classification"
+      "alternate_refs": [
+        "green mallard"
+      ],
+      "_note": "Added by scan 2026-07-07 \u2014 new owner onboarding, Airbnb account setup in progress \u2014 verify PM vs revenue-only classification"
     },
     "LTD Eastern Rise": {
       "actual_name": "LTD Eastern Rise",
-      "listing_titles": ["Panoramic Mountain Views", "Walk to Beach | Private Pool · Hot Tub", "Pond-View Cabin | Hot Tub · Fire Pit · Walkable"],
-      "alternate_refs": ["eastern rise", "easternriseinfo"],
-      "_note": "Added by scan 2026-07-11 — recurring source is the easternriseinfo@gmail.com inbox; has appeared regularly in checklist history but was never formally added to this mapping — verify PM vs revenue-only classification"
+      "listing_titles": [
+        "Panoramic Mountain Views",
+        "Walk to Beach | Private Pool \u00b7 Hot Tub",
+        "Pond-View Cabin | Hot Tub \u00b7 Fire Pit \u00b7 Walkable",
+        "Riverfront Escape"
+      ],
+      "alternate_refs": [
+        "eastern rise",
+        "easternriseinfo",
+        "riverfront escape"
+      ],
+      "_note": "Added by scan 2026-07-11 \u2014 recurring source is the easternriseinfo@gmail.com inbox; has appeared regularly in checklist history but was never formally added to this mapping \u2014 verify PM vs revenue-only classification"
     },
     "Key Lime Sky": {
       "actual_name": "Key Lime Sky",
-      "listing_titles": ["Key Lime Sky · Couples Cabin | Hot Tub · Fireplace"],
-      "alternate_refs": ["key lime sky"],
-      "_note": "Added by scan 2026-07-11 (Afternoon) — Airbnb alteration request from guest Jaylia to easternriseinfo@gmail.com; property in Broken Bow — verify PM vs revenue-only classification"
+      "listing_titles": [
+        "Key Lime Sky \u00b7 Couples Cabin | Hot Tub \u00b7 Fireplace"
+      ],
+      "alternate_refs": [
+        "key lime sky"
+      ],
+      "_note": "Added by scan 2026-07-11 (Afternoon) \u2014 Airbnb alteration request from guest Jaylia to easternriseinfo@gmail.com; property in Broken Bow \u2014 verify PM vs revenue-only classification"
     },
     "Riverfront Cabin": {
       "actual_name": "Riverfront Cabin",
-      "listing_titles": ["Riverfront Cabin | Indoor RockWall · HotTub · Loft"],
-      "alternate_refs": ["riverfront cabin", "riverfront"],
-      "_note": "Added by scan 2026-07-15 (Morning) — this listing had already appeared as checklist items on 7/1 and 7/2 (Tommy's, Nicole's, and Ashley's pending requests) flagged as unmapped both times but never formally added to this file; source is easternriseinfo@gmail.com — verify PM vs revenue-only classification"
+      "listing_titles": [
+        "Riverfront Cabin | Indoor RockWall \u00b7 HotTub \u00b7 Loft"
+      ],
+      "alternate_refs": [
+        "riverfront cabin",
+        "riverfront"
+      ],
+      "_note": "Added by scan 2026-07-15 (Morning) \u2014 this listing had already appeared as checklist items on 7/1 and 7/2 (Tommy's, Nicole's, and Ashley's pending requests) flagged as unmapped both times but never formally added to this file; source is easternriseinfo@gmail.com \u2014 verify PM vs revenue-only classification"
     },
     "Brickyard Branch": {
       "actual_name": "Brickyard Branch",
-      "listing_titles": ["Brickyard Branch | Hot Tub · Fire Pit"],
-      "alternate_refs": ["brickyard branch", "brickyard"],
-      "_note": "Added by scan 2026-07-16 (Afternoon) — recurring property in checklist history since at least 2026-06-02 (power outage, guest date-extension requests) but never formally added to this file; source is easternriseinfo@gmail.com — verify PM vs revenue-only classification"
+      "listing_titles": [
+        "Brickyard Branch | Hot Tub \u00b7 Fire Pit"
+      ],
+      "alternate_refs": [
+        "brickyard branch",
+        "brickyard"
+      ],
+      "_note": "Added by scan 2026-07-16 (Afternoon) \u2014 recurring property in checklist history since at least 2026-06-02 (power outage, guest date-extension requests) but never formally added to this file; source is easternriseinfo@gmail.com \u2014 verify PM vs revenue-only classification"
     }
   },
   "_revenue_management_clients": {
-    "_note": "REVENUE MANAGEMENT ONLY — These are listings where you provide pricing & revenue strategy. They do NOT appear in daily management checklist. They may appear in a separate revenue management tracking section.",
+    "_note": "REVENUE MANAGEMENT ONLY \u2014 These are listings where you provide pricing & revenue strategy. They do NOT appear in daily management checklist. They may appear in a separate revenue management tracking section.",
     "_note_2": "Add properties here as they're added to your revenue management portfolio. These should NOT trigger HOT/Maint/urgent alerts in the main checklist.",
     "_placeholder": "To be populated with full list of revenue management client properties and their platform references (Airbnb titles, VRBO titles, platform IDs, etc.)"
   },
