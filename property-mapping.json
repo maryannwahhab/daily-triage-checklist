@@ -1,6 +1,6 @@
 {
   "_comment": "Property name mapping for Maryann's properties. CRITICAL: Separate PM clients (co-hosting) from revenue management clients. Only PM clients appear in daily checklist.",
-  "_last_updated": "2026-08-20T20:13:05+00:00",
+  "_last_updated": "2026-08-21",
   "_property_management_clients": {
     "_note": "CO-HOSTING & PROPERTY MANAGEMENT \u2014 These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
     "Alpine Chalet": {
@@ -397,6 +397,21 @@
         "greeter loft"
       ],
       "_note": "Added by scan 2026-08-20 (Afternoon). Appears as an OwnerRez property on hello@theweekenderstays.com (booking ORB18907255, guest Foster Holm, arrives Sep 12 2026, balance past due). Not present in _property_management_clients. Verify PM vs revenue-only classification and move into the correct block."
+    },
+    "Modern Forest Cabin | Hot Tub \u00b7 Game Rm \u00b7 Fire Pit": {
+      "first_seen": "2026-08-20",
+      "source": "Airbnb inquiries (Melanie Aug 20; Gabriela Sep 25-27; Blair Aug 28-30, 2026)",
+      "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
+    },
+    "NorthWing Bear Resort": {
+      "first_seen": "2026-08-21",
+      "source": "Slack team DM 2026-08-20 - merged Airbnb listing showing photos of both NorthWing Bear Resort and Majestic One",
+      "status": "NEEDS MAPPING - likely a new onboarding cabin; confirm PM vs revenue-only and add to _property_management_clients"
+    },
+    "Majestic One": {
+      "first_seen": "2026-08-21",
+      "source": "Slack team DM 2026-08-20 - merged Airbnb listing with NorthWing Bear Resort",
+      "status": "NEEDS MAPPING - likely a new onboarding cabin; confirm PM vs revenue-only and add to _property_management_clients"
     }
   }
 }
