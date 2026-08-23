@@ -1,432 +1,442 @@
 {
- "_comment": "Property name mapping for Maryann's properties. CRITICAL: Separate PM clients (co-hosting) from revenue management clients. Only PM clients appear in daily checklist.",
- "_last_updated": "2026-08-22T20:10:00Z",
- "_property_management_clients": {
-  "_note": "CO-HOSTING & PROPERTY MANAGEMENT \u2014 These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
-  "Alpine Chalet": {
-   "actual_name": "Alpine Chalet",
-   "listing_titles": [],
-   "alternate_refs": []
+  "_comment": "Property name mapping for Maryann's properties. CRITICAL: Separate PM clients (co-hosting) from revenue management clients. Only PM clients appear in daily checklist.",
+  "_last_updated": "2026-08-23T20:15:00Z",
+  "_property_management_clients": {
+    "_note": "CO-HOSTING & PROPERTY MANAGEMENT — These properties appear in daily checklist with HOT/Maint tags. These are cabins Broken Bow Getaways actively manages.",
+    "Alpine Chalet": {
+      "actual_name": "Alpine Chalet",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Alpine Escape": {
+      "actual_name": "Alpine Escape",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Ambiance": {
+      "actual_name": "Ambiance",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Back to the Forest": {
+      "actual_name": "Back to the Forest",
+      "listing_titles": [],
+      "alternate_refs": [
+        "back-to-forest",
+        "back to forest"
+      ]
+    },
+    "Blueberry Bliss": {
+      "actual_name": "Blueberry Bliss",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Blushing Beaver Cabin": {
+      "actual_name": "Blushing Beaver Cabin",
+      "listing_titles": [
+        "Blushing Beaver",
+        "Romantic Scandinavian Cabin"
+      ],
+      "alternate_refs": [
+        "blushing beaver",
+        "BB"
+      ]
+    },
+    "Boots & Bonfires": {
+      "actual_name": "Boots & Bonfires",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Carter Mountain Lodge": {
+      "actual_name": "Carter Mountain Lodge",
+      "listing_titles": [
+        "Carter Mountain Cabin"
+      ],
+      "alternate_refs": [
+        "carter mountain"
+      ]
+    },
+    "Cliffhanger": {
+      "actual_name": "Cliffhanger",
+      "listing_titles": [
+        "45-Ft Cliff Views | Hot Tub · Game Rm · Fire Pit"
+      ],
+      "alternate_refs": []
+    },
+    "Cozy Q Cabin": {
+      "actual_name": "Cozy Q Cabin",
+      "listing_titles": [],
+      "alternate_refs": [
+        "cozy q"
+      ]
+    },
+    "Cozy White Cabin": {
+      "actual_name": "Cozy White Cabin",
+      "listing_titles": [],
+      "alternate_refs": [
+        "cozy white"
+      ]
+    },
+    "Desert Botanical": {
+      "actual_name": "Desert Botanical",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Divine Den": {
+      "actual_name": "Divine Den",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Grandview Heights": {
+      "actual_name": "Grandview Heights",
+      "listing_titles": [],
+      "alternate_refs": [
+        "grandview"
+      ]
+    },
+    "Heavenly Hilltop": {
+      "actual_name": "Heavenly Hilltop",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Holy Guacamole": {
+      "actual_name": "Holy Guacamole",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Honey Badger": {
+      "actual_name": "Honey Badger",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Jade Pond": {
+      "actual_name": "Jade Pond",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Livin on the Edge": {
+      "actual_name": "Livin on the Edge",
+      "listing_titles": [],
+      "alternate_refs": [
+        "livin on edge"
+      ]
+    },
+    "Lost in Pine": {
+      "actual_name": "Lost in Pine",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Mountain Majesty": {
+      "actual_name": "Mountain Majesty",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Rabbit Paw": {
+      "actual_name": "Rabbit Paw",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Rocky Top": {
+      "actual_name": "Rocky Top",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Rustic Lodge BB": {
+      "actual_name": "Rustic Lodge BB",
+      "listing_titles": [],
+      "alternate_refs": [
+        "rustic lodge"
+      ]
+    },
+    "7 Spanish Angels": {
+      "actual_name": "7 Spanish Angels",
+      "listing_titles": [],
+      "alternate_refs": [
+        "spanish angels"
+      ]
+    },
+    "Simply D'Vine": {
+      "actual_name": "Simply D'Vine",
+      "listing_titles": [],
+      "alternate_refs": [
+        "simply divine",
+        "dvine"
+      ]
+    },
+    "Skippin Rocks": {
+      "actual_name": "Skippin Rocks",
+      "listing_titles": [
+        "Skipping Rocks"
+      ],
+      "alternate_refs": [
+        "skippin rocks",
+        "skipping rocks"
+      ]
+    },
+    "Sweet Serenity": {
+      "actual_name": "Sweet Serenity",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "The Bliss": {
+      "actual_name": "The Bliss",
+      "listing_titles": [],
+      "alternate_refs": [
+        "bliss"
+      ]
+    },
+    "The Cove": {
+      "actual_name": "The Cove",
+      "listing_titles": [
+        "Cove",
+        "Cove Cabin"
+      ],
+      "alternate_refs": [
+        "cove"
+      ]
+    },
+    "Timber Lodge": {
+      "actual_name": "Timber Lodge",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Tranquil Lane Lodge": {
+      "actual_name": "Tranquil Lane Lodge",
+      "listing_titles": [
+        "Tranquil Lane"
+      ],
+      "alternate_refs": [
+        "tranquil lane"
+      ]
+    },
+    "Tree House Chalet": {
+      "actual_name": "Tree House Chalet",
+      "listing_titles": [],
+      "alternate_refs": [
+        "tree house",
+        "treehouse"
+      ]
+    },
+    "Whiskey Made Me Do It": {
+      "actual_name": "Whiskey Made Me Do It",
+      "listing_titles": [],
+      "alternate_refs": [
+        "whiskey",
+        "vrbo #5256407",
+        "unit_5830568"
+      ],
+      "_note": "Confirmed 2026-07-26 (Morning) — VRBO listing #5256407 / unit_5830568 (guest Siobhain Sanchez, kitchen counter cleaner/sponges request) matches David's Slack 'Whiskey made me do it' pending-list entry describing the same request; this listing had been flagged unmapped in the 2026-07-25 PM scan."
+    },
+    "Wildwoods": {
+      "actual_name": "Wildwoods",
+      "listing_titles": [
+        "Wildwoods Creekside Cabin Retreat"
+      ],
+      "alternate_refs": [
+        "wildwoods"
+      ]
+    },
+    "Woodland Oasis": {
+      "actual_name": "Woodland Oasis",
+      "listing_titles": [],
+      "alternate_refs": []
+    },
+    "Top of the Rock": {
+      "actual_name": "Top of the Rock",
+      "listing_titles": [
+        "Epic Bluff Views | Modern Cabin",
+        "Top of the Rock {Cabin}"
+      ],
+      "alternate_refs": [],
+      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com — verify PM vs revenue-only classification"
+    },
+    "Bird's Eye View": {
+      "actual_name": "Bird's Eye View",
+      "listing_titles": [],
+      "alternate_refs": [
+        "birds eye view"
+      ],
+      "_note": "Added by scan 2026-07-04 from OwnerRez cancellation alert (booking ORB18213869, Airbnb #215814950) to hello@theweekenderstays.com — verify PM vs revenue-only classification"
+    },
+    "The Rock House": {
+      "actual_name": "The Rock House",
+      "listing_titles": [
+        "Glass-Wall Lodge | Hot Tub · Scenic Views · Patio"
+      ],
+      "alternate_refs": [
+        "rock house"
+      ],
+      "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com (owner cc tim@i-mpact.biz) — verify PM vs revenue-only classification"
+    },
+    "Suquleana": {
+      "actual_name": "Suquleana",
+      "listing_titles": [],
+      "alternate_refs": [
+        "suqueleana",
+        "suqulena",
+        "suquleana cabin"
+      ],
+      "_note": "New client onboarding (Leslie & Jerry / owner contact Cassandra), in progress since 2026-06-25 — verify PM vs revenue-only classification once live"
+    },
+    "Green Mallard Trail": {
+      "actual_name": "Green Mallard Trail",
+      "listing_titles": [],
+      "alternate_refs": [
+        "green mallard"
+      ],
+      "_note": "Added by scan 2026-07-07 — new owner onboarding, Airbnb account setup in progress — verify PM vs revenue-only classification"
+    },
+    "LTD Eastern Rise": {
+      "actual_name": "LTD Eastern Rise",
+      "listing_titles": [
+        "Panoramic Mountain Views",
+        "Walk to Beach | Private Pool · Hot Tub",
+        "Pond-View Cabin | Hot Tub · Fire Pit · Walkable",
+        "Riverfront Escape"
+      ],
+      "alternate_refs": [
+        "eastern rise",
+        "easternriseinfo",
+        "riverfront escape"
+      ],
+      "_note": "Added by scan 2026-07-11 — recurring source is the easternriseinfo@gmail.com inbox; has appeared regularly in checklist history but was never formally added to this mapping — verify PM vs revenue-only classification"
+    },
+    "Key Lime Sky": {
+      "actual_name": "Key Lime Sky",
+      "listing_titles": [
+        "Key Lime Sky · Couples Cabin | Hot Tub · Fireplace"
+      ],
+      "alternate_refs": [
+        "key lime sky"
+      ],
+      "_note": "Added by scan 2026-07-11 (Afternoon) — Airbnb alteration request from guest Jaylia to easternriseinfo@gmail.com; property in Broken Bow — verify PM vs revenue-only classification"
+    },
+    "Riverfront Cabin": {
+      "actual_name": "Riverfront Cabin",
+      "listing_titles": [
+        "Riverfront Cabin | Indoor RockWall · HotTub · Loft"
+      ],
+      "alternate_refs": [
+        "riverfront cabin",
+        "riverfront"
+      ],
+      "_note": "Added by scan 2026-07-15 (Morning) — this listing had already appeared as checklist items on 7/1 and 7/2 (Tommy's, Nicole's, and Ashley's pending requests) flagged as unmapped both times but never formally added to this file; source is easternriseinfo@gmail.com — verify PM vs revenue-only classification"
+    },
+    "Brickyard Branch": {
+      "actual_name": "Brickyard Branch",
+      "listing_titles": [
+        "Brickyard Branch | Hot Tub · Fire Pit"
+      ],
+      "alternate_refs": [
+        "brickyard branch",
+        "brickyard"
+      ],
+      "_note": "Added by scan 2026-07-16 (Afternoon) — recurring property in checklist history since at least 2026-06-02 (power outage, guest date-extension requests) but never formally added to this file; source is easternriseinfo@gmail.com — verify PM vs revenue-only classification"
+    },
+    "Starry Escape": {
+      "actual_name": "Starry Escape",
+      "listing_titles": [
+        "Broken Bow Starry Escape · Cabin Near Town | Hot Tub · Bunks · Games"
+      ],
+      "alternate_refs": [
+        "starry escape"
+      ],
+      "_note": "Added by scan 2026-08-16 (Morning) from an Airbnb reservation-change request (guest Christian) to easternriseinfo@gmail.com — verify PM vs revenue-only classification"
+    },
+    "Mountaintop Escape": {
+      "actual_name": "Mountaintop Escape",
+      "listing_titles": [
+        "Mountaintop Escape | Sauna · Hot Tub · Game Room"
+      ],
+      "alternate_refs": [
+        "mountaintop escape"
+      ],
+      "_note": "Added by scan 2026-08-16 (Afternoon) from an Airbnb inquiry (guest Lara, Nov 24-27, 4-dog request) to easternriseinfo@gmail.com — verify actual cabin name + PM vs revenue-only classification"
+    },
+    "Near Hochatown Pool Table Cabin": {
+      "actual_name": "Near Hochatown Pool Table Cabin",
+      "listing_titles": [
+        "Near Hochatown | Hot Tub · Pool Table"
+      ],
+      "alternate_refs": [
+        "near hochatown pool table"
+      ],
+      "_note": "Added by scan 2026-08-16 (Afternoon) — PLACEHOLDER; 'Near Hochatown | Hot Tub . Pool Table' is a listing descriptor, actual cabin name UNKNOWN. Seen via easternriseinfo@gmail.com (guest Erin Aug 17-21; guest Ben Hines Sep 18-20). Identify the real cabin name + verify PM vs revenue-only classification."
+    },
+    "Sleeps 19 Lakefront Lodge": {
+      "actual_name": "Sleeps 19 Lakefront Lodge",
+      "listing_titles": [
+        "Sleeps 19 | Kayaks · Tree Fort · Paddleboat · Dogs"
+      ],
+      "alternate_refs": [
+        "sleeps 19",
+        "kayaks tree fort paddleboat"
+      ],
+      "_note": "Added by scan 2026-08-18 (Morning) — PLACEHOLDER; 'Sleeps 19 | Kayaks · Tree Fort · Paddleboat · Dogs' (Airbnb room 1164468716132528082, hosted by Maryann) is a listing descriptor; actual cabin name UNKNOWN. Seen via easternriseinfo@gmail.com (guest Christopher, stay Aug 13-16, left-behind clippers/trimmers). Identify the real cabin name + verify PM vs revenue-only classification."
+    }
   },
-  "Alpine Escape": {
-   "actual_name": "Alpine Escape",
-   "listing_titles": [],
-   "alternate_refs": []
+  "_revenue_management_clients": {
+    "_note": "REVENUE MANAGEMENT ONLY — These are listings where you provide pricing & revenue strategy. They do NOT appear in daily management checklist. They may appear in a separate revenue management tracking section.",
+    "_note_2": "Add properties here as they're added to your revenue management portfolio. These should NOT trigger HOT/Maint/urgent alerts in the main checklist.",
+    "_placeholder": "To be populated with full list of revenue management client properties and their platform references (Airbnb titles, VRBO titles, platform IDs, etc.)"
   },
-  "Ambiance": {
-   "actual_name": "Ambiance",
-   "listing_titles": [],
-   "alternate_refs": []
+  "_instructions": {
+    "usage_critical": "ONLY Property Management Clients should appear in the main daily checklist (with HOT, Maint tags, urgent alerts). Revenue Management Clients should be filtered OUT of the daily checklist or placed in a separate tracking section.",
+    "filtering_logic": "When scanning sources (Gmail, Slack, Notion, OpenPhone), check if the property is in _property_management_clients. If yes, include in main checklist. If in _revenue_management_clients only, filter it to revenue section or exclude.",
+    "lookup_strategy": "1. Extract property reference from source. 2. Check against PM clients first. 3. If found in PM clients, use actual_name in main checklist. 4. If only in revenue clients, route to revenue section. 5. If not found anywhere, flag for Maryann to classify.",
+    "maintenance": "Update _property_management_clients when new PM clients are added. Update _revenue_management_clients when new revenue-only clients join."
   },
-  "Back to the Forest": {
-   "actual_name": "Back to the Forest",
-   "listing_titles": [],
-   "alternate_refs": [
-    "back-to-forest",
-    "back to forest"
-   ]
-  },
-  "Blueberry Bliss": {
-   "actual_name": "Blueberry Bliss",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Blushing Beaver Cabin": {
-   "actual_name": "Blushing Beaver Cabin",
-   "listing_titles": [
-    "Blushing Beaver",
-    "Romantic Scandinavian Cabin"
-   ],
-   "alternate_refs": [
-    "blushing beaver",
-    "BB"
-   ]
-  },
-  "Boots & Bonfires": {
-   "actual_name": "Boots & Bonfires",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Carter Mountain Lodge": {
-   "actual_name": "Carter Mountain Lodge",
-   "listing_titles": [
-    "Carter Mountain Cabin"
-   ],
-   "alternate_refs": [
-    "carter mountain"
-   ]
-  },
-  "Cliffhanger": {
-   "actual_name": "Cliffhanger",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Cozy Q Cabin": {
-   "actual_name": "Cozy Q Cabin",
-   "listing_titles": [],
-   "alternate_refs": [
-    "cozy q"
-   ]
-  },
-  "Cozy White Cabin": {
-   "actual_name": "Cozy White Cabin",
-   "listing_titles": [],
-   "alternate_refs": [
-    "cozy white"
-   ]
-  },
-  "Desert Botanical": {
-   "actual_name": "Desert Botanical",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Divine Den": {
-   "actual_name": "Divine Den",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Grandview Heights": {
-   "actual_name": "Grandview Heights",
-   "listing_titles": [],
-   "alternate_refs": [
-    "grandview"
-   ]
-  },
-  "Heavenly Hilltop": {
-   "actual_name": "Heavenly Hilltop",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Holy Guacamole": {
-   "actual_name": "Holy Guacamole",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Honey Badger": {
-   "actual_name": "Honey Badger",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Jade Pond": {
-   "actual_name": "Jade Pond",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Livin on the Edge": {
-   "actual_name": "Livin on the Edge",
-   "listing_titles": [],
-   "alternate_refs": [
-    "livin on edge"
-   ]
-  },
-  "Lost in Pine": {
-   "actual_name": "Lost in Pine",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Mountain Majesty": {
-   "actual_name": "Mountain Majesty",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Rabbit Paw": {
-   "actual_name": "Rabbit Paw",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Rocky Top": {
-   "actual_name": "Rocky Top",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Rustic Lodge BB": {
-   "actual_name": "Rustic Lodge BB",
-   "listing_titles": [],
-   "alternate_refs": [
-    "rustic lodge"
-   ]
-  },
-  "7 Spanish Angels": {
-   "actual_name": "7 Spanish Angels",
-   "listing_titles": [],
-   "alternate_refs": [
-    "spanish angels"
-   ]
-  },
-  "Simply D'Vine": {
-   "actual_name": "Simply D'Vine",
-   "listing_titles": [],
-   "alternate_refs": [
-    "simply divine",
-    "dvine"
-   ]
-  },
-  "Skippin Rocks": {
-   "actual_name": "Skippin Rocks",
-   "listing_titles": [
-    "Skipping Rocks"
-   ],
-   "alternate_refs": [
-    "skippin rocks",
-    "skipping rocks"
-   ]
-  },
-  "Sweet Serenity": {
-   "actual_name": "Sweet Serenity",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "The Bliss": {
-   "actual_name": "The Bliss",
-   "listing_titles": [],
-   "alternate_refs": [
-    "bliss"
-   ]
-  },
-  "The Cove": {
-   "actual_name": "The Cove",
-   "listing_titles": [
-    "Cove",
-    "Cove Cabin"
-   ],
-   "alternate_refs": [
-    "cove"
-   ]
-  },
-  "Timber Lodge": {
-   "actual_name": "Timber Lodge",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Tranquil Lane Lodge": {
-   "actual_name": "Tranquil Lane Lodge",
-   "listing_titles": [
-    "Tranquil Lane"
-   ],
-   "alternate_refs": [
-    "tranquil lane"
-   ]
-  },
-  "Tree House Chalet": {
-   "actual_name": "Tree House Chalet",
-   "listing_titles": [],
-   "alternate_refs": [
-    "tree house",
-    "treehouse"
-   ]
-  },
-  "Whiskey Made Me Do It": {
-   "actual_name": "Whiskey Made Me Do It",
-   "listing_titles": [],
-   "alternate_refs": [
-    "whiskey",
-    "vrbo #5256407",
-    "unit_5830568"
-   ],
-   "_note": "Confirmed 2026-07-26 (Morning) \u2014 VRBO listing #5256407 / unit_5830568 (guest Siobhain Sanchez, kitchen counter cleaner/sponges request) matches David's Slack 'Whiskey made me do it' pending-list entry describing the same request; this listing had been flagged unmapped in the 2026-07-25 PM scan."
-  },
-  "Wildwoods": {
-   "actual_name": "Wildwoods",
-   "listing_titles": [
-    "Wildwoods Creekside Cabin Retreat"
-   ],
-   "alternate_refs": [
-    "wildwoods"
-   ]
-  },
-  "Woodland Oasis": {
-   "actual_name": "Woodland Oasis",
-   "listing_titles": [],
-   "alternate_refs": []
-  },
-  "Top of the Rock": {
-   "actual_name": "Top of the Rock",
-   "listing_titles": [
-    "Epic Bluff Views | Modern Cabin",
-    "Top of the Rock {Cabin}"
-   ],
-   "alternate_refs": [],
-   "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com \u2014 verify PM vs revenue-only classification"
-  },
-  "Bird's Eye View": {
-   "actual_name": "Bird's Eye View",
-   "listing_titles": [],
-   "alternate_refs": [
-    "birds eye view"
-   ],
-   "_note": "Added by scan 2026-07-04 from OwnerRez cancellation alert (booking ORB18213869, Airbnb #215814950) to hello@theweekenderstays.com \u2014 verify PM vs revenue-only classification"
-  },
-  "The Rock House": {
-   "actual_name": "The Rock House",
-   "listing_titles": [
-    "Glass-Wall Lodge | Hot Tub \u00b7 Scenic Views \u00b7 Patio"
-   ],
-   "alternate_refs": [
-    "rock house"
-   ],
-   "_note": "Added by scan 2026-07-02 from OwnerRez alerts to hello@theweekenderstays.com (owner cc tim@i-mpact.biz) \u2014 verify PM vs revenue-only classification"
-  },
-  "Suquleana": {
-   "actual_name": "Suquleana",
-   "listing_titles": [],
-   "alternate_refs": [
-    "suqueleana",
-    "suqulena",
-    "suquleana cabin"
-   ],
-   "_note": "New client onboarding (Leslie & Jerry / owner contact Cassandra), in progress since 2026-06-25 \u2014 verify PM vs revenue-only classification once live"
-  },
-  "Green Mallard Trail": {
-   "actual_name": "Green Mallard Trail",
-   "listing_titles": [],
-   "alternate_refs": [
-    "green mallard"
-   ],
-   "_note": "Added by scan 2026-07-07 \u2014 new owner onboarding, Airbnb account setup in progress \u2014 verify PM vs revenue-only classification"
-  },
-  "LTD Eastern Rise": {
-   "actual_name": "LTD Eastern Rise",
-   "listing_titles": [
-    "Panoramic Mountain Views",
-    "Walk to Beach | Private Pool \u00b7 Hot Tub",
-    "Pond-View Cabin | Hot Tub \u00b7 Fire Pit \u00b7 Walkable",
-    "Riverfront Escape"
-   ],
-   "alternate_refs": [
-    "eastern rise",
-    "easternriseinfo",
-    "riverfront escape"
-   ],
-   "_note": "Added by scan 2026-07-11 \u2014 recurring source is the easternriseinfo@gmail.com inbox; has appeared regularly in checklist history but was never formally added to this mapping \u2014 verify PM vs revenue-only classification"
-  },
-  "Key Lime Sky": {
-   "actual_name": "Key Lime Sky",
-   "listing_titles": [
-    "Key Lime Sky \u00b7 Couples Cabin | Hot Tub \u00b7 Fireplace"
-   ],
-   "alternate_refs": [
-    "key lime sky"
-   ],
-   "_note": "Added by scan 2026-07-11 (Afternoon) \u2014 Airbnb alteration request from guest Jaylia to easternriseinfo@gmail.com; property in Broken Bow \u2014 verify PM vs revenue-only classification"
-  },
-  "Riverfront Cabin": {
-   "actual_name": "Riverfront Cabin",
-   "listing_titles": [
-    "Riverfront Cabin | Indoor RockWall \u00b7 HotTub \u00b7 Loft"
-   ],
-   "alternate_refs": [
-    "riverfront cabin",
-    "riverfront"
-   ],
-   "_note": "Added by scan 2026-07-15 (Morning) \u2014 this listing had already appeared as checklist items on 7/1 and 7/2 (Tommy's, Nicole's, and Ashley's pending requests) flagged as unmapped both times but never formally added to this file; source is easternriseinfo@gmail.com \u2014 verify PM vs revenue-only classification"
-  },
-  "Brickyard Branch": {
-   "actual_name": "Brickyard Branch",
-   "listing_titles": [
-    "Brickyard Branch | Hot Tub \u00b7 Fire Pit"
-   ],
-   "alternate_refs": [
-    "brickyard branch",
-    "brickyard"
-   ],
-   "_note": "Added by scan 2026-07-16 (Afternoon) \u2014 recurring property in checklist history since at least 2026-06-02 (power outage, guest date-extension requests) but never formally added to this file; source is easternriseinfo@gmail.com \u2014 verify PM vs revenue-only classification"
-  },
-  "Starry Escape": {
-   "actual_name": "Starry Escape",
-   "listing_titles": [
-    "Broken Bow Starry Escape \u00b7 Cabin Near Town | Hot Tub \u00b7 Bunks \u00b7 Games"
-   ],
-   "alternate_refs": [
-    "starry escape"
-   ],
-   "_note": "Added by scan 2026-08-16 (Morning) from an Airbnb reservation-change request (guest Christian) to easternriseinfo@gmail.com \u2014 verify PM vs revenue-only classification"
-  },
-  "Mountaintop Escape": {
-   "actual_name": "Mountaintop Escape",
-   "listing_titles": [
-    "Mountaintop Escape | Sauna \u00b7 Hot Tub \u00b7 Game Room"
-   ],
-   "alternate_refs": [
-    "mountaintop escape"
-   ],
-   "_note": "Added by scan 2026-08-16 (Afternoon) from an Airbnb inquiry (guest Lara, Nov 24-27, 4-dog request) to easternriseinfo@gmail.com \u2014 verify actual cabin name + PM vs revenue-only classification"
-  },
-  "Near Hochatown Pool Table Cabin": {
-   "actual_name": "Near Hochatown Pool Table Cabin",
-   "listing_titles": [
-    "Near Hochatown | Hot Tub \u00b7 Pool Table"
-   ],
-   "alternate_refs": [
-    "near hochatown pool table"
-   ],
-   "_note": "Added by scan 2026-08-16 (Afternoon) \u2014 PLACEHOLDER; 'Near Hochatown | Hot Tub . Pool Table' is a listing descriptor, actual cabin name UNKNOWN. Seen via easternriseinfo@gmail.com (guest Erin Aug 17-21; guest Ben Hines Sep 18-20). Identify the real cabin name + verify PM vs revenue-only classification."
-  },
-  "Sleeps 19 Lakefront Lodge": {
-   "actual_name": "Sleeps 19 Lakefront Lodge",
-   "listing_titles": [
-    "Sleeps 19 | Kayaks \u00b7 Tree Fort \u00b7 Paddleboat \u00b7 Dogs"
-   ],
-   "alternate_refs": [
-    "sleeps 19",
-    "kayaks tree fort paddleboat"
-   ],
-   "_note": "Added by scan 2026-08-18 (Morning) \u2014 PLACEHOLDER; 'Sleeps 19 | Kayaks \u00b7 Tree Fort \u00b7 Paddleboat \u00b7 Dogs' (Airbnb room 1164468716132528082, hosted by Maryann) is a listing descriptor; actual cabin name UNKNOWN. Seen via easternriseinfo@gmail.com (guest Christopher, stay Aug 13-16, left-behind clippers/trimmers). Identify the real cabin name + verify PM vs revenue-only classification."
+  "_unmapped_listing_flags": {
+    "Pine Forest Cabin | Hot Tub · Fireplace · Views": {
+      "first_seen": "2026-08-20",
+      "source": "Airbnb inquiry (Gabriela, Sep 25-27, 2026)",
+      "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
+    },
+    "Greeter Loft": {
+      "actual_name": "Greeter Loft",
+      "listing_titles": [],
+      "alternate_refs": [
+        "greeter loft"
+      ],
+      "_note": "Added by scan 2026-08-20 (Afternoon). Appears as an OwnerRez property on hello@theweekenderstays.com (booking ORB18907255, guest Foster Holm, arrives Sep 12 2026, balance past due). Not present in _property_management_clients. Verify PM vs revenue-only classification and move into the correct block."
+    },
+    "Modern Forest Cabin | Hot Tub · Game Rm · Fire Pit": {
+      "first_seen": "2026-08-20",
+      "source": "Airbnb inquiries (Melanie Aug 20; Gabriela Sep 25-27; Blair Aug 28-30, 2026)",
+      "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
+    },
+    "NorthWing Bear Resort": {
+      "first_seen": "2026-08-21",
+      "source": "Slack team DM 2026-08-20 - merged Airbnb listing showing photos of both NorthWing Bear Resort and Majestic One",
+      "status": "NEEDS MAPPING - likely a new onboarding cabin; confirm PM vs revenue-only and add to _property_management_clients"
+    },
+    "Majestic One": {
+      "first_seen": "2026-08-21",
+      "source": "Slack team DM 2026-08-20 - merged Airbnb listing with NorthWing Bear Resort",
+      "status": "NEEDS MAPPING - likely a new onboarding cabin; confirm PM vs revenue-only and add to _property_management_clients"
+    },
+    "Sleeps 19 | Kayaks · Tree Fort · Paddleboat · Dogs": {
+      "first_seen": "2026-08-21",
+      "source": "Airbnb guest threads (Christopher Aug 21; Linna Booker Aug 21-22, 2026)",
+      "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
+    },
+    "Sauna · Hot Tub · Movie Lounge | Forest Cabin": {
+      "first_seen": "2026-08-22",
+      "source": "Airbnb inquiry (Stacy, Sep 10-14, 2026) to easternriseinfo@gmail.com",
+      "status": "NEEDS MAPPING - close to Mountaintop Escape's recorded title ('Mountaintop Escape | Sauna · Hot Tub · Game Room') but not a match (Movie Lounge vs Game Room). Confirm before treating as Mountaintop Escape."
+    },
+    "OpenPhone contact (214) 906-7400": {
+      "first_seen": "2026-08-22",
+      "source": "OpenPhone thread - sent 3 screenshots, said 'these are bad photos', asked for the listing link",
+      "status": "NEEDS MAPPING - cabin never named in the thread; identify the contact and property"
+    },
+    "Suquelena (owner) — cabin TBD": {
+      "first_seen": "2026-08-23",
+      "source": "Maryann Slack team group DM 8:53 AM CT Aug 23",
+      "note": "Owner named 'Suquelena' asked for replacement listing photos. Very likely the same person as the (214) 906-7400 OpenPhone contact tracked since Aug 20. Property name still unknown — confirm and map.",
+      "alternate_refs": [
+        "(214) 906-7400"
+      ]
+    }
   }
- },
- "_revenue_management_clients": {
-  "_note": "REVENUE MANAGEMENT ONLY \u2014 These are listings where you provide pricing & revenue strategy. They do NOT appear in daily management checklist. They may appear in a separate revenue management tracking section.",
-  "_note_2": "Add properties here as they're added to your revenue management portfolio. These should NOT trigger HOT/Maint/urgent alerts in the main checklist.",
-  "_placeholder": "To be populated with full list of revenue management client properties and their platform references (Airbnb titles, VRBO titles, platform IDs, etc.)"
- },
- "_instructions": {
-  "usage_critical": "ONLY Property Management Clients should appear in the main daily checklist (with HOT, Maint tags, urgent alerts). Revenue Management Clients should be filtered OUT of the daily checklist or placed in a separate tracking section.",
-  "filtering_logic": "When scanning sources (Gmail, Slack, Notion, OpenPhone), check if the property is in _property_management_clients. If yes, include in main checklist. If in _revenue_management_clients only, filter it to revenue section or exclude.",
-  "lookup_strategy": "1. Extract property reference from source. 2. Check against PM clients first. 3. If found in PM clients, use actual_name in main checklist. 4. If only in revenue clients, route to revenue section. 5. If not found anywhere, flag for Maryann to classify.",
-  "maintenance": "Update _property_management_clients when new PM clients are added. Update _revenue_management_clients when new revenue-only clients join."
- },
- "_unmapped_listing_flags": {
-  "Pine Forest Cabin | Hot Tub \u00b7 Fireplace \u00b7 Views": {
-   "first_seen": "2026-08-20",
-   "source": "Airbnb inquiry (Gabriela, Sep 25-27, 2026)",
-   "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
-  },
-  "Greeter Loft": {
-   "actual_name": "Greeter Loft",
-   "listing_titles": [],
-   "alternate_refs": [
-    "greeter loft"
-   ],
-   "_note": "Added by scan 2026-08-20 (Afternoon). Appears as an OwnerRez property on hello@theweekenderstays.com (booking ORB18907255, guest Foster Holm, arrives Sep 12 2026, balance past due). Not present in _property_management_clients. Verify PM vs revenue-only classification and move into the correct block."
-  },
-  "Modern Forest Cabin | Hot Tub \u00b7 Game Rm \u00b7 Fire Pit": {
-   "first_seen": "2026-08-20",
-   "source": "Airbnb inquiries (Melanie Aug 20; Gabriela Sep 25-27; Blair Aug 28-30, 2026)",
-   "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
-  },
-  "NorthWing Bear Resort": {
-   "first_seen": "2026-08-21",
-   "source": "Slack team DM 2026-08-20 - merged Airbnb listing showing photos of both NorthWing Bear Resort and Majestic One",
-   "status": "NEEDS MAPPING - likely a new onboarding cabin; confirm PM vs revenue-only and add to _property_management_clients"
-  },
-  "Majestic One": {
-   "first_seen": "2026-08-21",
-   "source": "Slack team DM 2026-08-20 - merged Airbnb listing with NorthWing Bear Resort",
-   "status": "NEEDS MAPPING - likely a new onboarding cabin; confirm PM vs revenue-only and add to _property_management_clients"
-  },
-  "Sleeps 19 | Kayaks \u00b7 Tree Fort \u00b7 Paddleboat \u00b7 Dogs": {
-   "first_seen": "2026-08-21",
-   "source": "Airbnb guest threads (Christopher Aug 21; Linna Booker Aug 21-22, 2026)",
-   "status": "NEEDS MAPPING - identify actual property name and move into _property_management_clients"
-  },
-  "Sauna \u00b7 Hot Tub \u00b7 Movie Lounge | Forest Cabin": {
-   "first_seen": "2026-08-22",
-   "source": "Airbnb inquiry (Stacy, Sep 10-14, 2026) to easternriseinfo@gmail.com",
-   "status": "NEEDS MAPPING - close to Mountaintop Escape's recorded title ('Mountaintop Escape | Sauna \u00b7 Hot Tub \u00b7 Game Room') but not a match (Movie Lounge vs Game Room). Confirm before treating as Mountaintop Escape."
-  },
-  "OpenPhone contact (214) 906-7400": {
-   "first_seen": "2026-08-22",
-   "source": "OpenPhone thread - sent 3 screenshots, said 'these are bad photos', asked for the listing link",
-   "status": "NEEDS MAPPING - cabin never named in the thread; identify the contact and property"
-  }
- }
 }
